@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <title>Форма и отзывы</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/picturefill.js"></script>
+    <script src="js/svg4everybody.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="page-header">
+            <nav class="main-nav main-nav--open">
+                    <ul class="main-nav__lists">
+                        <li class="main-nav__list main-nav__list--hidden main-nav__list--close">
+                            <a href="index.html" class="main-nav__link main-nav__link--close">Главная</a>
+                            <svg width="24" height="24" class="main-nav__menu-icon main-nav__menu-icon--close">
+                                <use xlink:href="img/spriteSvg.svg#icon-cross"></use>
+                            </svg>
+                        </li>
+                        <li class="main-nav__list main-nav__list--hidden">
+                            <a href="photo.html" class="main-nav__link">Фото и видео</a>
+                        </li>
+                        <li class="main-nav__list main-nav__list--hidden">
+                            <a class="main-nav__link main-nav__link--active">Форма отзыва</a>
+                        </li>
+                        <li class="main-nav__list main-nav__list--hidden">
+                            <a href="http://htmlacademy.ru" class="main-nav__link">HTML Academy</a>
+                        </li>
+                        <li class="main-nav__list main-nav__list--open">
+                            <a href="/" class="main-nav__link main-nav__link--open">
+                                <svg width="105" height="85" class="main-nav__logo main-nav__logo-mob">
+                                    <use xlink:href="img/spriteSvg.svg#logo-sedona-mobile"></use>
+                                </svg>
+                                <svg width="104" height="83" class="main-nav__logo main-nav__logo-tablet">
+                                    <use xlink:href="img/spriteSvg.svg#logo-sedona-tablet"></use>
+                                </svg>
+                                <svg width="187" height="97" class="main-nav__logo main-nav__logo-desktop">
+                                    <use xlink:href="img/spriteSvg.svg#logo-sedona-desktop"></use>
+                                </svg>
+                            </a>
+                            <svg width="24" height="24" class="main-nav__menu-icon main-nav__menu-icon--open">
+                                <use xlink:href="img/spriteSvg.svg#icon-menu"></use>
+                            </svg>
+                        </li>
+                    </ul>
+                </nav>
+            <div class="page-header__logo">
+                <div class="logo logo--padding">
+                    <svg width="228" height="40" class="logo__svg logo__svg--mob">
+                        <use xlink:href="img/spriteSvg.svg#text-sedona"></use>
+                    </svg>
+                    <svg width="454" height="82" class="logo__svg logo__svg--tablet">
+                        <use xlink:href="img/spriteSvg.svg#text-sedona"></use>
+                    </svg>
+                </div>
+                <div class="page-header__triangle">
+                    <svg width="320" height="30" class="page-header__triangle page-header__triangle--mob">
+                        <use xlink:href="img/spriteSvg.svg#bg-intro-triangle-mobile"></use>
+                    </svg>
+                    <svg width="768" height="60" class="page-header__triangle page-header__triangle--tablet">
+                        <use xlink:href="img/spriteSvg.svg#bg-intro-triangle-tablet"></use>
+                    </svg>
+                    <svg width="1202" height="60" class="page-header__triangle page-header__triangle--desktop">
+                        <use xlink:href="img/spriteSvg.svg#bg-intro-triangle-desktop"></use>
+                    </svg>
+                </div>
+            </div>
+        </header>
+
+        <section class="page-content">
+            <header class="page-content__header page-content__header--padding page-content__header--addpadding">
+                <h1 class="page-content__title">
+                    Оставьте свой отзыв
+                </h1>
+                <p class="page-content__description page-content__description--padding">
+                    Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
+                </p>
+            </header>
+
+            <section class="page-form">
+                <div class="page-form__wrapper">
+                    <form action="/" class="interview" method="post">
+                        <div class="interview__wrapper">
+                            <fieldset class="interview__section interview__section--fio">
+                                <p class="interview__title">Представьтесь<span class="form-input__hidden">, пожалуйста</span>:</p>
+                                <div class="form-input">
+                                    <label class="form-input__label" for="username">Имя:</label>
+                                    <input class="form-input__text" type="text" id="username" name="username" placeholder="Петр" pattern="[a-zA-ZА-Яа-я0-9_]{2,}" required>
+                                </div>
+                                <div class="form-input">
+                                    <label class="form-input__label" for="surname">Фамилия:</label>
+                                    <input class="form-input__text" type="text" id="surname" name="surname" placeholder="Иванов" pattern="[a-zA-ZА-Яа-я0-9_]{2,}" required>
+                                </div>
+                                <div class="form-input">
+                                    <label class="form-input__label" for="patronymic">Отчество:</label>
+                                    <input class="form-input__text" type="text" id="patronymic" name="patronymic" placeholder="Александрович" pattern="[a-zA-ZА-Яа-я0-9_]{2,}" required>
+                                </div>
+                            </fieldset>
+                            <fieldset class="interview__section interview__section--info">
+                                <p class="interview__title">Контактная информация:</p>
+                                <div class="interview__inner-wrapper interview__inner-wrapper--no-padding">
+                                    <div class="form-input form-input--info">
+                                        <label class="form-input__label form-input__label--info" for="tel"><span class="form-input__hidden">Контактный</span> телефон:</label>
+                                        <input class="form-input__text form-input__text--info form-input__text--tel" type="number" id="tel" name="tel" placeholder="Введите телефон" min="11" required>
+                                    </div>
+                                    <div class="form-input form-input--info">
+                                        <label class="form-input__label form-input__label--info" for="email">Электронная почта:</label>
+                                        <input class="form-input__text form-input__text--info form-input__text--email" type="email" id="email" name="email" placeholder="Введите e-mail" required>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="interview__section interview__section--mood">
+                                <p class="interview__title">Ваше общее впечатление:</p>
+                                <label class="form-radio">
+                                    <input type="radio" class="form-radio__control" name="mood" checked>
+                                    <span class="form-radio__state"></span>
+                                    <span class="form-radio__label">Скорее положительное</span>
+                                </label>
+                                <label class="form-radio">
+                                    <input type="radio" class="form-radio__control" name="mood">
+                                    <span class="form-radio__state"></span>
+                                    <span class="form-radio__label">Скорее отрицательное</span>
+                                </label>
+                                <label class="form-radio">
+                                    <input type="radio" class="form-radio__control" name="mood">
+                                    <span class="form-radio__state"></span>
+                                    <span class="form-radio__label">Затрудняюсь ответить</span>
+                                </label>
+                            </fieldset>
+                            <fieldset class="interview__section interview__section--place">
+                                <p class="interview__title">Посещенные достопримечательности:</p>
+                                <div class="interview__inner-wrapper">
+                                    <label class="form-checkbox">
+                                        <input type="checkbox" class="form-checkbox__control" name="place" checked>
+                                        <span class="form-checkbox__state"></span>
+                                        <span class="form-checkbox__label">Мост дьявола</span>
+                                    </label>
+                                    <label class="form-checkbox">
+                                        <input type="checkbox" class="form-checkbox__control" name="place" checked>
+                                        <span class="form-checkbox__state"></span>
+                                        <span class="form-checkbox__label">Слайд-парк</span>
+                                    </label>
+                                    <label class="form-checkbox">
+                                        <input type="checkbox" class="form-checkbox__control" name="place">
+                                        <span class="form-checkbox__state"></span>
+                                        <span class="form-checkbox__label">Гора-колокол</span>
+                                    </label>
+                                    <label class="form-checkbox">
+                                        <input type="checkbox" class="form-checkbox__control" name="place" checked>
+                                        <span class="form-checkbox__state"></span>
+                                        <span class="form-checkbox__label">Красные скалы</span>
+                                    </label>
+                                </div>
+                            </fieldset>
+                            <fieldset class="interview__section interview__section--emotions">
+                                <p class="interview__title">Опишите свои эмоции:</p>
+                                <textarea name="emotions" class="form-textarea" placeholder="Опишите подробно все свои восторги"></textarea>
+                            </fieldset>
+                        </div>
+                        <div class="interview__footer">
+                            <button type="submit" class="button button--send">Отправить отзыв</button>
+                            <div class="rules">
+                                <div class="rules__text">
+                                    * — Обязательные поля
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+        </section>
+        <footer class="page-footer">
+            <div class="page-footer__wrapper">
+                <div class="hash-name">#Visitsedona</div>
+                <div class="social">
+                    <a href="http://twitter.com" class="social-link social-link--tw">Twitter</a>
+                    <a href="hhtp://facebook.com" class="social-link social-link--fb">Facebook</a>
+                    <a href="http://youtube.com" class="social-link social-link--yt">Youtube</a>
+                </div>
+                <div class="copyright">
+                    <a href="http://htmlacademy.ru" class="copyright__link">
+                        Разработано
+                        <svg width="41px" height="38px" class="copyright__academy-logo">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/symbols.svg#htmlacademy"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/main-nav.js"></script>
+    <script src="js/form-validation.js"></script>
+    <script>
+        svg4everybody();
+    </script>
+</body>
+</html>
