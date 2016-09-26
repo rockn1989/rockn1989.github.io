@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>PINK: Фотографии</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/picturefill.js"></script>
+    <script src="js/svg4everybody.js"></script>
+  </head>
+  <body>
+
+      <header class="page-header">
+
+        <nav class="main-nav main-nav--open main-nav--no-js">
+          <div class="center-wrapper">
+            <div class="header-flex-wrapper">
+                <div class="main-nav__header">
+                    <a href="index.html" class="main-nav__logo">
+                      <svg width="80" height="30" class="header-logo header-logo--mob">
+                        <use xlink:href="img/symbols.svg#logo-pink-white-mobile"></use>
+                      </svg>
+                      <svg width="150" height="40" class="header-logo header-logo--tabl">
+                        <use xlink:href="img/symbols.svg#logo-pink-white-tablet"></use>
+                      </svg>
+                      <svg width="150" height="45" class="header-logo header-logo--desk">
+                        <use xlink:href="img/symbols.svg#logo-pink-white-desktop"></use>
+                      </svg>
+                    </a>
+                    <a href="" class="main-nav__open-menu">
+                      <svg width="50" height="25" class="main-nav__open">
+                        <use xlink:href="img/symbols.svg#icon-menu-burger"></use>
+                      </svg>
+                      <svg width="50" height="25" class="main-nav__close">
+                        <use xlink:href="img/symbols.svg#icon-menu-cross"></use>
+                      </svg>
+                    </a>
+                </div>
+                <ul class="main-nav__list">
+                  <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+                  <li class="main-nav__item"><a class="main-nav__link">Фотографии</a></li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="http://htmlacademy.ru">HTML Academy</a></li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+
+          <div class="description center-wrapper">
+            <p class="description__text">
+              Фотографии <br> пользователей
+            </p>
+          </div>
+
+      </header>
+
+      <article class="posts">
+
+          <header class="posts__header">
+            <div class="center-wrapper">
+              <h2 class="posts__title">
+                Взгляните на фотографии, которые выкладывают пользователи!
+                Видите, как не хватает ваших?
+              </h2>
+            </div>
+          </header>
+
+          <article class="user-post user-post--best">
+            <div class="user-post__photo">
+              <picture>
+                <source media="(min-width:1200px)"
+                srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+                <source media="(min-width:700px)"
+                srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+                <img src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" width="100%" height="100%" alt="Лучшее фото">
+              </picture>
+            </div>
+            <div class="user-post__desc-wrapper">
+              <div class="user-post__description">
+                <header class="user-post__header">
+                  <h2 class="user-post__title">Анна</h2>
+                  <span class="user-post__date">(5 минут назад)</span>
+                </header>
+                <p class="user-post__text">
+                  Прыгать или нет? Напишите в комментарии свой совет и смотрите
+                  прямую трансляцию в перископе, задавайте свои вопросы !
+                </p>
+                <p class="user-post__likes">
+                  Нравится: 215
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <div class="posts__wrapper center-wrapper">
+            <article class="user-post">
+              <div class="user-post__photo">
+              <picture>
+                <source media="(min-width:1200px)"
+                srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width:700px)"
+                srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" width="100%" height="100%" alt="Пост Левона">
+              </picture>
+
+              </div>
+              <div class="user-post__desc-wrapper">
+                <div class="user-post__description">
+                  <header class="user-post__header">
+                    <h2 class="user-post__title">Левон</h2>
+                    <span class="user-post__date">(5 часов назад)</span>
+                  </header>
+                  <p class="user-post__text">
+                    Вчера он на луну летал, сегодня в руки к нам попал.
+                  </p>
+                  <p class="user-post__likes">
+                    Нравится: 356
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="user-post">
+              <div class="user-post__photo">
+                <picture>
+                  <source media="(min-width:1200px)"
+                  srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                  <source media="(min-width:700px)"
+                  srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                  <img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" width="100%" height="100%" alt="Пост Антона">
+                </picture>
+              </div>
+              <div class="user-post__desc-wrapper">
+                <div class="user-post__description">
+                  <header class="user-post__header">
+                    <h2 class="user-post__title">Антон</h2>
+                    <span class="user-post__date">(12 часов назад)</span>
+                  </header>
+                  <p class="user-post__text">
+                    Соседи будут рады! lorem
+                  </p>
+                  <p class="user-post__likes">
+                    Нравится: 666
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="user-post">
+              <div class="user-post__photo">
+                <picture>
+                  <source media="(min-width:1200px)"
+                  srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                  <source media="(min-width:700px)"
+                  srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                  <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" width="100%" height="100%" alt="Пост Бориса">
+                </picture>
+              </div>
+              <div class="user-post__desc-wrapper">
+                <div class="user-post__description">
+                  <header class="user-post__header">
+                    <h2 class="user-post__title">Борис</h2>
+                    <span class="user-post__date">(20 часов назад)</span>
+                  </header>
+                  <p class="user-post__text">
+                    Здесь могла быть цитата о высоком и вечном.
+                  </p>
+                  <p class="user-post__likes">
+                    Нравится: 215
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="user-post">
+              <div class="user-post__photo">
+                <picture>
+                  <source media="(min-width:1200px)"
+                  srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+                  <source media="(min-width:700px)"
+                  srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+                  <img src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" width="100%" height="100%" alt="Пост Сергея">
+                </picture>
+              </div>
+              <div class="user-post__desc-wrapper">
+                <div class="user-post__description">
+                  <header class="user-post__header">
+                    <h2 class="user-post__title">Сергей</h2>
+                    <span class="user-post__date">(25 часов назад)</span>
+                  </header>
+                  <p class="user-post__text">
+                    Самая кубанская в мире!
+                  </p>
+                  <p class="user-post__likes">
+                    Нравится: 4
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="user-post">
+              <div class="user-post__photo">
+                <picture>
+                  <source media="(min-width:1200px)"
+                  srcset="img/photo-5-desktop@1x.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
+                  <source media="(min-width:700px)"
+                  srcset="img/photo-5-tablet@1x.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
+                  <img src="img/photo-5-mobile@1x.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" width="100%" height="100%" alt="Пост Максима">
+                </picture>
+              </div>
+              <div class="user-post__desc-wrapper">
+                <div class="user-post__description">
+                  <header class="user-post__header">
+                    <h2 class="user-post__title">Максим</h2>
+                    <span class="user-post__date">(40 часов назад)</span>
+                  </header>
+                  <p class="user-post__text">
+                    Где снег-то?
+                  </p>
+                  <p class="user-post__likes">
+                    Нравится: 150
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="user-post">
+              <div class="user-post__photo">
+                <picture>
+                  <source media="(min-width:1200px)"
+                  srcset="img/photo-6-desktop@1x.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
+                  <source media="(min-width:700px)"
+                  srcset="img/photo-6-tablet@1x.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
+                  <img src="img/photo-6-mobile@1x.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" width="100%" height="100%" alt="Пост Надежды">
+                </picture>
+              </div>
+              <div class="user-post__desc-wrapper">
+                <div class="user-post__description">
+                  <header class="user-post__header">
+                    <h2 class="user-post__title">Надежда</h2>
+                    <span class="user-post__date">(45 часов назад)</span>
+                  </header>
+                  <p class="user-post__text">
+                    Всем GM и взаимные лайки!
+                  </p>
+                  <p class="user-post__likes">
+                    Нравится: 2560
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+
+      </article>
+
+      <section class="photo-uploader center-wrapper">
+        <header class="photo-uploader__header">
+          Затмите их всех!<br>
+          Выкладывайте все, что накопилось в телефоне!
+        </header>
+          <form action="/" class="form-uploader" method="post">
+            <div class="photo-uploader__photo">
+              <picture>
+                <source media="(min-width:1200px)"
+                srcset="img/photo-7-desktop@1x.jpg 1x, img/photo-7-desktop@2x.jpg 2x">
+                <source media="(min-width:700px)"
+                srcset="img/photo-7-tablet@1x.jpg 1x, img/photo-7-tablet@2x.jpg 2x">
+                <img src="img/photo-7-mobile@1x.jpg" srcset="img/photo-7-mobile@2x.jpg 2x" width="100%" height="100%" alt="Загрузочное фото">
+              </picture>
+            </div>
+            <div class="photo-uploader__controls">
+
+              <div class="photo-uploader__effects">
+
+                <div class="photo-uploader__effect photo-uploader__effect--crop">
+                  <svg width="48px" height="48px" class="photo-svg photo-svg--crop photo-svg--active">
+                    <use xlink:href="img/symbols.svg#icon-editor-crop"></use>
+                  </svg>
+                  <div class="photo-uploader__range">
+                    <div class="range">
+                      <div class="range__control"></div>
+                      <span class="range__pointer range__pointer--crop"></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="photo-uploader__effect photo-uploader__effect--fill">
+                  <svg width="48px" height="48px" class="photo-svg photo-svg--fill photo-svg--disabled">
+                    <use xlink:href="img/symbols.svg#icon-editor-fill"></use>
+                  </svg>
+                  <div class="photo-uploader__range">
+                    <div class="range">
+                      <div class="range__control"></div>
+                      <span class="range__pointer range__pointer--fill"></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="photo-uploader__effect photo-uploader__effect--contrast">
+                  <svg width="31px" height="31px" class="photo-svg photo-svg--contrast photo-svg--disabled">
+                    <use xlink:href="img/symbols.svg#icon-editor-contrast"></use>
+                  </svg>
+                  <div class="photo-uploader__range">
+                    <div class="range">
+                      <div class="range__control"></div>
+                       <span class="range__pointer range__pointer--contrast"></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="photo-uploader__range photo-uploader__range--mobile">
+                  <div class="range__control"></div>
+                  <span class="range__pointer"></span>
+                </div>
+
+              </div>
+
+
+            </div>
+            <div class="photo-uploader__actions">
+              <button class="basic-btn basic-btn--action">Запостить</button>
+              <button class="basic-btn basic-btn--silent">Отмена</button>
+            </div>
+          </form>
+      </section>
+
+      <footer class="page-footer">
+        <div class="center-wrapper">
+          <div class="footer-logo">
+            <a href="/" class="footer-logo__link">
+              <svg width="150px" height="45px" class="footer-logo-img footer-logo-img--desk">
+                <use xlink:href="img/symbols.svg#logo-pink-blue-desktop"></use>
+              </svg>
+              <svg width="146px" height="40px" class="footer-logo-img footer-logo-img--tabl">
+                <use xlink:href="img/symbols.svg#logo-pink-blue-mobile"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="social">
+            <a href="#" class="social-link social-link--tw">Twitter</a>
+            <a href="#" class="social-link social-link--fb">Facebook</a>
+            <a href="#" class="social-link social-link--yo">Youtube</a>
+          </div>
+          <div class="copyright">
+            <a href="http://htmlacademy.ru" class="copyright__link">Разработано
+              <svg width="41px" height="38px" class="copyright__academy-logo">
+                <use xlink:href="img/symbols.svg#htmlacademy"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </footer>
+
+    <script src="js/main-menu.js"></script>
+    <script>
+      svg4everybody();
+    </script>
+  </body>
+</html>
