@@ -268,10 +268,21 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("../img/icon/spriteIcon.png");
-  text-indent: -9999px; }
+  text-indent: -9999px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-box-shadow: 0 0 7px 2px #d4d4d4;
+          box-shadow: 0 0 7px 2px #d4d4d4;
+  -webkit-transition: -webkit-box-shadow 0.2s ease;
+  transition: -webkit-box-shadow 0.2s ease;
+  transition: box-shadow 0.2s ease;
+  transition: box-shadow 0.2s ease, -webkit-box-shadow 0.2s ease; }
   .mycontact__link.mycontact__link--vk {
     background-position: -35px;
-    margin-right: 5px; }
+    margin-right: 10px; }
+  .mycontact__link:hover {
+    -webkit-box-shadow: 0 0 15px 2px #d4d4d4;
+            box-shadow: 0 0 15px 2px #d4d4d4; }
 
 .mycontact__icon {
   fill: red;
