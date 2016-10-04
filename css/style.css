@@ -254,6 +254,29 @@ img {
   .skill__item:first-child {
     padding-top: 0; }
 
+.mycontacts {
+  margin-bottom: 20px; }
+
+.mycontacts__title {
+  margin-bottom: 20px; }
+
+.mycontact__link {
+  color: #fff;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/icon/spriteIcon.png");
+  text-indent: -9999px; }
+  .mycontact__link.mycontact__link--vk {
+    background-position: -35px;
+    margin-right: 5px; }
+
+.mycontact__icon {
+  fill: red;
+  fill-opacity: 0; }
+
 .page-footer {
   background-color: #343536;
   padding: 20px 0;
@@ -268,3 +291,7 @@ img {
   display: inline-block;
   text-decoration: none;
   margin-right: 20px; }
+  .contacts__link:hover {
+    color: #93b640; }
+  .contacts__link:active {
+    color: #b6b240; }
