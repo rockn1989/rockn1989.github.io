@@ -10,13 +10,23 @@
 <body>
   <header class="page-header">
     <div class="wrapper">
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--open main-nav--no-js">
+        <div class="main-nav__header">
+          <a class="main-nav__toggle-menu">
+            <svg width="50" height="25" class="main-nav__open">
+              <use xlink:href="img/icon/symbols.svg#icon-menu-burger"></use>
+            </svg>
+            <svg width="50" height="25" class="main-nav__close">
+              <use xlink:href="img/icon/symbols.svg#icon-menu-cross"></use>
+            </svg>
+          </a>
+        </div>
         <ul class="main-nav__lists">
           <li class="main-nav__item">
             <a href="index.html" class="main-nav__link">Галлерея</a>
           </li>
           <li class="main-nav__item">
-            <a href="aboutme.html" class="main-nav__link main-nav__link--active">Обо мне</a>
+            <a class="main-nav__link main-nav__link--active">Обо мне</a>
           </li>
           <li class="main-nav__item">
             <a href="contacts.html" class="main-nav__link">Контакты</a>
@@ -29,12 +39,12 @@
     <div class="wrapper">
       <article class="myinfo">
         <h1 class="myinfo__title">
-          Добро пожаловать на мою скромную страницу :)
+          Добро пожаловать на мою страницу :)
         </h1>
         <div class="myinfo__desc">
-          <p>Тут я постараюсь подробно рассказать о себе и своих навыках на текущий момент.</p>
+          <p>Тут я постараюсь подробно рассказать о себе и своих навыках на текущий момент: </p>
           <p>
-            Зовут меня <a class="myinfo__link" target="_blank" href="https://vk.com/rock1989">Рябков Артём</a>. Мне <span class="myinfo__age">27</span> лет. И я проживаю в Москве. Имею высшее образование. Закончил <a href="http://misis.ru/" target="_blank" class="myinfo__link">МиСИС</a> в 2011 году.
+            Зовут меня Рябков Артём. Мне <span class="myinfo__age">27</span> лет. И я проживаю в Москве. Имею высшее образование. Закончил МиСИС в 2011 году.
           </p>
           <div class="myinfo__part myinfo__part--1">
             <p>Я успешно окончил два, достаточно насыщенных интенсива от
@@ -47,14 +57,14 @@
                 <a href="https://up.htmlacademy.ru/adaptive/7/certificate/get" target="_blank" class="myinfo__link">
                   <img src="img/certificate-1.jpg" width="330" height="550" alt="Сертификат по верстке">
                 </a>
-                <ul class="skill__lists">
-                  <li class="skill__item">Работа с системой контроля версий Git</li>
-                  <li class="skill__item">Работа по методологии БЭМ</li>
-                  <li class="skill__item">Препроцессоры: LESS & SASS (основы)</li>
-                  <li class="skill__item">Работа с адаптивной версткой (в курсе шли по технологии <i>Mobile first</i>)</li>
-                  <li class="skill__item">Работа с графикой: оптимизация изображений, нарезка макета в <i>Adobe Photoshop)</i></li>
-                  <li class="skill__item">Верстка на <i>flexbox</i></li>
-                  <li class="skill__item">Автоматизация: Grunt & Gulp (основы)</li>
+                <ul class="myinfo__skill-lists">
+                  <li class="myinfo__skill-item">Работа с системой контроля версий Git</li>
+                  <li class="myinfo__skill-item">Работа по методологии БЭМ</li>
+                  <li class="myinfo__skill-item">Препроцессоры: LESS & SASS (основы)</li>
+                  <li class="myinfo__skill-item">Работа с адаптивной версткой (в курсе шли по технологии <i>Mobile first</i>)</li>
+                  <li class="myinfo__skill-item">Работа с графикой: оптимизация изображений, нарезка макета в <i>Adobe Photoshop)</i></li>
+                  <li class="myinfo__skill-item">Верстка на <i>flexbox</i></li>
+                  <li class="myinfo__skill-item">Автоматизация: Grunt & Gulp (основы)</li>
                 </ul>
               </li>
               <li class="myinfo__item">
@@ -62,25 +72,25 @@
                 <a href="https://up.htmlacademy.ru/javascript/6/certificate/get" target="_blank" class="myinfo__link">
                   <img src="img/certificate-2.jpg" width="330" height="550" alt="Сертификат по JavaScript">
                 </a>
-                <ul class="skill__lists">
-                  <li class="skill__item">Основы JS: типы данных, операторы, переменные и тд</li>
-                  <li class="skill__item">Основы работы с графикой на <i>Canvas</i></li>
-                  <li class="skill__item">Работа с <i>cookie</i>, с датами</li>
-                  <li class="skill__item">Работа с несложными <i>Ajax-запросами</i></li>
-                  <li class="skill__item">Работа с <i>событиями</i></li>
-                  <li class="skill__item">Основы в ООП</li>
-                  <li class="skill__item">Работа на основе модульного подхода при использовании <i>AMD</i></li>
+                <ul class="myinfo__skill-lists">
+                  <li class="myinfo__skill-item">Основы JS: типы данных, операторы, переменные и тд</li>
+                  <li class="myinfo__skill-item">Основы работы с графикой на <i>Canvas</i></li>
+                  <li class="myinfo__skill-item">Работа с <i>cookie</i>, с датами</li>
+                  <li class="myinfo__skill-item">Работа с несложными <i>Ajax-запросами</i></li>
+                  <li class="myinfo__skill-item">Работа с <i>событиями</i></li>
+                  <li class="myinfo__skill-item">Основы в ООП</li>
+                  <li class="myinfo__skill-item">Работа на основе модульного подхода при использовании <i>AMD</i></li>
                 </ul>
               </li>
             </ul>
           </div>
           <div class="myinfo__part myinfo__part--2">
           <p>Чего я не <i>умею :</i></p>
-            <ul class="skill__lists skill__lists--bad">
-              <li class="skill__item">Работать с CMS</li>
-              <li class="skill__item">Работать с фреймворками по верстке (Bootstrap, Skeleton)</li>
-              <li class="skill__item">Работа с очень крупными проектами</li>
-              <li class="skill__item">Работать с фреймворками по JavaScript (знаю основы JQuery)</li>
+            <ul class="myinfo__skill-lists myinfo__skill-lists--bad">
+              <li class="myinfo__skill-item">Работать с CMS</li>
+              <li class="myinfo__skill-item">Работать с фреймворками по верстке (Bootstrap, Skeleton)</li>
+              <li class="myinfo__skill-item">Работа с очень крупными проектами</li>
+              <li class="myinfo__skill-item">Работать с фреймворками по JavaScript (знаю основы JQuery)</li>
             </ul>
             <p>
             Продолжаю учиться и развиваться в данных направлениях.<br>
@@ -100,6 +110,6 @@
       </div>
     </div>
   </footer>
-
+  <script src="js/main.js"></script>
 </body>
 </html>
