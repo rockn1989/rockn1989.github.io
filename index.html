@@ -12,30 +12,64 @@
     </script>
 </head>
 <body>
-  <header class="page-header">
+<section class="page-content">
     <div class="wrapper">
-      <nav class="main-nav main-nav--open main-nav--no-js">
-      <div class="main-nav__header">
-        <a class="main-nav__toggle-menu">
-          <svg width="50" height="25" class="main-nav__open">
-            <use xlink:href="img/icon/symbols.svg#icon-menu-burger"></use>
-          </svg>
-          <svg width="50" height="25" class="main-nav__close">
-            <use xlink:href="img/icon/symbols.svg#icon-menu-cross"></use>
-          </svg>
-        </a>
+      <div class="feature">
+        <header class="feature__title">
+          Добрый день, меня зовут Артём Рябков и я начинающий фронтенд-разработчик.
+        </header>
+        <div class="feature__desc">
+          <p class="feature__text">
+            Верстаю сайты из макетов в формате PSD. Верстку делаю для современных браузеров ( с частичной поддержкой IE-9, но не ниже). <br>
+            Верстка адаптивная, кроссбраузерная, семантическая.  <br>
+            Использую для верстки методологию <a href="https://tech.yandex.ru/bem/" target="_blank">БЭМ</a> ( можно и без нее). <br>
+            HTML 4 - 5/ CSS 2 - 3  <br>
+            Работаю с препроцессором LESS ( так же знаком с SASS). <br>
+            Пишу на нативном JavaScript, без использования фреймворков, необходимые функции, шаблонизацию, валидацию. <br>
+            Умею работать с Git, но есть определенные сложности :
+            <blockquote class="feature__quote">
+              Дело в том, что Git полезен при работе в команде. А у меня опыта работы в команде увы нет.
+            </blockquote>
+          </p>
+        </div>
       </div>
-        <ul class="main-nav__lists">
-          <li class="main-nav__item"><a class="main-nav__link main-nav__link--active">Галлерея</a></li>
-          <li class="main-nav__item"><a href="aboutme.html" class="main-nav__link">Обо мне</a></li>
-          <li class="main-nav__item"><a href="contacts.html" class="main-nav__link">Контакты</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
-  <section class="page-content">
-    <div class="wrapper">
+      <div class="trained">
+        <ul class="trained__lists">
+              <li class="trained__item">
+              <p class="trained__lists-title">Прошел обчение в <a href="https://htmlacademy.ru/" target="_blank">HTMLAcademy</a>. В результате чего имею навыки в верстке:</p>
+                <a href="https://up.htmlacademy.ru/adaptive/7/certificate/get" target="_blank" class="trained__link">
+                  <img src="img/certificate-1.jpg" width="330" height="550" alt="Сертификат по верстке">
+                </a>
+                <ul class="trained__skill-lists">
+                  <li class="trained__skill-item">Работа с системой контроля версий Git</li>
+                  <li class="trained__skill-item">Работа по методологии БЭМ</li>
+                  <li class="trained__skill-item">Препроцессоры: LESS & SASS (основы)</li>
+                  <li class="trained__skill-item">Работа с адаптивной версткой (в курсе шли по технологии <i>Mobile first</i>)</li>
+                  <li class="trained__skill-item">Работа с графикой: оптимизация изображений, нарезка макета в <i>Adobe Photoshop)</i></li>
+                  <li class="trained__skill-item">Верстка на <i>flexbox</i></li>
+                  <li class="trained__skill-item">Автоматизация: Grunt & Gulp (основы)</li>
+                </ul>
+              </li>
+              <li class="trained__item">
+                <p class="trained__lists-title">JavaScript:</p>
+                <a href="https://up.htmlacademy.ru/javascript/6/certificate/get" target="_blank" class="trained__link">
+                  <img src="img/certificate-2.jpg" width="330" height="550" alt="Сертификат по JavaScript">
+                </a>
+                <ul class="trained__skill-lists">
+                  <li class="trained__skill-item">Основы JS: типы данных, операторы, переменные и тд</li>
+                  <li class="trained__skill-item">Основы работы с графикой на <i>Canvas</i></li>
+                  <li class="trained__skill-item">Работа с <i>cookie</i>, с датами</li>
+                  <li class="trained__skill-item">Работа с несложными <i>Ajax-запросами</i></li>
+                  <li class="trained__skill-item">Работа с <i>событиями</i></li>
+                  <li class="trained__skill-item">Работа с DOM-элементами</li>
+                  <li class="trained__skill-item">Основы в ООП</li>
+                  <li class="trained__skill-item">Работа на основе модульного подхода при использовании <i>AMD</i></li>
+                </ul>
+              </li>
+            </ul>
+      </div>
+
       <div class="gallery">
         <header class="gallery__header">
           <h2 class="gallery__title">Мои работы</h2>
@@ -190,14 +224,22 @@
           Да, работ пока что мало, но будет пополнение :)
         </div>
       </div>
+      <p>
+        Продолжаю учиться и развиваться в данных направлениях.<br>
+        P.S. О себе добавлю: имею инвалидность из-за травмы позвоночника. Перемещаюсь с тростью.
+      </p>
     </div>
   </section>
 
   <footer class="page-footer">
     <div class="wrapper">
       <div class="contacts">
-        <a href="https://github.com/rockn1989" target="_blank" class="contacts__link">Github</a>
-        <a href="https://vk.com/rock1989" target="_blank" class="contacts__link">Соц.сети</a>
+        <p class="contacts__title">Связаться со мной Вы можете через: </p>
+        <a href="https://vk.com/rock1989" target="_blank" class="contacts__link contacts__link--vk">
+          Соц.сеть
+        </a>
+        <a href="skype:rock-n1989?chat" class="contacts__link">Skype</a>
+        <p class="contacts__desc">Или же написать на почту : <i>gold_100@bk.ru</i></p>
       </div>
     </div>
   </footer>
