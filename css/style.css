@@ -116,11 +116,8 @@ a {
         margin-right: 0; } }
   @media (min-width: 1200px) {
     .gallery__item {
-      margin-right: 25px; }
-      .gallery__item:nth-child(3n) {
-        margin-right: 25px; }
-      .gallery__item:nth-child(5n) {
-        margin-right: 0; } }
+      width: 30%;
+      margin-right: 5%; } }
 
 .gallery__link {
   display: block; }
