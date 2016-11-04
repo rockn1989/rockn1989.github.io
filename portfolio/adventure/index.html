@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Главная</title>
+
+  <link rel="stylesheet" href="css/style.min.css">
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/libs/svg4everybody.js"></script>
+  <script>
+    svg4everybody();
+  </script>
+  <!--[if lte IE 9]>
+    <script src="js/libs/classList.min.js"></script>
+    <script src="js/libs/html5shiv.js"></script>
+    <script src="js/libs/flexibility.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <header class="page-header">
+
+      <div class="wrapper__inside wrapper__inside--flex-mod">
+
+        <div class="page-logo">
+          <a class="page-logo__link" href="/">Adventure</a>
+        </div>
+
+        <nav class="main-nav">
+          <ul class="main-nav__lists">
+            <li class="main-nav__item"><a class="main-nav__link main-nav__link--is-active">home</a></li>
+            <li class="main-nav__item"><a href="" class="main-nav__link">about</a></li>
+            <li class="main-nav__item"><a href="" class="main-nav__link">service</a></li>
+            <li class="main-nav__item"><a href="" class="main-nav__link">contact</a></li>
+            <li class="main-nav__item"><a href="" class="main-nav__link">faq</a></li>
+            <li class="main-nav__item"><a href="" class="main-nav__link">support</a></li>
+          </ul>
+        </nav>
+        <div class="page-search">
+          <form action="" class="page-search__form" autocomplete="disabled">
+            <input type="text" class="page-search__text">
+            <button class="page-search__btn">go</button>
+          </form>
+        </div>
+      </div>
+
+    </header>
+
+    <div class="slider-box">
+      <div class="slider-box__btn slider-box__btn--left">
+        <svg width="15" height="29" class="slider-box__btn-icon">
+          <use xlink:href="img/svg/symbols.svg#arrow-left"></use>
+        </svg>
+      </div>
+      <div class="slider-box__btn slider-box__btn--right slider-box__btn--is-active">
+        <svg width="15" height="29" class="slider-box__btn-icon">
+          <use xlink:href="img/svg/symbols.svg#arrow-right"></use>
+        </svg>
+      </div>
+      <div class="slider-box__content">
+        <div class="slide">
+          <div class="slide__desc">
+            <h2 class="slide__title"> Adventurer</h2>
+            <p class="slide__text">muri, a template at the heart of the beauty</p>
+            <a href="" class="slide__link btn">see more</a>
+          </div>
+        </div>
+        <div class="slide hideSlide">
+          <div class="slide__desc">
+            <h2 class="slide__title"> Adventurer2</h2>
+            <p class="slide__text">muri, a template at the heart of the beauty</p>
+            <a href="" class="slide__link btn">see more</a>
+          </div>
+        </div>
+        <div class="slide hideSlide">
+          <div class="slide__desc">
+            <h2 class="slide__title"> Adventurer3</h2>
+            <p class="slide__text">muri, a template at the heart of the beauty</p>
+            <a href="" class="slide__link btn">see more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="page-content">
+
+      <article class="review">
+        <div class="wrapper__inside">
+          <h2 class="content-title">who we are</h2>
+          <p class="content-subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore inventore quia perspiciatis, similique, totam reiciendis. Eos necessitatibus quaerat doloribus maxime consequatur corporis, molestias autem porro.
+          </p>
+
+          <div class="review__content">
+            <div class="our-ability">
+
+              <div class="our-ability__desc">
+                <p class="our-ability__title">
+                  <span class="our-ability__title-text">
+                    Lorem ipsum dolor sit amet, consectetur.
+                  </span>
+                  <span class="our-ability__toggle"></span>
+                </p>
+                <p class="our-ability__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur voluptatibus, ratione sequi!
+                </p>
+              </div>
+
+              <div class="our-ability__desc is-open">
+                <p class="our-ability__title">
+                  <span class="our-ability__title-text ">
+                    Lorem ipsum dolor sit amet, consectetur.
+                  </span>
+                  <span class="our-ability__toggle"></span>
+                </p>
+                <p class="our-ability__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam hic animi, nostrum vitae magni maiores, aut quis cum sed facere atque dolorum ipsam delectus quidem iure fuga deleniti dolorem explicabo quas autem?
+                </p>
+              </div>
+
+              <div class="our-ability__desc">
+                <p class="our-ability__title">
+                  <span class="our-ability__title-text">
+                    Lorem ipsum dolor sit amet, consectetur.
+                  </span>
+                  <span class="our-ability__toggle"></span>
+                </p>
+                <p class="our-ability__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur voluptatibus, ratione sequi!
+                </p>
+              </div>
+
+            </div>
+
+            <div class="our-progress">
+              <ul class="our-progress__lists">
+                <li class="our-progress__item">
+                  <span class="our-progress__text our-progress__text--width-80">Web Design 80%</span>
+                </li>
+                <li class="our-progress__item">
+                  <span class="our-progress__text our-progress__text--width-60">Html and Css 60%</span>
+                </li>
+                <li class="our-progress__item">
+                  <span class="our-progress__text our-progress__text--width-75">Graphic Design 75%</span>
+                </li>
+                <li class="our-progress__item">
+                  <span class="our-progress__text our-progress__text--width-90">Wordpress 90%</span>
+                </li>
+                <li class="our-progress__item">
+                  <span class="our-progress__text our-progress__text--width-50">Joomla 50%</span>
+                </li>
+                <li class="our-progress__item">
+                  <span class="our-progress__text our-progress__text--width-85">Php and MySQL 85%</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="services">
+        <div class="wrapper__inside">
+          <h2 class="content-title">our service</h2>
+          <ul class="services__lists">
+            <li class="services__item">
+              <div class="services__logo">
+                <svg width="90" height="90" class="services__logo-icon">
+                  <use xlink:href="img/svg/symbols.svg#cog"></use>
+                </svg>
+              </div>
+              <p class="services__title">free support & updates</p>
+              <p class="services__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur voluptatem amet odit aliquid incidunt magni sapiente sit, voluptas!
+              </p>
+              <a href="" class="services__link btn">see more</a>
+            </li>
+            <li class="services__item">
+              <div class="services__logo">
+                <svg width="90" height="90" class="services__logo-icon">
+                  <use xlink:href="img/svg/symbols.svg#pill"></use>
+                </svg>
+              </div>
+              <p class="services__title">fully customizable</p>
+              <p class="services__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur voluptatem amet odit aliquid incidunt magni sapiente sit, voluptas!
+              </p>
+              <a href="" class="services__link btn">see more</a>
+            </li>
+            <li class="services__item">
+              <div class="services__logo">
+                <svg width="90" height="90" class="services__logo-icon">
+                  <use xlink:href="img/svg/symbols.svg#plug"></use>
+                </svg>
+              </div>
+              <p class="services__title">12 theme websites</p>
+              <p class="services__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur voluptatem amet odit aliquid incidunt magni sapiente sit, voluptas!
+              </p>
+              <a href="" class="services__link btn">see more</a>
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <div class="block-ad">
+        <div class="block-ad__logo">
+          <img src="img/icon/user-icon.png" alt="invite">
+        </div>
+        <div class="block-ad__title">
+          join our creative company
+        </div>
+        <div class="block-ad__subtitle">
+          “ Hello! Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+          tincidunt ut laoreet dolore magna aliquam erat volutpat.”
+        </div>
+        <div class="block-ad__link btn">join with us</div>
+      </div>
+
+      <div class="block-offer">
+        <div class="wrapper__inside">
+          <h2 class="content-title">what we offer</h2>
+          <ul class="block-offer__lists">
+            <li class="block-offer__item">
+              <div class="block-offer__icon block-offer__icon--clouds-1"></div>
+              <div class="block-offer__desc">
+                <p class="block-offer__title">technical analysis</p>
+                <p class="block-offer__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est neque earum omnis.
+                </p>
+              </div>
+            </li>
+            <li class="block-offer__item">
+              <div class="block-offer__icon block-offer__icon--clouds-2"></div>
+              <div class="block-offer__desc">
+                <p class="block-offer__title">General contract</p>
+                <p class="block-offer__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda illum ratione porro.
+                </p>
+              </div>
+            </li>
+            <li class="block-offer__item">
+              <div class="block-offer__icon block-offer__icon--clouds-3"></div>
+              <div class="block-offer__desc">
+                <p class="block-offer__title">consultation</p>
+                <p class="block-offer__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum reiciendis, ut autem!
+                </p>
+              </div>
+            </li>
+            <li class="block-offer__item">
+              <div class="block-offer__icon block-offer__icon--clouds-4"></div>
+              <div class="block-offer__desc">
+                <p class="block-offer__title">27/7  full support</p>
+                <p class="block-offer__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non officiis, dolorum excepturi!
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="customer-reviews">
+        <div class="wrapper__inside">
+          <h2 class="content-title">Customer Reviews</h2>
+          <div class="customer-reviews__slides">
+
+            <input type="radio" name="slide" id="radio-slide-1" class="customer-reviews__radio"  checked>
+            <input type="radio" name="slide" id="radio-slide-2" class="customer-reviews__radio">
+            <input type="radio" name="slide" id="radio-slide-3" class="customer-reviews__radio">
+
+            <div class="customer-reviews__block-control">
+              <label for="radio-slide-1" class="customer-reviews__label">
+                <span class="customer-reviews__state">slide-1</span>
+              </label>
+              <label for="radio-slide-2" class="customer-reviews__label">
+                <span class="customer-reviews__state">slide-2</span>
+              </label>
+              <label for="radio-slide-3" class="customer-reviews__label">
+                <span class="customer-reviews__state">slide-3</span>
+              </label>
+            </div>
+
+            <div class="customer-reviews__slides-wrapper">
+              <div class="customer-reviews__slide" id="slide-1">
+                <div class="customer-reviews__review">
+                  <div class="customer-reviews__img customer-reviews__img--img-1"></div>
+                  <div class="customer-reviews__desc">
+                    <h2 class="customer-reviews__desc-title">Ejazul Islam 1</h2>
+                    <p class="customer-reviews__desc-subtitle">
+                      Diploma in mati bidda
+                    </p>
+                    <div class="customer-reviews__desc-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur quas aspernatur consequuntur ex. Molestias iste necessitatibus, voluptatum pariatur rerum laudantium.
+                    </div>
+                  </div>
+                </div>
+                <div class="customer-reviews__review">
+                  <div class="customer-reviews__img customer-reviews__img--img-2"></div>
+                  <div class="customer-reviews__desc">
+                    <h2 class="customer-reviews__desc-title">Iqball Hossain</h2>
+                    <p class="customer-reviews__desc-subtitle">
+                      Psd at koitor bidda
+                    </p>
+                    <div class="customer-reviews__desc-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur quas aspernatur consequuntur ex. Molestias iste necessitatibus, voluptatum pariatur rerum laudantium.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="customer-reviews__slide" id="slide-2">
+                <div class="customer-reviews__review">
+                  <div class="customer-reviews__img customer-reviews__img--img-1"></div>
+                  <div class="customer-reviews__desc">
+                    <h2 class="customer-reviews__desc-title">Ejazul Islam 2</h2>
+                    <p class="customer-reviews__desc-subtitle">
+                      Diploma in mati bidda
+                    </p>
+                    <div class="customer-reviews__desc-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos omnis eligendi possimus accusantium aut odit commodi quia maxime, rerum repudiandae.
+                    </div>
+                  </div>
+                </div>
+                <div class="customer-reviews__review">
+                  <div class="customer-reviews__img customer-reviews__img--img-2"></div>
+                  <div class="customer-reviews__desc">
+                    <h2 class="customer-reviews__desc-title">Iqball Hossain</h2>
+                    <p class="customer-reviews__desc-subtitle">
+                      Psd at koitor bidda
+                    </p>
+                    <div class="customer-reviews__desc-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur quas aspernatur consequuntur ex. Molestias iste necessitatibus, voluptatum pariatur rerum laudantium.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="customer-reviews__slide" id="slide-3">
+                <div class="customer-reviews__review">
+                  <div class="customer-reviews__img customer-reviews__img--img-1"></div>
+                  <div class="customer-reviews__desc">
+                    <h2 class="customer-reviews__desc-title">Ejazul Islam 3</h2>
+                    <p class="customer-reviews__desc-subtitle">
+                      Diploma in mati bidda
+                    </p>
+                    <div class="customer-reviews__desc-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, pariatur cupiditate. Provident, pariatur? Et dicta distinctio, facere. Dolorem minima, maiores.
+                    </div>
+                  </div>
+                </div>
+                <div class="customer-reviews__review">
+                  <div class="customer-reviews__img customer-reviews__img--img-2"></div>
+                  <div class="customer-reviews__desc">
+                    <h2 class="customer-reviews__desc-title">Iqball Hossain</h2>
+                    <p class="customer-reviews__desc-subtitle">
+                      Psd at koitor bidda
+                    </p>
+                    <div class="customer-reviews__desc-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur quas aspernatur consequuntur ex. Molestias iste necessitatibus, voluptatum pariatur rerum laudantium.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="statistics">
+        <div class="wrapper__inside">
+          <ul class="statistics__lists">
+            <li class="statistics__item">
+              <p class="statistics__img">
+                <svg width="56" height="53" class="statistics__img-icon">
+                  <use xlink:href="img/svg/symbols.svg#heart"></use>
+                </svg>
+              </p>
+              <p class="statistics__count">10k+</p>
+              <p class="statistics__subtitle">love our team</p>
+            </li>
+            <li class="statistics__item">
+              <p class="statistics__img">
+                <svg width="56" height="53" class="statistics__img-icon">
+                  <use xlink:href="img/svg/symbols.svg#check"></use>
+                </svg>
+              </p>
+              <p class="statistics__count">400+</p>
+              <p class="statistics__subtitle">check our</p>
+            </li>
+            <li class="statistics__item">
+              <p class="statistics__img">
+                <svg width="56" height="53" class="statistics__img-icon">
+                  <use xlink:href="img/svg/symbols.svg#repeat2"></use>
+                </svg>
+              </p>
+              <p class="statistics__count">312</p>
+              <p class="statistics__subtitle">repeat client</p>
+            </li>
+            <li class="statistics__item">
+              <p class="statistics__img">
+                <svg width="56" height="53" class="statistics__img-icon">
+                  <use xlink:href="img/svg/symbols.svg#beer"></use>
+                </svg>
+              </p>
+              <p class="statistics__count">480</p>
+              <p class="statistics__subtitle">pizzas ordered</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="our-team">
+        <div class="wrapper__inside">
+          <h2 class="content-title">meet out team</h2>
+          <p class="content-subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora doloribus eum, libero ad esse non! Qui dolorem laudantium reprehenderit quis voluptatibus similique debitis at quaerat!
+          </p>
+          <ul class="our-team__lists">
+            <li class="our-team__item our-team__item--bg-img-1">
+              <div class="tooltip">
+                <div class="tooltip__name">Mahabubul Islam</div>
+                <div class="tooltip__profession">Html-Coder</div>
+                <div class="tooltip__links">
+                  <a href="" class="tooltip__link">
+                    <svg class="tooltip__link-icon" width="8" height="17">
+                      <use xlink:href="img/svg/symbols.svg#facebook"></use>
+                    </svg>
+                  </a>
+                  <a href="" class="tooltip__link">
+                    <svg class="tooltip__link-icon" width="17" height="13">
+                      <use xlink:href="img/svg/symbols.svg#twitter"></use>
+                    </svg>
+                  </a>
+                  <a href="" class="tooltip__link">
+                    <svg class="tooltip__link-icon" width="13" height="17">
+                      <use xlink:href="img/svg/symbols.svg#pinterest"></use>
+                    </svg>
+                  </a>
+                  <a href="" class="tooltip__link">
+                    <svg class="tooltip__link-icon" width="17" height="17">
+                      <use xlink:href="img/svg/symbols.svg#dribbble"></use>
+                    </svg>
+                  </a>
+                  <a href="" class="tooltip__link">
+                    <svg class="tooltip__link-icon" width="17" height="11">
+                      <use xlink:href="img/svg/symbols.svg#behance"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="our-team__item our-team__item--bg-img-2">
+              <div class="tooltip">
+                <div class="tooltip__name">Mahabubul Islam</div>
+                <div class="tooltip__profession">Javascript-Coder</div>
+                <div class="tooltip__links">
+                  <a href="" class="tooltip__link">
+                    <svg class="tooltip__link-icon" width="8" height="17">
+                      <use xlink:href="img/svg/symbols.svg#facebook"></use>
+                    </svg>
+                  </a>
+                  <a href="" class="tooltip__link">
+                    <svg class="tooltip__link-icon" width="17" height="13">
+                      <use xlink:href="img/svg/symbols.svg#twitter"></use>
+                    </svg>
+                  </a>
+                  <a href="" class="tooltip__link">
+                    <svg class="tooltip__link-icon" width="13" height="17">
+                      <use xlink:href="img/svg/symbols.svg#pinterest"></use>
+                    </svg>
+                  </a>
+                  <a href="" class="tooltip__link">
+                    <svg class="tooltip__link-icon" width="17" height="17">
+                      <use xlink:href="img/svg/symbols.svg#dribbble"></use>
+                    </svg>
+                  </a>
+                  <a href="" class="tooltip__link">
+                    <svg class="tooltip__link-icon" width="17" height="11">
+                      <use xlink:href="img/svg/symbols.svg#behance"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="our-team__item our-team__item--bg-img-3">
+              <div class="tooltip">
+                <div class="tooltip__name">Mahabubul Islam</div>
+                <div class="tooltip__profession">Php-coder</div>
+                <div class="tooltip__links">
+                  <a href="" class="tooltip__link">
+                    <svg class="tooltip__link-icon" width="8" height="17">
+                      <use xlink:href="img/svg/symbols.svg#facebook"></use>
+                    </svg>
+                  </a>
+                  <a href="" class="tooltip__link">
+                    <svg class="tooltip__link-icon" width="17" height="13">
+                      <use xlink:href="img/svg/symbols.svg#twitter"></use>
+                    </svg>
+                  </a>
+                  <a href="" class="tooltip__link">
+                    <svg class="tooltip__link-icon" width="13" height="17">
+                      <use xlink:href="img/svg/symbols.svg#pinterest"></use>
+                    </svg>
+                  </a>
+                  <a href="" class="tooltip__link">
+                    <svg class="tooltip__link-icon" width="17" height="17">
+                      <use xlink:href="img/svg/symbols.svg#dribbble"></use>
+                    </svg>
+                  </a>
+                  <a href="" class="tooltip__link">
+                    <svg class="tooltip__link-icon" width="17" height="11">
+                      <use xlink:href="img/svg/symbols.svg#behance"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="our-team__item our-team__item--bg-img-4">
+              <div class="tooltip">
+                <div class="tooltip__name">Mahabubul Islam</div>
+                <div class="tooltip__profession">Designer</div>
+                <div class="tooltip__links">
+                  <a href="" class="tooltip__link">
+                    <svg class="tooltip__link-icon" width="8" height="17">
+                      <use xlink:href="img/svg/symbols.svg#facebook"></use>
+                    </svg>
+                  </a>
+                  <a href="" class="tooltip__link">
+                    <svg class="tooltip__link-icon" width="17" height="13">
+                      <use xlink:href="img/svg/symbols.svg#twitter"></use>
+                    </svg>
+                  </a>
+                  <a href="" class="tooltip__link">
+                    <svg class="tooltip__link-icon" width="13" height="17">
+                      <use xlink:href="img/svg/symbols.svg#pinterest"></use>
+                    </svg>
+                  </a>
+                  <a href="" class="tooltip__link">
+                    <svg class="tooltip__link-icon" width="17" height="17">
+                      <use xlink:href="img/svg/symbols.svg#dribbble"></use>
+                    </svg>
+                  </a>
+                  <a href="" class="tooltip__link">
+                    <svg class="tooltip__link-icon" width="17" height="11">
+                      <use xlink:href="img/svg/symbols.svg#behance"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="our-works">
+        <div class="wrapper__inside">
+          <h2 class="content-title">Our awesome works</h2>
+          <p class="content-subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, ex cum. Exercitationem consequatur, dicta, enim dolorem ratione voluptas possimus tempora eveniet ipsum, temporibus, odio quas!
+          </p>
+          <div class="our-works__box-control">
+            <a href="" class="our-works__links our-works__links--is-active">All</a>
+            <a href="" class="our-works__links">Photography</a>
+            <a href="" class="our-works__links">graphic</a>
+            <a href="" class="our-works__links">print</a>
+            <a href="" class="our-works__links">web</a>
+          </div>
+          <ul class="our-works__lists">
+            <li class="our-works__item">
+              <div class="our-works__mask">
+                <div class="our-works__mask-control">
+                  <a href="somelink1.ru" class="our-works__mask-control-links">
+                    <svg width="12" height="12" class="our-works__mask-control-icon">
+                      <use xlink:href="img/svg/symbols.svg#zoom"></use>
+                    </svg>
+                  </a>
+                  <span class="our-works__mask-control-join"></span>
+                  <a href="somelink1.ru" data-role="copy-link" class="our-works__mask-control-links">
+                    <svg width="12" height="12" class="our-works__mask-control-icon">
+                      <use xlink:href="img/svg/symbols.svg#link"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="our-works__item-img"><img src="img/bg/works-photo-1.jpg" alt="work-1"></div>
+              <div class="our-works__item-desc">
+                <p class="our-works__item-text">Our Work Image 01</p>
+                <p class="our-works__item-subtitle">Lorem ipsum dolor sit amet, consectetur.</p>
+              </div>
+            </li>
+            <li class="our-works__item">
+              <div class="our-works__mask">
+                <div class="our-works__mask-control">
+                  <a href="somelink2.ru" class="our-works__mask-control-links">
+                    <svg width="12" height="12" class="our-works__mask-control-icon">
+                      <use xlink:href="img/svg/symbols.svg#zoom"></use>
+                    </svg>
+                  </a>
+                  <span class="our-works__mask-control-join"></span>
+                  <a href="somelink2.ru" data-role="copy-link" class="our-works__mask-control-links">
+                    <svg width="12" height="12" class="our-works__mask-control-icon">
+                      <use xlink:href="img/svg/symbols.svg#link"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="our-works__item-img"><img src="img/bg/works-photo-2.jpg" alt="work-2"></div>
+              <div class="our-works__item-desc">
+                <p class="our-works__item-text">Our Work Image 02</p>
+                <p class="our-works__item-subtitle">Lorem ipsum dolor sit amet, consectetur.</p>
+              </div>
+            </li>
+            <li class="our-works__item">
+              <div class="our-works__mask">
+                <div class="our-works__mask-control">
+                  <a href="somelink3.ru" class="our-works__mask-control-links">
+                    <svg width="12" height="12" class="our-works__mask-control-icon">
+                      <use xlink:href="img/svg/symbols.svg#zoom"></use>
+                    </svg>
+                  </a>
+                  <span class="our-works__mask-control-join"></span>
+                  <a href="somelink3.ru" data-role="copy-link" class="our-works__mask-control-links">
+                    <svg width="12" height="12" class="our-works__mask-control-icon">
+                      <use xlink:href="img/svg/symbols.svg#link"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="our-works__item-img"><img src="img/bg/works-photo-3.jpg" alt="work-3"></div>
+              <div class="our-works__item-desc">
+                <p class="our-works__item-text">Our Work Image 03</p>
+                <p class="our-works__item-subtitle">Lorem ipsum dolor sit amet, consectetur.</p>
+              </div>
+            </li>
+            <li class="our-works__item">
+              <div class="our-works__mask">
+                <div class="our-works__mask-control">
+                  <a href="somelink4.ru" class="our-works__mask-control-links">
+                    <svg width="12" height="12" class="our-works__mask-control-icon">
+                      <use xlink:href="img/svg/symbols.svg#zoom"></use>
+                    </svg>
+                  </a>
+                  <span class="our-works__mask-control-join"></span>
+                  <a href="somelink4.ru" data-role="copy-link" class="our-works__mask-control-links">
+                    <svg width="12" height="12" class="our-works__mask-control-icon">
+                      <use xlink:href="img/svg/symbols.svg#link"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="our-works__item-img"><img src="img/bg/works-photo-4.jpg" alt="work-4"></div>
+              <div class="our-works__item-desc">
+                <p class="our-works__item-text">Our Work Image 04</p>
+                <p class="our-works__item-subtitle">Lorem ipsum dolor sit amet, consectetur.</p>
+              </div>
+            </li>
+            <li class="our-works__item">
+              <div class="our-works__mask">
+                <div class="our-works__mask-control">
+                  <a href="somelink5.ru" class="our-works__mask-control-links">
+                    <svg width="12" height="12" class="our-works__mask-control-icon">
+                      <use xlink:href="img/svg/symbols.svg#zoom"></use>
+                    </svg>
+                  </a>
+                  <span class="our-works__mask-control-join"></span>
+                  <a href="somelink5.ru" data-role="copy-link" class="our-works__mask-control-links">
+                    <svg width="12" height="12" class="our-works__mask-control-icon">
+                      <use xlink:href="img/svg/symbols.svg#link"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="our-works__item-img"><img src="img/bg/works-photo-5.jpg" alt="work-5"></div>
+              <div class="our-works__item-desc">
+                <p class="our-works__item-text">Our Work Image 05</p>
+                <p class="our-works__item-subtitle">Lorem ipsum dolor sit amet, consectetur.</p>
+              </div>
+            </li>
+            <li class="our-works__item">
+              <div class="our-works__mask">
+                <div class="our-works__mask-control">
+                  <a href="somelink6.ru" class="our-works__mask-control-links">
+                    <svg width="12" height="12" class="our-works__mask-control-icon">
+                      <use xlink:href="img/svg/symbols.svg#zoom"></use>
+                    </svg>
+                  </a>
+                  <span class="our-works__mask-control-join"></span>
+                  <a href="somelink6.ru" data-role="copy-link" class="our-works__mask-control-links">
+                    <svg width="12" height="12" class="our-works__mask-control-icon">
+                      <use xlink:href="img/svg/symbols.svg#link"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="our-works__item-img"><img src="img/bg/works-photo-6.jpg" alt="work-6"></div>
+              <div class="our-works__item-desc">
+                <p class="our-works__item-text">Our Work Image 06</p>
+                <p class="our-works__item-subtitle">Lorem ipsum dolor sit amet, consectetur.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="client">
+        <div class="wrapper__inside">
+          <h2 class="content-title">our awesome works</h2>
+          <ul class="client__lists">
+            <li class="client__item">
+              <span class="client__item-bg-box">
+                <svg width="40" height="40" class="client__item-icon client__item-icon--graph">
+                  <use xlink:href="img/svg/symbols.svg#graphicriver"></use>
+                </svg>
+              </span>
+              <a href="#" class="client__link">graphicriver</a>
+            </li>
+            <li class="client__item">
+              <span class="client__item-bg-box">
+                <svg width="40" height="40" class="client__item-icon client__item-icon--forest">
+                  <use xlink:href="img/svg/symbols.svg#themeforest"></use>
+                </svg>
+              </span>
+              <a href="#" class="client__link">themeforest</a>
+            </li>
+            <li class="client__item">
+              <span class="client__item-bg-box">
+                <svg width="40" height="40" class="client__item-icon client__item-icon--jungle">
+                  <use xlink:href="img/svg/symbols.svg#audiojungle"></use>
+                </svg>
+              </span>
+              <a href="#" class="client__link">auiojungke</a>
+            </li>
+            <li class="client__item">
+              <span class="client__item-bg-box">
+                <svg width="40" height="40" class="client__item-icon client__item-icon--code">
+                  <use xlink:href="img/svg/symbols.svg#codecanyon"></use>
+                </svg>
+              </span>
+              <a href="#" class="client__link">codecanyon</a>
+            </li>
+            <li class="client__item">
+              <span class="client__item-bg-box">
+                <svg width="40" height="40" class="client__item-icon client__item-icon--active">
+                  <use xlink:href="img/svg/symbols.svg#activeden"></use>
+                </svg>
+              </span>
+              <a href="#" class="client__link">activeden</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="subscribe-news">
+        <div class="wrapper__inside">
+          <div class="subscribe-news__content">
+              <p class="subscribe-news__text">Subscribe to our newsletter to get every Notify</p>
+              <form action="" class="subscribe-news__form">
+                <input type="text" class="subscribe-news__form-email" placeholder="Your email">
+                <input type="submit" value="Send" class="subscribe-news__form-send">
+              </form>
+            </div>
+        </div>
+      </div>
+
+    </section>
+
+    <footer class="page-footer">
+      <div class="page-footer__top">
+        <div class="wrapper__inside">
+          <div class="page-footer__content">
+            <div class="page-footer__soc">
+              <p class="page-footer__soc-title page-logo__link">Adventurer</p>
+              <p class="page-footer__soc-text">
+                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                The point of using Lorem Ipsum is that it has a more-or-less normal.
+              </p>
+              <ul class="page-footer__soc-lists">
+                <li class="page-footer__soc-item">
+                  <a href="#" class="page-footer__soc-link page-footer__soc-link--facebook">facebook</a>
+                </li>
+                <li class="page-footer__soc-item">
+                  <a href="#" class="page-footer__soc-link page-footer__soc-link--google">google+</a>
+                </li>
+                <li class="page-footer__soc-item">
+                  <a href="#" class="page-footer__soc-link page-footer__soc-link--twitter">twitter</a>
+                </li>
+                <li class="page-footer__soc-item">
+                  <a href="#" class="page-footer__soc-link page-footer__soc-link--viber">viber</a>
+                </li>
+                <li class="page-footer__soc-item">
+                  <a href="#" class="page-footer__soc-link page-footer__soc-link--in">in</a>
+                </li>
+              </ul>
+            </div>
+            <div class="page-footer__features">
+              <h3 class="page-footer__title">Some features</h3>
+              <ul class="page-footer__features-lists">
+                <li class="page-content__features-item">Lorem ipsum dolor sit amet.</li>
+                <li class="page-content__features-item">Lorem ipsum dolor sit.</li>
+                <li class="page-content__features-item">Lorem ipsum dolor sit amet.</li>
+                <li class="page-content__features-item">Lorem ipsum dolor sit. Lorem ipsum dolor sit.Lorem ipsum dolor sit.</li>
+              </ul>
+            </div>
+            <div class="page-footer__tags">
+              <h3 class="page-footer__title">Tags</h3>
+              <ul class="page-footer___tags-lists">
+                <li class="page-footer__tags-item">
+                  <a href="#" class="page-footer__tags-link">corporate</a>
+                </li>
+                <li class="page-footer__tags-item">
+                  <a href="#" class="page-footer__tags-link">agency</a>
+                </li>
+                <li class="page-footer__tags-item">
+                  <a href="#" class="page-footer__tags-link">portfolio</a>
+                </li>
+                <li class="page-footer__tags-item">
+                  <a href="#" class="page-footer__tags-link">blog</a>
+                </li>
+                <li class="page-footer__tags-item">
+                  <a href="#" class="page-footer__tags-link">elegant</a>
+                </li>
+                <li class="page-footer__tags-item">
+                  <a href="#" class="page-footer__tags-link">professional</a>
+                </li>
+                <li class="page-footer__tags-item">
+                  <a href="#" class="page-footer__tags-link">business</a>
+                </li>
+              </ul>
+            </div>
+            <div class="page-footer__posts">
+              <h3 class="page-footer__title">Flicker Posts</h3>
+              <ul class="page-footer__posts-lists">
+                <li class="page-footer__posts-item">
+                  <a href="#" class="page-footer__posts-link page-footer__posts-link--post-bg-1">link</a>
+                </li>
+                <li class="page-footer__posts-item">
+                  <a href="#" class="page-footer__posts-link page-footer__posts-link--post-bg-2">link</a>
+                </li>
+                <li class="page-footer__posts-item">
+                  <a href="#" class="page-footer__posts-link page-footer__posts-link--post-bg-3">link</a>
+                </li>
+                <li class="page-footer__posts-item">
+                  <a href="#" class="page-footer__posts-link page-footer__posts-link--post-bg-4">link</a>
+                </li>
+                <li class="page-footer__posts-item">
+                  <a href="#" class="page-footer__posts-link page-footer__posts-link--post-bg-5">link</a>
+                </li>
+                <li class="page-footer__posts-item">
+                  <a href="#" class="page-footer__posts-link page-footer__posts-link--post-bg-6">link</a>
+                </li>
+                <li class="page-footer__posts-item">
+                  <a href="#" class="page-footer__posts-link page-footer__posts-link--post-bg-7">sometext</a>
+                </li>
+                <li class="page-footer__posts-item">
+                  <a href="#" class="page-footer__posts-link page-footer__posts-link--post-bg-8">sometext</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-footer__bottom">
+        <div class="wrapper__inside">
+          <div class="page-footer__copyright">
+            <p class="page-footer__copyright-name">
+              © 2015 loran Kha. All Rights Reserved. Ehsanul
+            </p>
+            <ul class="page-footer__copyright-lists">
+              <li class="page-footer__copyright-item">
+                <a href="#" class="page-footer__copyright-link">
+                  <svg width="8" height="17" class="page-footer__copyright-icon">
+                    <use xlink:href="img/svg/symbols.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="page-footer__copyright-item">
+                <a href="#" class="page-footer__copyright-link">
+                  <svg width="17" height="13" class="page-footer__copyright-icon">
+                    <use xlink:href="img/svg/symbols.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="page-footer__copyright-item">
+                <a href="#" class="page-footer__copyright-link">
+                  <svg width="13" height="17" class="page-footer__copyright-icon">
+                    <use xlink:href="img/svg/symbols.svg#pinterest"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="page-footer__copyright-item">
+                <a href="#" class="page-footer__copyright-link">
+                  <svg width="17" height="17" class="page-footer__copyright-icon">
+                    <use xlink:href="img/svg/symbols.svg#dribbble"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="page-footer__copyright-item">
+                <a href="#" class="page-footer__copyright-link">
+                  <svg width="17" height="11" class="page-footer__copyright-icon">
+                    <use xlink:href="img/svg/symbols.svg#behance"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <template id="popupbox">
+    <div class="popupbox">
+      <input class="popupbox__input" type="text" readonly="readonly">
+      <button class="popupbox__btn">Copy link</button>
+    </div>
+  </template>
+  <script src="js/slider.js"></script>
+  <script src="js/copy-link.js"></script>
+  <script src="js/main.js"></script>
+  <!--[if lte IE 9]>
+    <script>
+      flexibility(document.querySelector('.wrapper__inside.wrapper__inside--flex-mod'));
+      flexibility(document.querySelector('.review__content'));
+      flexibility(document.querySelector('.page-footer__content'));
+      flexibility(document.querySelector('.page-footer__copyright'));
+    </script>
+  <![endif]-->
+</body>
+</html>
