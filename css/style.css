@@ -322,7 +322,7 @@ a {
     @media (min-width: 780px) {
       .trained__item .trained__link {
         width: 35%;
-        max-height: initial;
+        max-height: 100%;
         margin-bottom: 0; } }
     @media (min-width: 1200px) {
       .trained__item .trained__link {
