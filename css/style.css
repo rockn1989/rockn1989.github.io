@@ -106,6 +106,7 @@ a {
 
 .gallery__item {
   display: inline-block;
+  vertical-align: top;
   position: relative;
   font-size: 16px;
   margin-bottom: 30px;
