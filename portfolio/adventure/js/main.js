@@ -28,5 +28,24 @@
 
     new Slider(true);
 
+    var platform = window.navigator.userAgent.match(/Android|IPhone|iPad/i);
+
+    if(platform) {
+      var copyLink = Array.prototype.filter.call(document.querySelectorAll('.our-works__mask-control-links'), function(el) {
+        return !el.getAttribute("data-role");
+      });
+
+      var tooltips = document.querySelectorAll('.tooltip');
+
+      Array.prototype.forEach.call(tooltips, function(el) {
+        el.classList.add('tooltip-mobile');
+      });
+
+      Array.prototype.forEach.call(copyLink, function(el) {
+        el.addEventListener('click', function(e) {
+          e.preventDefault();
+        });
+      });
+    }
   };
 })();
