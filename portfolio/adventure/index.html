@@ -3,13 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1"">
+  <meta name="viewport" content="width=device-width">
   <title>Главная</title>
 
   <link rel="stylesheet" href="css/style.min.css">
 
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="js/libs/svg4everybody.js"></script>
   <script>
     svg4everybody();
@@ -913,12 +912,50 @@
       </div>
     </footer>
   </div>
+
+  <button class="template-description__btn-open" type="button">Описание</button>
+  <div class="template-description">
+    <div class="template-description__shadow-mask">
+      <div class="template-description__wrapper">
+        <button class="template-description__btn-close" type="button"></button>
+        <table class="template-description__box">
+          <tr>
+            <td>Макет:</td>
+            <td>Adventure. Промо страница</td>
+          </tr>
+          <tr>
+            <td>Адаптивность:</td>
+            <td> — </td>
+          </tr>
+          <tr>
+            <td>Препроцессор: </td>
+            <td>Less</td>
+          </tr>
+          <tr>
+            <td>CSS фреймворк</td>
+            <td> — </td>
+          </tr>
+          <tr>
+            <td>Поддержка браузеров: </td>
+            <td>IE9+, Chrome, FireFox, Opera<sup>*</sup></td>
+          </tr>
+        </table>
+        <span class="template-description__box-sup">* — поддержка последних версий браузеров</span>
+      </div>
+    </div>
+  </div>
+
   <template id="popupbox">
     <div class="popupbox">
       <input class="popupbox__input" type="text" readonly="readonly">
       <button class="popupbox__btn">Copy link</button>
     </div>
   </template>
+
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <script src="js/template-description/template-description.js"></script>
   <script src="js/slider.js"></script>
   <script src="js/copy-link.js"></script>
   <script src="js/main.js"></script>
