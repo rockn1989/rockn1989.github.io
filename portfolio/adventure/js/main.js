@@ -2,6 +2,14 @@
 
 (function() {
 
+  function toggleAbilityBox(el) {
+    for(var i = 0; i < el.parentNode.children.length; i++) {
+      if(el.parentNode.children[i] == el) continue;
+      el.parentNode.children[i].classList.remove('is-open');
+    }
+    el.classList.toggle('is-open');
+  }
+
   window.onload = function() {
 
     var abilityToggle = document.querySelectorAll('.our-ability__toggle'),
@@ -14,13 +22,6 @@
       });
     });
 
-    function toggleAbilityBox(el) {
-      for(var i = 0; i < el.parentNode.children.length; i++) {
-        if(el.parentNode.children[i] == el) continue;
-        el.parentNode.children[i].classList.remove('is-open');
-      }
-      el.classList.toggle('is-open');
-    }
 
     Array.prototype.forEach.call(copyLink, function(el) {
       new PopupBox(el);
@@ -48,4 +49,5 @@
       });
     }
   };
+
 })();
