@@ -4,60 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Главная</title>
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <section class="page-content">
     <div class="wrapper">
       <div class="feature">
-        <header class="feature__title">
-          Добрый день, меня зовут Артём Рябков и я начинающий фронтенд-разработчик.
+        <header class="feature__header">
+          <h1 class="feature__header-title">Артём Рябков</h1>
+          <p class="feature__header-text">
+            Начинающий фронтенд-разработчик
+          </p>
         </header>
         <div class="feature__desc">
           <p class="feature__text">
-            Верстаю сайты из макетов в формате PSD. Верстку делаю для современных браузеров ( с частичной поддержкой IE-9, но не ниже). <br>
-            Верстка адаптивная, кроссбраузерная, семантическая.  <br>
-            Использую для верстки методологию <a href="https://tech.yandex.ru/bem/" target="_blank">БЭМ</a> ( можно и без нее). <br>
-            HTML 4 - 5/ CSS 2 - 3  <br>
-            Работаю с препроцессором LESS ( так же знаком с SASS). <br>
-            Пишу на нативном JavaScript, без использования фреймворков, необходимые функции, шаблонизацию, валидацию. <br>
-            Умею работать с Git, но есть определенные сложности :
-            <blockquote class="feature__quote">
-              Дело в том, что Git полезен при работе в команде. А у меня опыта работы в команде увы нет.
-            </blockquote>
+            Верстаю сайты из макетов в формате <i>PSD</i>. Для нарезки макета использую <i>Adobe Photoshop</i>. Всю графику оптимизирую. Не стесняюсь работать с <i>SVG</i>. Верстку делаю для современных браузеров ( с частичной поддержкой IE-9, но не ниже).
+          </p>
+          <p class="feature__text">
+            Верстка адаптивная, кроссбраузерная, семантическая. Использую методологию БЭМ ( можно и без нее). Работаю с препроцессором <i>LESS</i> ( так же знаком с <i>SASS</i>). Знания <i>HTML4 - 5/ CSS2 - 3</i>. Делаю несложную анимацию на CSS3.
+          </p>
+          <p class="feature__text">
+            Пишу на нативном JavaScript. Где уместно, использую <i>JQuery</i>.
+          </p>
+          <p class="feature__text">
+            Для ускорения верстки, использую <i>Gulp</i> (так же знаком и с <i>Grunt</i>, но остановился на Gulp). Пользуюсь пакетным менеджером <i>NPM</i>, а так же <i>GIT</i>, но по минимуму(<i>pull, push, add, commit, squash, merge</i>).
           </p>
         </div>
       </div>
 
       <div class="trained">
-        <ul class="trained__lists">
-              <li class="trained__item">
-              <p class="trained__lists-title">Прошел обучение в <a href="https://htmlacademy.ru/profile/id72912" target="_blank">HTMLAcademy</a>. В результате чего имею навыки в верстке:</p>
-                <ul class="trained__skill-lists">
-                  <li class="trained__skill-item">Работа с системой контроля версий Git</li>
-                  <li class="trained__skill-item">Работа по методологии БЭМ</li>
-                  <li class="trained__skill-item">Препроцессоры: LESS & SASS (основы)</li>
-                  <li class="trained__skill-item">Работа с адаптивной версткой (в курсе шли по технологии <i>Mobile first</i>)</li>
-                  <li class="trained__skill-item">Работа с графикой: оптимизация изображений, нарезка макета в <i>Adobe Photoshop)</i></li>
-                  <li class="trained__skill-item">Верстка на <i>flexbox</i></li>
-                  <li class="trained__skill-item">Автоматизация: Grunt & Gulp (основы)</li>
-                </ul>
-              </li>
-              <li class="trained__item">
-                <p class="trained__lists-title">JavaScript:</p>
-                <ul class="trained__skill-lists">
-                  <li class="trained__skill-item">Основы JS: типы данных, операторы, переменные и тд</li>
-                  <li class="trained__skill-item">Основы работы с графикой на <i>Canvas</i></li>
-                  <li class="trained__skill-item">Работа с <i>cookie</i>, с датами</li>
-                  <li class="trained__skill-item">Работа с несложными <i>Ajax-запросами</i></li>
-                  <li class="trained__skill-item">Работа с <i>событиями</i></li>
-                  <li class="trained__skill-item">Работа с DOM-элементами</li>
-                  <li class="trained__skill-item">Основы в ООП</li>
-                  <li class="trained__skill-item">Работа на основе модульного подхода при использовании <i>AMD</i></li>
-                </ul>
-              </li>
-            </ul>
+        <p class="trained__title">Прошел обучение в <a href="https://htmlacademy.ru/profile/id72912" target="_blank">HTMLAcademy</a></p>
       </div>
 
       <div class="gallery">
@@ -76,6 +54,33 @@
                 </a>
               </span>
             </div>
+            <div class="gallery__item desc">
+              <ul class="desc__list">
+                <li class="desc__item">
+                  <span class="desc__label">Макет</span>
+                  <span class="desc__option">Pink. Промо страница</span>
+                </li>
+                <li class="desc__item">
+                  <span class="desc__label">Адаптивность</span>
+                  <span class="desc__option"><i class="fa fa-check"></i></span>
+                </li>
+                <li class="desc__item">
+                  <span class="desc__label">Препроцессор</span>
+                  <span class="desc__option">—</span>
+                </li>
+                <li class="desc__item">
+                  <span class="desc__label">CSS фреймворк</span>
+                  <span class="desc__option">LESS</span>
+                </li>
+                <li class="desc__item">
+                  <span class="desc__label">Поддержка браузеров</span>
+                  <span class="desc__option">IE9+, Chrome, FireFox, Opera <sup>*</sup></span>
+                </li>
+                <li class="desc__item desc__item--subtitle">
+                  <sup>*</sup> — поддержка последних версий браузеров
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="gallery__item">
             <img src="img/preview-sedona.jpg" alt="Макет Sedona" width="217" height="117" class="gallery__promo-img">
@@ -87,6 +92,33 @@
                   </svg>
                 </a>
               </span>
+            </div>
+            <div class="gallery__item desc">
+              <ul class="desc__list">
+                <li class="desc__item">
+                  <span class="desc__label">Макет</span>
+                  <span class="desc__option">Sedona. Промо страница</span>
+                </li>
+                <li class="desc__item">
+                  <span class="desc__label">Адаптивность</span>
+                  <span class="desc__option"><i class="fa fa-check"></i></span>
+                </li>
+                <li class="desc__item">
+                  <span class="desc__label">Препроцессор</span>
+                  <span class="desc__option">LESS</span>
+                </li>
+                <li class="desc__item">
+                  <span class="desc__label">CSS фреймворк</span>
+                  <span class="desc__option">—</span>
+                </li>
+                <li class="desc__item">
+                  <span class="desc__label">Поддержка браузеров</span>
+                  <span class="desc__option">IE9+, Chrome, FireFox, Opera <sup>*</sup></span>
+                </li>
+                <li class="desc__item desc__item--subtitle">
+                  <sup>*</sup> — поддержка последних версий браузеров
+                </li>
+              </ul>
             </div>
           </li>
           <li class="gallery__item">
@@ -100,34 +132,63 @@
                 </a>
               </span>
             </div>
+            <div class="gallery__item desc">
+              <ul class="desc__list">
+                <li class="desc__item">
+                  <span class="desc__label">Макет</span>
+                  <span class="desc__option">Adventure. Промо страница</span>
+                </li>
+                <li class="desc__item">
+                  <span class="desc__label">Адаптивность</span>
+                  <span class="desc__option">—</span>
+                </li>
+                <li class="desc__item">
+                  <span class="desc__label">Препроцессор</span>
+                  <span class="desc__option">LESS</span>
+                </li>
+                <li class="desc__item">
+                  <span class="desc__label">CSS фреймворк</span>
+                  <span class="desc__option">—</span>
+                </li>
+                <li class="desc__item">
+                  <span class="desc__label">Поддержка браузеров</span>
+                  <span class="desc__option">IE9+, Chrome, FireFox, Opera <sup>*</sup></span>
+                </li>
+                <li class="desc__item desc__item--subtitle">
+                  <sup>*</sup> — поддержка последних версий браузеров
+                </li>
+              </ul>
+            </div>
           </li>
         </ul>
         <div class="gallery__caption">
-          Да, работ пока что мало, но будет пополнение :)
+          <p class="gallery__caption__text">Да, работ пока что мало, но будет пополнение :)</p>
+          <p class="gallery__caption__text">
+            Продолжаю учиться и развиваться в данных направлениях.
+          </p>
+          <p class="gallery__caption__text">
+            P.S. О себе добавлю: имею инвалидность из-за травмы позвоночника. Перемещаюсь с тростью.
+          </p>
         </div>
       </div>
-      <p>
-        Продолжаю учиться и развиваться в данных направлениях.<br>
-        P.S. О себе добавлю: имею инвалидность из-за травмы позвоночника. Перемещаюсь с тростью.
-      </p>
     </div>
   </section>
 
   <footer class="page-footer">
     <div class="wrapper">
       <div class="contacts">
-        <p class="contacts__title">Связаться со мной Вы можете через: </p>
-        <a href="https://vk.com/rock1989" target="_blank" class="contacts__link contacts__link--vk">
-          Соц.сеть
+        <p class="contacts__title">Связаться со мной вы можете через: </p>
+        <a href="skype:rock-n1989?chat" class="contacts__link"><i class="fa fa-skype"></i></a>
+        <a href="https://vk.com/rock1989" target="_blank" class="contacts__link">
+        <i class="fa fa-vk"></i>
         </a>
-        <a href="skype:rock-n1989?chat" class="contacts__link">Skype</a>
-        <p class="contacts__desc">Или же написать на почту : <i>gold_100@bk.ru</i></p>
+        <p class="contacts__desc">Или же написать на почту : <a href="mailto:gold_100@bk.ru">gold_100@bk.ru</a></p>
       </div>
     </div>
   </footer>
   <script src="js/svg4everybody.min.js"></script>
   <script>
     svg4everybody();
-  </script> 
+  </script>
 </body>
 </html>
