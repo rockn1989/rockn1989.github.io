@@ -60,11 +60,15 @@ img {
   display: block; }
 
 a {
-  color: blue; }
+  text-decoration: none;
+  color: #00AFF0;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease; }
   a:hover {
-    color: #93b640; }
-  a:active {
-    color: #b6b240; }
+    color: #008abd; }
+  @media (min-width: 768px) {
+    a.contacts__link {
+      border-bottom: 1px solid rgba(0, 175, 240, 0.5); } }
 
 .wrapper {
   width: 300px;
@@ -266,16 +270,14 @@ a {
   text-align: left; }
 
 .contacts__link {
-  display: block;
-  color: #00AFF0;
   margin-right: 10px;
-  -webkit-transition: color 0.2s ease;
-  transition: color 0.2s ease; }
-  .contacts__link:hover {
-    color: #008abd; }
+  display: block;
+  border: none;
+  text-decoration: underline; }
   @media (min-width: 768px) {
     .contacts__link {
-      display: inline; } }
+      display: inline-block;
+      text-decoration: none; } }
 
 .invisibly {
   display: none; }
