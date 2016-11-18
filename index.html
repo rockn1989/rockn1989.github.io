@@ -6,172 +6,218 @@
     <title>Главная</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/picturefill.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<section class="page-content">
-    <div class="wrapper">
-      <div class="feature">
-        <header class="feature__header">
-          <h1 class="feature__header-title">Артём Рябков</h1>
-          <p class="feature__header-text">
-            Начинающий фронтенд-разработчик
-          </p>
-        </header>
-        <div class="feature__desc">
-          <p class="feature__text">
-            Верстаю сайты из макетов в формате <i>PSD</i>. Для нарезки макета использую <i>Adobe Photoshop</i>. Всю графику оптимизирую. Не стесняюсь работать с <i>SVG</i>. Верстку делаю для современных браузеров ( с частичной поддержкой IE-9, но не ниже).
-          </p>
-          <p class="feature__text">
-            Верстка адаптивная, кроссбраузерная, семантическая. Использую методологию БЭМ ( можно и без нее). Работаю с препроцессором <i>LESS</i> ( так же знаком с <i>SASS</i>). Знания <i>HTML4 - 5/ CSS2 - 3</i>. Делаю несложную анимацию на CSS3.
-          </p>
-          <p class="feature__text">
-            Пишу на нативном JavaScript. Где уместно, использую <i>JQuery</i>.
-          </p>
-          <p class="feature__text">
-            Для ускорения верстки, использую <i>Gulp</i> (так же знаком и с <i>Grunt</i>, но остановился на Gulp). Пользуюсь пакетным менеджером <i>NPM</i>, а так же <i>GIT</i>, но по минимуму(<i>pull, push, add, commit, squash, merge</i>).
-          </p>
+  <section class="page-content">
+      <div class="wrapper">
+        <div class="feature">
+          <header class="feature__header">
+            <h1 class="feature__header-title">Артём Рябков</h1>
+            <p class="feature__header-text">
+              Начинающий фронтенд-разработчик
+            </p>
+          </header>
+          <div class="feature__desc">
+            <p class="feature__text">
+              Верстаю сайты из макетов в формате <i>PSD</i>. Для нарезки макета использую <i>Adobe Photoshop</i>. Всю графику оптимизирую. Не стесняюсь работать с <i>SVG</i>. Верстку делаю для современных браузеров ( с частичной поддержкой IE-9, но не ниже).
+            </p>
+            <p class="feature__text">
+              Верстка адаптивная, кроссбраузерная, семантическая. Использую методологию БЭМ ( можно и без нее). Работаю с препроцессором <i>LESS</i> ( так же знаком с <i>SASS</i>). Знания <i>HTML4 - 5/ CSS2 - 3</i>. Делаю несложную анимацию на CSS3.
+            </p>
+            <p class="feature__text">
+              Пишу на нативном JavaScript. Где уместно, использую <i>JQuery</i>.
+            </p>
+            <p class="feature__text">
+              Для ускорения верстки, использую <i>Gulp</i> (так же знаком и с <i>Grunt</i>, но остановился на Gulp). Пользуюсь пакетным менеджером <i>NPM</i>, а так же <i>GIT</i>, но по минимуму(<i>pull, push, add, commit, squash, merge</i>).
+            </p>
+          </div>
+        </div>
+
+        <div class="trained">
+          <p class="trained__title">Прошел обучение в <a href="https://htmlacademy.ru/profile/id72912" target="_blank">HTMLAcademy</a></p>
+        </div>
+
+        <div class="gallery">
+          <header class="gallery__header">
+            <h2 class="gallery__title"><a class="no-link" name="portfolio">Мои работы</a></h2>
+          </header>
+          <ul class="gallery__lists">
+            <li class="gallery__item">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/preview-pink.jpg 1x, img/preview-pink@2.jpg 2x">
+                <img src="img/preview-pink.jpg" alt="Макет Pink" width="100%" height="100%" class="gallery__promo-img">
+              </picture>
+              <div class="gallery__shadowbox">
+                <span class="gallery__open">
+                  <a href="portfolio/pink/index.html" target="_blank">
+                    <svg width="40px" height="40px" class="gallery__open-icon">
+                      <use xlink:href="img/icon/symbols.svg#search-icon"></use>
+                    </svg>
+                  </a>
+                </span>
+              </div>
+              <div class="gallery__item desc">
+                <ul class="desc__list">
+                  <li class="desc__item">
+                    <span class="desc__label">Макет</span>
+                    <span class="desc__option">Pink. Промо-сайт мобильного приложения</span>
+                  </li>
+                  <li class="desc__item">
+                    <span class="desc__label">Адаптивность</span>
+                    <span class="desc__option"><i class="fa fa-check"></i></span>
+                  </li>
+                  <li class="desc__item">
+                    <span class="desc__label">Графика</span>
+                    <span class="desc__option">SVG-спрайты, ретиновая графика.</span>
+                  </li>
+                  <li class="desc__item">
+                    <span class="desc__label">Препроцессор</span>
+                    <span class="desc__option">LESS</span>
+                  </li>
+                  <li class="desc__item">
+                    <span class="desc__label">CSS фреймворк</span>
+                    <span class="desc__option">—</span>
+                  </li>
+                  <li class="desc__item">
+                    <span class="desc__label">JS фреймворк</span>
+                    <span class="desc__option">—</span>
+                  </li>
+                  <li class="desc__item">
+                    <span class="desc__label">Система сборки</span>
+                    <span class="desc__option">Gulp</span>
+                  </li>
+                  <li class="desc__item">
+                    <span class="desc__label">Поддержка браузеров</span>
+                    <span class="desc__option">IE9+, Chrome, FireFox, Opera <sup>*</sup></span>
+                  </li>
+                  <li class="desc__item desc__item--subtitle">
+                    <sup>*</sup> — поддержка последних версий браузеров
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="gallery__item">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/preview-sedona.jpg 1x, img/preview-sedona@2.jpg 2x"/>
+                <img src="img/preview-sedona.jpg" alt="Макет Sedona" width="100%" height="100%" class="gallery__promo-img">
+              </picture>
+              <div class="gallery__shadowbox">
+                <span class="gallery__open">
+                  <a href="portfolio/sedona/index.html" target="_blank">
+                    <svg width="40" height="40" class="gallery__open-icon">
+                      <use xlink:href="img/icon/symbols.svg#search-icon"></use>
+                    </svg>
+                  </a>
+                </span>
+              </div>
+              <div class="gallery__item desc">
+                <ul class="desc__list">
+                  <li class="desc__item">
+                    <span class="desc__label">Макет</span>
+                    <span class="desc__option">Sedona. Туристический сайт города</span>
+                  </li>
+                  <li class="desc__item">
+                    <span class="desc__label">Адаптивность</span>
+                    <span class="desc__option"><i class="fa fa-check"></i></span>
+                  </li>
+                  <li class="desc__item">
+                    <span class="desc__label">Графика</span>
+                    <span class="desc__option">SVG-спрайты, ретиновая графика.</span>
+                  </li>
+                  <li class="desc__item">
+                    <span class="desc__label">Препроцессор</span>
+                    <span class="desc__option">LESS</span>
+                  </li>
+                  <li class="desc__item">
+                    <span class="desc__label">CSS фреймворк</span>
+                    <span class="desc__option">—</span>
+                  </li>
+                  <li class="desc__item">
+                    <span class="desc__label">JS фреймворк</span>
+                    <span class="desc__option">—</span>
+                  </li>
+                  <li class="desc__item">
+                    <span class="desc__label">Система сборки</span>
+                    <span class="desc__option">Gulp</span>
+                  </li>
+                  <li class="desc__item">
+                    <span class="desc__label">Поддержка браузеров</span>
+                    <span class="desc__option">IE9+, Chrome, FireFox, Opera <sup>*</sup></span>
+                  </li>
+                  <li class="desc__item desc__item--subtitle">
+                    <sup>*</sup> — поддержка последних версий браузеров
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="gallery__item">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/preview-adventure.jpg 1x, img/preview-adventure@2.jpg 2x"/>
+                <img src="img/preview-adventure.jpg" alt="Макет Adveture" width="100%" height="100%" class="gallery__promo-img">
+              </picture>
+              <div class="gallery__shadowbox">
+                <span class="gallery__open">
+                  <a href="portfolio/adventure/index.html" target="_blank">
+                    <svg width="40" height="40" class="gallery__open-icon">
+                      <use xlink:href="img/icon/symbols.svg#search-icon"></use>
+                    </svg>
+                  </a>
+                </span>
+              </div>
+              <div class="gallery__item desc">
+                <ul class="desc__list">
+                  <li class="desc__item">
+                    <span class="desc__label">Макет</span>
+                    <span class="desc__option">Adventure. Сайт компании</span>
+                  </li>
+                  <li class="desc__item">
+                    <span class="desc__label">Адаптивность</span>
+                    <span class="desc__option">—</span>
+                  </li>
+                  <li class="desc__item">
+                    <span class="desc__label">Графика</span>
+                    <span class="desc__option">SVG-спрайты.</span>
+                  </li>
+                  <li class="desc__item">
+                    <span class="desc__label">Препроцессор</span>
+                    <span class="desc__option">LESS</span>
+                  </li>
+                  <li class="desc__item">
+                    <span class="desc__label">CSS фреймворк</span>
+                    <span class="desc__option">—</span>
+                  </li>
+                  <li class="desc__item">
+                    <span class="desc__label">JS фреймворк</span>
+                    <span class="desc__option">JQuery(для слайдера)</span>
+                  </li>
+                  <li class="desc__item">
+                    <span class="desc__label">Система сборки</span>
+                    <span class="desc__option">Gulp</span>
+                  </li>
+                  <li class="desc__item">
+                    <span class="desc__label">Поддержка браузеров</span>
+                    <span class="desc__option">IE9+, Chrome, FireFox, Opera <sup>*</sup></span>
+                  </li>
+                  <li class="desc__item desc__item--subtitle">
+                    <sup>*</sup> — поддержка последних версий браузеров
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <div class="gallery__caption">
+            <p class="gallery__caption__text">Да, работ пока что мало, но будет пополнение :)</p>
+            <p class="gallery__caption__text">
+              Продолжаю учиться и развиваться в данных направлениях.
+            </p>
+            <p class="gallery__caption__text">
+              P.S. О себе добавлю: имею инвалидность из-за травмы позвоночника. Перемещаюсь с тростью.
+            </p>
+          </div>
         </div>
       </div>
-
-      <div class="trained">
-        <p class="trained__title">Прошел обучение в <a href="https://htmlacademy.ru/profile/id72912" target="_blank">HTMLAcademy</a></p>
-      </div>
-
-      <div class="gallery">
-        <header class="gallery__header">
-          <h2 class="gallery__title"><a class="no-link" name="portfolio">Мои работы</a></h2>
-        </header>
-        <ul class="gallery__lists">
-          <li class="gallery__item">
-            <img src="img/preview-pink.jpg" alt="Макет Pink" width="217" height="117" class="gallery__promo-img">
-            <div class="gallery__shadowbox">
-              <span class="gallery__open">
-                <a href="portfolio/pink/index.html" target="_blank">
-                  <svg width="40px" height="40px" class="gallery__open-icon">
-                    <use xlink:href="img/icon/symbols.svg#search-icon"></use>
-                  </svg>
-                </a>
-              </span>
-            </div>
-            <div class="gallery__item desc">
-              <ul class="desc__list">
-                <li class="desc__item">
-                  <span class="desc__label">Макет</span>
-                  <span class="desc__option">Pink. Промо страница</span>
-                </li>
-                <li class="desc__item">
-                  <span class="desc__label">Адаптивность</span>
-                  <span class="desc__option"><i class="fa fa-check"></i></span>
-                </li>
-                <li class="desc__item">
-                  <span class="desc__label">Препроцессор</span>
-                  <span class="desc__option">—</span>
-                </li>
-                <li class="desc__item">
-                  <span class="desc__label">CSS фреймворк</span>
-                  <span class="desc__option">LESS</span>
-                </li>
-                <li class="desc__item">
-                  <span class="desc__label">Поддержка браузеров</span>
-                  <span class="desc__option">IE9+, Chrome, FireFox, Opera <sup>*</sup></span>
-                </li>
-                <li class="desc__item desc__item--subtitle">
-                  <sup>*</sup> — поддержка последних версий браузеров
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="gallery__item">
-            <img src="img/preview-sedona.jpg" alt="Макет Sedona" width="217" height="117" class="gallery__promo-img">
-            <div class="gallery__shadowbox">
-              <span class="gallery__open">
-                <a href="portfolio/sedona/index.html" target="_blank">
-                  <svg width="40" height="40" class="gallery__open-icon">
-                    <use xlink:href="img/icon/symbols.svg#search-icon"></use>
-                  </svg>
-                </a>
-              </span>
-            </div>
-            <div class="gallery__item desc">
-              <ul class="desc__list">
-                <li class="desc__item">
-                  <span class="desc__label">Макет</span>
-                  <span class="desc__option">Sedona. Промо страница</span>
-                </li>
-                <li class="desc__item">
-                  <span class="desc__label">Адаптивность</span>
-                  <span class="desc__option"><i class="fa fa-check"></i></span>
-                </li>
-                <li class="desc__item">
-                  <span class="desc__label">Препроцессор</span>
-                  <span class="desc__option">LESS</span>
-                </li>
-                <li class="desc__item">
-                  <span class="desc__label">CSS фреймворк</span>
-                  <span class="desc__option">—</span>
-                </li>
-                <li class="desc__item">
-                  <span class="desc__label">Поддержка браузеров</span>
-                  <span class="desc__option">IE9+, Chrome, FireFox, Opera <sup>*</sup></span>
-                </li>
-                <li class="desc__item desc__item--subtitle">
-                  <sup>*</sup> — поддержка последних версий браузеров
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="gallery__item">
-            <img src="img/preview-adventure.jpg" alt="Макет Adventure" width="217" height="117" class="gallery__promo-img">
-            <div class="gallery__shadowbox">
-              <span class="gallery__open">
-                <a href="portfolio/adventure/index.html" target="_blank">
-                  <svg width="40" height="40" class="gallery__open-icon">
-                    <use xlink:href="img/icon/symbols.svg#search-icon"></use>
-                  </svg>
-                </a>
-              </span>
-            </div>
-            <div class="gallery__item desc">
-              <ul class="desc__list">
-                <li class="desc__item">
-                  <span class="desc__label">Макет</span>
-                  <span class="desc__option">Adventure. Промо страница</span>
-                </li>
-                <li class="desc__item">
-                  <span class="desc__label">Адаптивность</span>
-                  <span class="desc__option">—</span>
-                </li>
-                <li class="desc__item">
-                  <span class="desc__label">Препроцессор</span>
-                  <span class="desc__option">LESS</span>
-                </li>
-                <li class="desc__item">
-                  <span class="desc__label">CSS фреймворк</span>
-                  <span class="desc__option">—</span>
-                </li>
-                <li class="desc__item">
-                  <span class="desc__label">Поддержка браузеров</span>
-                  <span class="desc__option">IE9+, Chrome, FireFox, Opera <sup>*</sup></span>
-                </li>
-                <li class="desc__item desc__item--subtitle">
-                  <sup>*</sup> — поддержка последних версий браузеров
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-        <div class="gallery__caption">
-          <p class="gallery__caption__text">Да, работ пока что мало, но будет пополнение :)</p>
-          <p class="gallery__caption__text">
-            Продолжаю учиться и развиваться в данных направлениях.
-          </p>
-          <p class="gallery__caption__text">
-            P.S. О себе добавлю: имею инвалидность из-за травмы позвоночника. Перемещаюсь с тростью.
-          </p>
-        </div>
-      </div>
-    </div>
   </section>
 
   <footer class="page-footer">
