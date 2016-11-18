@@ -290,7 +290,6 @@ a {
   text-align: left; }
 
 .contacts__link {
-  margin-right: 10px;
   margin-bottom: 10px;
   display: block;
   font-size: 20px;
@@ -302,6 +301,7 @@ a {
   @media (min-width: 768px) {
     .contacts__link {
       display: inline-block;
+      margin-right: 10px;
       margin-bottom: 0;
       padding: 0;
       background-color: transparent;
