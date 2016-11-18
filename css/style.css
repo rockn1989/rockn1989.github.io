@@ -22,7 +22,7 @@ body {
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      max-height: 100vh;
+      min-height: 100vh;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -webkit-flex-direction: column;
@@ -31,9 +31,9 @@ body {
       html .page-content,
       body .page-content {
         -webkit-box-flex: 1;
-        -webkit-flex: 1;
-            -ms-flex: 1;
-                flex: 1; } }
+        -webkit-flex: auto;
+            -ms-flex: auto;
+                flex: auto; } }
 
 div,
 p,
@@ -97,6 +97,9 @@ a {
 .feature__header,
 .feature__text {
   margin-bottom: 20px; }
+
+.feature__header-title {
+  margin-bottom: 5px; }
 
 .gallery {
   margin-bottom: 20px; }
