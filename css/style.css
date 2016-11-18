@@ -150,7 +150,13 @@ a {
       margin-right: 5%; } }
 
 .gallery__item-preview {
-  height: 232px; }
+  height: 200px; }
+  @media (min-width: 768px) {
+    .gallery__item-preview {
+      height: 218px; } }
+  @media (min-width: 1200px) {
+    .gallery__item-preview {
+      height: 232px; } }
 
 .gallery__item.desc {
   margin-bottom: 0;
