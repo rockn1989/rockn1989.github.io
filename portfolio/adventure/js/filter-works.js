@@ -5,13 +5,13 @@
   var filterControl = document.querySelector('.our-works__box-control'),
   filterControlLink = filterControl.querySelectorAll('.our-works__links'),
             itemBox = document.querySelector('.our-works__list'),
-            test = document.querySelectorAll('.our-works__item'),
+            items = document.querySelectorAll('.our-works__item'),
             filteredBox = [],
             docFragment = document.createDocumentFragment();
 
       var itemAll = [];
-      for(var g = 0; g < test.length; g++) {
-        itemAll.push(test[g].cloneNode(true));
+      for(var g = 0; g < items.length; g++) {
+        itemAll.push(items[g].cloneNode(true));
       };
 
   filterControl.addEventListener('click', function(e) {
