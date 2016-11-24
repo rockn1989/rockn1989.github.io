@@ -560,14 +560,14 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, ex cum. Exercitationem consequatur, dicta, enim dolorem ratione voluptas possimus tempora eveniet ipsum, temporibus, odio quas!
           </p>
           <div class="our-works__box-control">
-            <a href="" class="our-works__links our-works__links--is-active">All</a>
-            <a href="" class="our-works__links">Photography</a>
-            <a href="" class="our-works__links">graphic</a>
-            <a href="" class="our-works__links">print</a>
-            <a href="" class="our-works__links">web</a>
+            <a href="" id="work-all" class="our-works__links our-works__links is-active">All</a>
+            <a href="" id="work-photo" class="our-works__links">Photography</a>
+            <a href="" id="work-graphic" class="our-works__links">graphic</a>
+            <a href="" id="work-print" class="our-works__links">print</a>
+            <a href="" id="work-web" class="our-works__links">web</a>
           </div>
           <ul class="our-works__list">
-            <li class="our-works__item">
+            <li class="our-works__item" id="print">
               <div class="our-works__mask">
                 <div class="our-works__mask-control">
                   <a href="somelink1.ru" class="our-works__mask-control-links">
@@ -589,7 +589,7 @@
                 <p class="our-works__item-subtitle">Lorem ipsum dolor sit amet, consectetur.</p>
               </div>
             </li>
-            <li class="our-works__item">
+            <li class="our-works__item" id="web">
               <div class="our-works__mask">
                 <div class="our-works__mask-control">
                   <a href="somelink2.ru" class="our-works__mask-control-links">
@@ -611,7 +611,7 @@
                 <p class="our-works__item-subtitle">Lorem ipsum dolor sit amet, consectetur.</p>
               </div>
             </li>
-            <li class="our-works__item">
+            <li class="our-works__item" id="graphic">
               <div class="our-works__mask">
                 <div class="our-works__mask-control">
                   <a href="somelink3.ru" class="our-works__mask-control-links">
@@ -633,7 +633,7 @@
                 <p class="our-works__item-subtitle">Lorem ipsum dolor sit amet, consectetur.</p>
               </div>
             </li>
-            <li class="our-works__item">
+            <li class="our-works__item" id="photo">
               <div class="our-works__mask">
                 <div class="our-works__mask-control">
                   <a href="somelink4.ru" class="our-works__mask-control-links">
@@ -655,7 +655,7 @@
                 <p class="our-works__item-subtitle">Lorem ipsum dolor sit amet, consectetur.</p>
               </div>
             </li>
-            <li class="our-works__item">
+            <li class="our-works__item" id="graphic">
               <div class="our-works__mask">
                 <div class="our-works__mask-control">
                   <a href="somelink5.ru" class="our-works__mask-control-links">
@@ -677,7 +677,7 @@
                 <p class="our-works__item-subtitle">Lorem ipsum dolor sit amet, consectetur.</p>
               </div>
             </li>
-            <li class="our-works__item">
+            <li class="our-works__item" id="photo">
               <div class="our-works__mask">
                 <div class="our-works__mask-control">
                   <a href="somelink6.ru" class="our-works__mask-control-links">
@@ -923,9 +923,9 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-  <script src="js/slider.js"></script>
-  <script src="js/copy-link.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/main.min.js"></script>
+
+
   <!--[if lte IE 9]>
     <script>
       flexibility(document.querySelector('.wrapper__inside.wrapper__inside--flex-mod'));

@@ -32,6 +32,7 @@
     var platform = window.navigator.userAgent.match(/Android|IPhone|iPad/i);
 
     if(platform) {
+
       var copyLink = Array.prototype.filter.call(document.querySelectorAll('.our-works__mask-control-links'), function(el) {
         return !el.getAttribute("data-role");
       });
