@@ -5,9 +5,14 @@
   var filterControl = document.querySelector('.our-works__box-control'),
   filterControlLink = filterControl.querySelectorAll('.our-works__links'),
             itemBox = document.querySelector('.our-works__list'),
-            itemAll = itemBox.querySelectorAll('.our-works__item'),
+            test = document.querySelectorAll('.our-works__item'),
             filteredBox = [],
             docFragment = document.createDocumentFragment();
+
+      var itemAll = [];
+      for(var g = 0; g < test.length; g++) {
+        itemAll.push(test[g].cloneNode(true));
+      };
 
   filterControl.addEventListener('click', function(e) {
 
@@ -23,7 +28,7 @@
 
     cleanBox(itemBox, filterBox(e.target.id));
 
-    filteredBox.forEach(function(el,i) {
+    filteredBox.forEach(function(el) {
       docFragment.appendChild(el);
     });
 
@@ -33,30 +38,49 @@
 
   function cleanBox(box, callback) {
     box.innerHTML = '';
-    callback;
+    return callback;
   }
 
   function filterBox(id) {
+    filteredBox = [];
     switch(id) {
-      case 'work-all': filteredBox = Array.prototype.filter.call(itemAll, (function(el) {
-        return el;
-      }));
+      case 'work-all': Array.prototype.filter.call(itemAll, (function(el) {
+                          var newEl = el.cloneNode(true);
+                          filteredBox.push(newEl);
+                          return filteredBox;
+                        }));
       break;
-      case 'work-photo': filteredBox = Array.prototype.filter.call(itemAll, (function(el) {
-        return el.id == 'photo';
-      }));
+      case 'work-photo': Array.prototype.filter.call(itemAll, (function(el) {
+                            if(el.id == 'photo') {
+                              var newEl = el.cloneNode(true);
+                              filteredBox.push(newEl);
+                            }
+                            return filteredBox;
+                          }));
       break;
-      case 'work-graphic': filteredBox = Array.prototype.filter.call(itemAll, (function(el) {
-        return el.id == 'graphic';
-      }));
+      case 'work-graphic': Array.prototype.filter.call(itemAll, (function(el) {
+                            if(el.id == 'graphic') {
+                              var newEl = el.cloneNode(true);
+                              filteredBox.push(newEl);
+                            }
+                            return filteredBox;
+                          }));
       break;
-      case 'work-print': filteredBox = Array.prototype.filter.call(itemAll, (function(el) {
-        return el.id == 'print';
-      }));
+      case 'work-print': Array.prototype.filter.call(itemAll, (function(el) {
+                            if(el.id == 'print') {
+                              var newEl = el.cloneNode(true);
+                              filteredBox.push(newEl);
+                            }
+                            return filteredBox;
+                          }));
       break;
-      case 'work-web': filteredBox = Array.prototype.filter.call(itemAll, (function(el) {
-        return el.id == 'web';
-      }));
+      case 'work-web': Array.prototype.filter.call(itemAll, (function(el) {
+                        if(el.id == 'web') {
+                          var newEl = el.cloneNode(true);
+                          filteredBox.push(newEl);
+                        }
+                        return filteredBox;
+                      }));
       break;
     }
   }
