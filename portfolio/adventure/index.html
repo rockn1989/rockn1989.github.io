@@ -21,7 +21,7 @@
 
     <header class="page-header">
 
-      <div class="wrapper__inside wrapper__inside--flex-mod">
+      <div class="wrapper__inside wrapper__inside flex-mod">
 
         <div class="page-logo">
           <a class="page-logo__link" href="/">Adventure</a>
@@ -38,7 +38,7 @@
           </ul>
         </nav>
         <div class="page-search">
-          <form action="" class="page-search__form" autocomplete="disabled">
+          <form action="/" class="page-search__form" autocomplete="on">
             <input type="text" class="page-search__text">
             <button class="page-search__btn">go</button>
           </form>
@@ -84,7 +84,7 @@
     </div>
 
     <section class="page-content">
-
+      <h2 class="page-content__title hide">All about us</h2>
       <article class="review">
         <div class="wrapper__inside">
           <h2 class="content-title">who we are</h2>
@@ -555,7 +555,7 @@
 
       <div class="our-works">
         <div class="wrapper__inside">
-          <h2 class="content-title"><a name="work">Our awesome works</a></h2>
+          <h2 class="content-title"><a id="work">Our awesome works</a></h2>
           <p class="content-subtitle">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, ex cum. Exercitationem consequatur, dicta, enim dolorem ratione voluptas possimus tempora eveniet ipsum, temporibus, odio quas!
           </p>
@@ -755,7 +755,7 @@
         <div class="wrapper__inside">
           <div class="subscribe-news__content">
               <p class="subscribe-news__text">Subscribe to our newsletter to get every Notify</p>
-              <form action="" class="subscribe-news__form">
+              <form action="/" class="subscribe-news__form">
                 <input type="text" class="subscribe-news__form-email" placeholder="Your email">
                 <input type="submit" value="Send" class="subscribe-news__form-send">
               </form>
@@ -928,7 +928,7 @@
 
   <!--[if lte IE 9]>
     <script>
-      flexibility(document.querySelector('.wrapper__inside.wrapper__inside--flex-mod'));
+      flexibility(document.querySelector('.wrapper__inside.wrapper__inside.flex-mod'));
       flexibility(document.querySelector('.review__content'));
       flexibility(document.querySelector('.page-footer__content'));
       flexibility(document.querySelector('.page-footer__copyright'));
