@@ -49,10 +49,10 @@
 
     var filters = {
       'work-all': function() { return true; },
-      'work-photo': function(el) { return el.id === 'photo'},
-      'work-graphic': function(el) { return el.id === 'graphic'},
-      'work-print': function(el) { return el.id === 'print'},
-      'work-web': function(el) { return el.id === 'web'}
+      'work-photo': function(el) { return el.getAttribute('data-role') === 'photo'},
+      'work-graphic': function(el) { return el.getAttribute('data-role') === 'graphic'},
+      'work-print': function(el) { return el.getAttribute('data-role') === 'print'},
+      'work-web': function(el) { return el.getAttribute('data-role') === 'web'}
     };
 
    var filterFunction = filters[id] || filters['work-all'];
