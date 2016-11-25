@@ -20,6 +20,8 @@
 
     e.preventDefault();
 
+    var id = e.target.getAttribute('data-role');
+
     for(var i = 0; i< filterControlLink.length; i++) {
       filterControlLink[i].classList.remove('is-active');
     }
@@ -27,7 +29,7 @@
     e.target.classList.add('is-active');
 
     cleanBox(itemBox, function() {
-      filterBox(e.target.id);
+      filteredBox = filterBox(id);
     });
 
     filteredBox.forEach(function(el) {
@@ -44,47 +46,20 @@
   }
 
   function filterBox(id) {
-    filteredBox = [];
-    switch(id) {
-      case 'work-all': Array.prototype.forEach.call(itemCopy, (function(el) {
-                          var newEl = el.cloneNode(true);
-                          filteredBox.push(newEl);
-                          return filteredBox;
-                        }));
-      break;
-      case 'work-photo': Array.prototype.forEach.call(itemCopy, (function(el) {
-                            if(el.id == 'photo') {
-                              var newEl = el.cloneNode(true);
-                              filteredBox.push(newEl);
-                            }
-                            return filteredBox;
-                          }));
-      break;
-      case 'work-graphic': Array.prototype.forEach.call(itemCopy, (function(el) {
-                            if(el.id == 'graphic') {
-                              var newEl = el.cloneNode(true);
-                              filteredBox.push(newEl);
-                            }
-                            return filteredBox;
-                          }));
-      break;
-      case 'work-print': Array.prototype.forEach.call(itemCopy, (function(el) {
-                            if(el.id == 'print') {
-                              var newEl = el.cloneNode(true);
-                              filteredBox.push(newEl);
-                            }
-                            return filteredBox;
-                          }));
-      break;
-      case 'work-web': Array.prototype.forEach.call(itemCopy, (function(el) {
-                        if(el.id == 'web') {
-                          var newEl = el.cloneNode(true);
-                          filteredBox.push(newEl);
-                        }
-                        return filteredBox;
-                      }));
-      break;
-    }
+
+    var filters = {
+      'work-all': function() { return true; },
+      'work-photo': function(el) { return el.id === 'photo'},
+      'work-graphic': function(el) { return el.id === 'graphic'},
+      'work-print': function(el) { return el.id === 'print'},
+      'work-web': function(el) { return el.id === 'web'}
+    };
+
+   var filterFunction = filters[id] || filters['work-all'];
+
+   return Array.prototype.filter.call(itemCopy, filterFunction).map(function(el) {
+                  return el.cloneNode(true);
+                });
   }
 
 })();
