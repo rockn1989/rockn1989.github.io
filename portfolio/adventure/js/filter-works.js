@@ -38,7 +38,7 @@
   });
 
   function cleanBox(box) {
-    if(document.querySelector('.popupbox')) {
+    if(document.querySelector('.popupbox.popupbox-show')) {
       document.body.removeChild(document.querySelector('.popupbox.popupbox-show'));
     }
     while(box.children.length > 0) {

@@ -35,10 +35,8 @@
     e.preventDefault();
 
     try {
-      if(document.querySelector('.popupbox')) {
+      if(document.querySelector('.popupbox.popupbox-show')) {
         document.body.removeChild(document.querySelector('.popupbox.popupbox-show'));
-        console.log(this.time);
-        clearInterval(this.time);
       }
     } catch(err) {
        var err = 'Some error in IE. Text error : ' + err;
