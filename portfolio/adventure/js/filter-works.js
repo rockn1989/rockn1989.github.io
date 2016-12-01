@@ -28,6 +28,8 @@
     filteredBox = filterBox(id);
 
     filteredBox.forEach(function(el) {
+      var copyLink = el.querySelector('a[data-role="copy-link"]');
+      new PopupBox(copyLink);
       docFragment.appendChild(el);
     });
 
@@ -36,6 +38,9 @@
   });
 
   function cleanBox(box) {
+    if(document.querySelector('.popupbox')) {
+      document.body.removeChild(document.querySelector('.popupbox.popupbox-show'));
+    }
     while(box.children.length > 0) {
       box.removeChild(box.firstElementChild);
     }
