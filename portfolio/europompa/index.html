@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Главная</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="css/slick/slick-theme.css"/>
+  <link rel="stylesheet" href="css/min.style.css">
+
+
+  <!--[if lte IE 9]>
+    <script src="js/libs/classList.min.js"></script>
+    <script src="js/libs/html5shiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+  <div class="wrapper">
+    <header class="page-header">
+      <div class="page-header__main">
+        <nav class="main-nav">
+          <i href="#" class="main-nav__menu-toggle">
+            <span class="main-nav__menu-icon">
+              <i class="main-nav__menu-strip"></i>
+              <i class="main-nav__menu-strip"></i>
+              <i class="main-nav__menu-strip"></i>
+            </span>
+          </i>
+          <ul class="main-nav__list open-menu">
+            <li class="main-nav__item"><a href="#" class="main-nav__link">О компании</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__link">Доставка и оплата</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__link">Новости</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__link">Сертификаты</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__link">Словарь терминов</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
+          </ul>
+          <div class="main-nav__auth">
+            <a href="#" class="main-nav__link">Войти</a>
+            <span class="main-nav__auth-separate">или</span>
+            <a href="#" class="main-nav__link">Зарегистрироваться</a>
+          </div>
+        </nav>
+        <div class="main-contacts">
+          <div class="main-contacts__logo">
+            <a href="index.html"><img src="img/logo.png" alt="Европомпа"></a>
+          </div>
+          <div class="main-contacts__info info">
+            <span class="info__tel">+7(495)645—93—36</span>
+            <span data-role="backCall" class="info__call">
+              <i class="info__icon info__icon--call"></i>
+              Обратный звонок
+            </span>
+            <span class="info__time">мы перезвоним с 08:00 до 20:00</span>
+            <span class="info__email">
+              <a href="mailto:info@europompa.ru">
+                <i class="info__icon info__icon--email"></i>
+                info@europompa.ru
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="page-header__pay pay">
+        <div class="pay__basket">
+          <img src="img/basket.png" alt="Корзина">
+          <span class="pay__basket-counter">4</span>
+        </div>
+        <div class="pay__price">
+          <span class="pay__price-val">20 457</span>
+          <span class="pay__price-currency">р.</span>
+        </div>
+      </div>
+    </header>
+    <div class="page-content">
+      <section class="catalog">
+        <header class="catalog__header">
+          <h2 class="catalog__title">
+            Каталог товаров
+          </h2>
+          <span class="catalog__icon">
+            <img src="img/icon/stairs.png" alt="иконка">
+          </span>
+          <span class="catalog__counter-item">
+            15
+          </span>
+        </header>
+        <ul class="catalog__list open-catalog">
+          <li class="catalog__item">
+            <a href="#" class="catalog__link" data="level-1">
+              Насосы
+            </a>
+            <ul class="catalog__sub-list" data="level-1">
+              <li class="catalog__sub-item">
+                <a href="#" class="catalog__sub-link" data="level-2">По области применения</a>
+                <ul class="catalog__sub-list" data="level-2">
+                  <li class="catalog__sub-item">
+                    <a href="#" class="catalog__sub-link">Lorem ipsum-1</a>
+                  </li>
+                  <li class="catalog__sub-item">
+                    <a href="#" class="catalog__sub-link">Lorem ipsum-1</a>
+                  </li>
+                  <li class="catalog__sub-item">
+                    <a href="#" class="catalog__sub-link">Lorem ipsum-1</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="catalog__sub-list" data="level-1">
+              <li class="catalog__sub-item">
+                <a href="#" class="catalog__sub-link" data="level-2">По типу</a>
+                <ul class="catalog__sub-list" data="level-2">
+                  <li class="catalog__sub-item">
+                    <a href="#" class="catalog__sub-link">Циркуляционные</a>
+                  </li>
+                  <li class="catalog__sub-item">
+                    <a href="#" class="catalog__sub-link">Скважинные</a>
+                  </li>
+                  <li class="catalog__sub-item">
+                    <a href="#" class="catalog__sub-link">Колодезные</a>
+                  </li>
+                  <li class="catalog__sub-item">
+                    <a href="#" class="catalog__sub-link">Дренажные</a>
+                  </li>
+                  <li class="catalog__sub-item">
+                    <a href="#" class="catalog__sub-link">Фекальные</a>
+                  </li>
+                  <li class="catalog__sub-item">
+                    <a href="#" class="catalog__sub-link">Канализационные установки</a>
+                  </li>
+                  <li class="catalog__sub-item">
+                    <a href="#" class="catalog__sub-link">Станции водоснабжения</a>
+                  </li>
+                  <li class="catalog__sub-item">
+                    <a href="#" class="catalog__sub-link">Повышения давления</a>
+                  </li>
+                  <li class="catalog__sub-item">
+                    <a href="#" class="catalog__sub-link">Насосы для загрязненной воды</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="catalog__sub-list" data="level-1">
+              <li class="catalog__sub-item">
+                <a href="#" class="catalog__sub-link" data="level-2">По брендам</a>
+                <ul class="catalog__sub-list" data="level-2">
+                  <li class="catalog__sub-item">
+                    <a href="#" class="catalog__sub-link">Lorem ipsum-2</a>
+                  </li>
+                  <li class="catalog__sub-item">
+                    <a href="#" class="catalog__sub-link">Lorem ipsum-2</a>
+                  </li>
+                  <li class="catalog__sub-item">
+                    <a href="#" class="catalog__sub-link">Lorem ipsum-2</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="catalog__item">
+            <a href="#" class="catalog__link" data="level-1">
+              Мембранные расширительные баки
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a href="#" class="catalog__link" data="level-1">
+              Шкафы и пульты управления
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a href="#" class="catalog__link" data="level-1">
+              Устройства контроля и автоматики
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a href="#" class="catalog__link" data="level-1">Трубопроводная арматура</a>
+          </li>
+          <li class="catalog__item">
+            <a href="#" class="catalog__link" data="level-1">Фитинги</a>
+          </li>
+          <li class="catalog__item">
+            <a href="#" class="catalog__link" data="level-1">Приводы</a>
+          </li>
+          <li class="catalog__item">
+            <a href="#" class="catalog__link" data="level-1">Теплообменники</a>
+          </li>
+          <li class="catalog__item">
+            <a href="#" class="catalog__link" data="level-1">Радиаторы отопления</a>
+          </li>
+          <li class="catalog__item">
+            <a href="#" class="catalog__link" data="level-1">Кондиционеры</a>
+          </li>
+          <li class="catalog__item">
+            <a href="#" class="catalog__link" data="level-1">Очистители и увлажнители</a>
+          </li>
+          <li class="catalog__item">
+            <a href="#" class="catalog__link" data="level-1">Электрические обогреватели</a>
+          </li>
+          <li class="catalog__item">
+            <a href="#" class="catalog__link" data="level-1">Водонагреватели</a>
+          </li>
+          <li class="catalog__item">
+            <a href="#" class="catalog__link" data="level-1">Котельное оборудование</a>
+          </li>
+          <li class="catalog__item">
+            <a href="#" class="catalog__link" data="level-1">Популряные товары</a>
+          </li>
+        </ul>
+      </section>
+      <div class="content">
+        <form action="/index.html" method="post" class="form-search">
+          <button class="form-search__btn" type="submit"></button>
+          <input name="textSearch" class="form-search__input" type="text" placeholder="искать в каталоге товаров">
+        </form>
+        <div class="slider-box">
+          <div class="slide slide--1">
+            <span class="slide-ytext">Очистка и подготовка воды 1</span>
+            <span>для технического и бытового использования</span>
+          </div>
+          <div class="slide slide--2">
+            <span class="slide-ytext">Очистка и подготовка воды 2</span>
+            <span>для технического и бытового использования</span>
+          </div>
+          <div class="slide slide--3">
+            <span class="slide-ytext">Очистка и подготовка воды 3</span>
+            <span>для технического и бытового использования</span>
+          </div>
+        </div>
+        <div class="wrapper-content">
+          <section class="popular-category">
+            <h2 class="page-content__title">Популярные категории</h2>
+            <div class="slider-content">
+              <div class="slide-popular">
+                <div class="slide-popular__img"><img src="img/lg-pump-1.jpg" alt="Насосы"></div>
+                <a href="#" class="slide-popular__link">Насосы</a>
+              </div>
+              <div class="slide-popular">
+                <div class="slide-popular__img"><img src="img/lg-pump-2.jpg" alt="Расширительные баки"></div>
+                <a href="#" class="slide-popular__link">Мембранные и расширительные баки</a>
+              </div>
+              <div class="slide-popular">
+                <div class="slide-popular__img"><img src="img/lg-control-panel.jpg" alt="Шкафы управления"></div>
+                <a href="#" class="slide-popular__link">Шкафы и пульты управления</a>
+              </div>
+              <div class="slide-popular">
+                <div class="slide-popular__img"><img src="img/lg-pump-1.jpg" alt="Насосы"></div>
+                <a href="#" class="slide-popular__link">Насосы 2</a>
+              </div>
+              <div class="slide-popular">
+                <div class="slide-popular__img"><img src="img/lg-pump-2.jpg" alt="Расширительные баки"></div>
+                <a href="#" class="slide-popular__link">Мембранные и расширительные баки 2</a>
+              </div>
+              <div class="slide-popular">
+                <div class="slide-popular__img"><img src="img/lg-control-panel.jpg" alt="Шкафы управления"></div>
+                <a href="#" class="slide-popular__link">Шкафы и пульты управления 2</a>
+              </div>
+            </div>
+          </section>
+
+          <section class="news">
+            <h2 class="page-content__title">Новости</h2>
+            <a href="#" class="news__link">Все новости</a>
+            <div class="page-content__wrapper">
+              <div class="news__post post">
+                <div class="post__top">
+                  <div class="post__date">
+                    <div class="post__date-wrapper">
+                      <span class="day">26</span>
+                      <span class="month">октября</span>
+                      <span class="year">2016</span>
+                    </div>
+                  </div>
+                  <div class="post__img">
+                    <img src="img/sm-pump-1.jpg" alt="Насосы">
+                  </div>
+                </div>
+                <div class="post__bottom">
+                  <h3 class="post__title">
+                    <a href="" class="post__title-link">
+                      Grundfos SOLAR-снимают с производства
+                    </a>
+                  </h3>
+                  <div class="post__desc">
+                    Настоящим сообщаем Вам, что ООО «Грундфос» прекращает производство циркуляционных насосов для систем с солнечными коллекторами SOLAR.
+                  </div>
+                </div>
+              </div>
+
+              <div class="news__post post">
+                <div class="post__top">
+                  <div class="post__date">
+                    <div class="post__date-wrapper">
+                      <span class="day">13</span>
+                      <span class="month">октября</span>
+                      <span class="year">2015</span>
+                    </div>
+                  </div>
+                  <div class="post__img">
+                    <img src="img/sm-pump-2.jpg" alt="Насосы">
+                  </div>
+                </div>
+                <div class="post__bottom">
+                  <h3 class="post__title">
+                    <a href="" class="post__title-link">
+                      Новая линейка колодезных насосов GRUNDFOS
+                    </a>
+                  </h3>
+                  <div class="post__desc">
+                    Начало продаж новой линейки колодезных насосов GRUNDFOS SB и GRUNDFOS SBA.
+                  </div>
+                </div>
+              </div>
+
+              <div class="news__post post">
+                <div class="post__top">
+                  <div class="post__date">
+                    <div class="post__date-wrapper">
+                      <span class="day">28</span>
+                      <span class="month">апреля</span>
+                      <span class="year">2014</span>
+                    </div>
+                  </div>
+                  <div class="post__img">
+                    <img src="img/sm-pump-3.jpg" alt="Насосы">
+                  </div>
+                </div>
+                <div class="post__bottom">
+                  <h3 class="post__title">
+                    <a href="" class="post__title-link">
+                      Новые погружные осевые насосы KPL.E от GRUNDFOS для сверхнизких напоров
+                    </a>
+                  </h3>
+                  <div class="post__desc">
+                    В апреле 2016 г.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+          <section class="popular-pumps">
+            <h2 class="page-content__title">Популярные типы насосов</h2>
+            <div class="page-content__wrapper">
+              <div class="popular-pumps__block">
+                <div class="popular-pumps__block-counter">
+                  <span class="block-counter__num">1</span>
+                </div>
+                <div class="popular-pumps__block-links">
+                  <a href="#" class="popular-pumps__block-link">Циркуляционные</a>
+                  <a href="#" class="popular-pumps__block-link">Скважинные</a>
+                  <a href="#" class="popular-pumps__block-link">Колодезные</a>
+                  <a href="#" class="popular-pumps__block-link">Дренажыные</a>
+                </div>
+              </div>
+              <div class="popular-pumps__block">
+                <div class="popular-pumps__block-counter">
+                  <span class="block-counter__num">2</span>
+                </div>
+                <div class="popular-pumps__block-links">
+                  <a href="#" class="popular-pumps__block-link">Фекальные</a>
+                  <a href="#" class="popular-pumps__block-link">
+                    Канализационные установки
+                  </a>
+                  <a href="#" class="popular-pumps__block-link">
+                    Станции водоснабжения
+                  </a>
+                </div>
+              </div>
+              <div class="popular-pumps__block">
+                <div class="popular-pumps__block-counter">
+                  <span class="block-counter__num">3</span>
+                </div>
+                <div class="popular-pumps__block-links">
+                  <a href="#" class="popular-pumps__block-link">
+                    Насосы для загрязненной воды
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="producers-category">
+            <h2 class="page-content__title">Производители</h2>
+            <div class="slider-content">
+              <div class="slide-popular">
+                <div class="slide-popular__img"><img src="img/slide-logo-1.jpg" alt="Насосы"></div>
+              </div>
+              <div class="slide-popular">
+                <div class="slide-popular__img"><img src="img/slide-logo-2.jpg" alt="Расширительные баки"></div>
+              </div>
+              <div class="slide-popular">
+                <div class="slide-popular__img"><img src="img/slide-logo-3.jpg" alt="Шкафы управления"></div>
+              </div>
+              <div class="slide-popular">
+                <div class="slide-popular__img"><img src="img/slide-logo-1.jpg" alt="Насосы"></div>
+              </div>
+              <div class="slide-popular">
+                <div class="slide-popular__img"><img src="img/slide-logo-2.jpg" alt="Расширительные баки"></div>
+              </div>
+              <div class="slide-popular">
+                <div class="slide-popular__img"><img src="img/slide-logo-3.jpg" alt="Шкафы управления"></div>
+              </div>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__info">
+          <h3 class="page-footer__title">Каталог продукции</h3>
+          <div class="page-footer__content">
+            <ul class="page-footer__list">
+              <li class="page-footer__item"><a href="#" class="page-footer__link">Бытовые насосы</a></li>
+              <li class="page-footer__item"><a href="#" class="page-footer__link">Промышленные насосы</a></li>
+              <li class="page-footer__item"><a href="#" class="page-footer__link">Шкафы и пульты управления</a></li>
+              <li class="page-footer__item"><a href="#" class="page-footer__link">Мембранные и расширительные баки</a></li>
+              <li class="page-footer__item"><a href="#" class="page-footer__link">Устройства контроля и автоматики</a></li>
+              <li class="page-footer__item"><a href="#" class="page-footer__link">Для насосов</a></li>
+              <li class="page-footer__item"><a href="#" class="page-footer__link">Требопроводная арматура</a></li>
+              <li class="page-footer__item"><a href="#" class="page-footer__link">Фитинги</a></li>
+            </ul>
+            <ul class="page-footer__list">
+              <li class="page-footer__item"><a href="#" class="page-footer__link">Приводы</a></li>
+              <li class="page-footer__item"><a href="#" class="page-footer__link">Теплообменники</a></li>
+              <li class="page-footer__item"><a href="#" class="page-footer__link">Радиаторы отопления</a></li>
+              <li class="page-footer__item"><a href="#" class="page-footer__link">Кондиционеры</a></li>
+              <li class="page-footer__item"><a href="#" class="page-footer__link">Очистители и увлажнители</a></li>
+              <li class="page-footer__item"><a href="#" class="page-footer__link">Электрические обогреватели</a></li>
+              <li class="page-footer__item"><a href="#" class="page-footer__link">Водонагреватели</a></li>
+              <li class="page-footer__item"><a href="#" class="page-footer__link">Котельное оборудование</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="page-footer__info">
+          <h3 class="page-footer__title">Посетителям</h3>
+            <ul class="page-footer__list">
+              <li class="page-footer__item"><a href="#" class="page-footer__link">О компании</a></li>
+              <li class="page-footer__item"><a href="#" class="page-footer__link">Доставка и оплата</a></li>
+              <li class="page-footer__item"><a href="#" class="page-footer__link">Новости</a></li>
+              <li class="page-footer__item"><a href="#" class="page-footer__link">Сертификаты</a></li>
+              <li class="page-footer__item"><a href="#" class="page-footer__link">Словарь терминов</a></li>
+              <li class="page-footer__item"><a href="#" class="page-footer__link">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="page-footer__info">
+          <h3 class="page-footer__title">Контакты</h3>
+            <ul class="page-footer__list">
+              <li class="page-footer__item">127282, Москва, ул. Полярная, дом 31Г стр. 1</li>
+              <li class="page-footer__item">Тел/факс: (495) 645-93-36</li>
+              <li class="page-footer__item">E-mail: info@europompa.ru</li>
+              <li class="page-footer__item"><a href="#" class="page-footer__link page-footer__link--call">Заказать звонок</a></li>
+            </ul>
+        </div>
+      </div>
+      <div class="page-footer__copyrights">
+        <p class="page-footer__copyright">
+          © 2016. «Европомпа». Все права защищены
+        </p>
+        <p class="page-footer__author">
+          <i class="page-footer__author-icon"></i>
+          <span class="page-footer__author-text">Разработка и поддержка — <a href="http://www.aevrika.ru/" class="page-footer__author-link">«ЭВРИКА»</a></span>
+        </p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/libs/slick.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
