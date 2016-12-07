@@ -64,7 +64,7 @@
 
     if(e.target.tagName != 'A') return;
 
-    e.preventDefault();
+    if(e.target.getAttribute('data') == 'level-1' || e.target.getAttribute('data') == 'level-2') e.preventDefault();
 
     if(e.target.getAttribute('data') == 'level-1' && !$(e.target).hasClass('link-open')) {
 
@@ -83,21 +83,19 @@
       $(e.target).parent().find('ul.catalog__sub-list[data="level-1"]').stop(true).slideUp('faster');
     }
 
-    if(e.target.getAttribute('data') == 'level-2') {
+    if(e.target.getAttribute('data') == 'level-2' && !$(e.target).hasClass('sub-link-open')) {
 
       $(allLink).filter('[data="level-2"]').removeClass('sub-link-open');
       $(allLink).filter('[data="level-2"]').parent().removeClass('sub-item-open');
       $(allLists).filter('ul.catalog__sub-list[data="level-2"]').stop(true).slideUp('faster');
 
-      if($(e.target).hasClass('sub-link-open')) {
+      $(e.target).addClass('sub-link-open');
+      $(e.target).parent().addClass('sub-item-open');
+      $(e.target).parent().find('ul.catalog__sub-list[data="level-2"]').stop(true).slideDown('faster');
+    }else {
         $(e.target).removeClass('sub-link-open');
         $(e.target).parent().removeClass('sub-item-open');
         $(e.target).parent().find('ul.catalog__sub-list[data="level-2"]').stop(true).slideUp('faster');
-      } else {
-        $(e.target).addClass('sub-link-open');
-        $(e.target).parent().addClass('sub-item-open');
-        $(e.target).parent().find('ul.catalog__sub-list[data="level-2"]').stop(true).slideDown('faster');
-      }
     }
 
   });
