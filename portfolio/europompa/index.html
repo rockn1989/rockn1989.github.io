@@ -38,9 +38,9 @@
             <li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
           </ul>
           <div class="main-nav__auth">
-            <a href="#" class="main-nav__link">Войти</a>
+            <a href="#" class="main-nav__link" data-role="auth">Войти</a>
             <span class="main-nav__auth-separate">или</span>
-            <a href="#" class="main-nav__link">Зарегистрироваться</a>
+            <a href="#" class="main-nav__link" data-role="reg">Зарегистрироваться</a>
           </div>
         </nav>
         <div class="main-contacts">
@@ -691,6 +691,53 @@
         </p>
       </div>
     </footer>
+  </div>
+
+  <div class="form-auth">
+    <button type="button" class="user-form__close" data-role="closeForm">
+    </button>
+    <form id="form-auth" action="/" method="post" class="user-form">
+      <div class="form-input">
+        <label for="login">
+          Имя
+        </label>
+        <input type="text" class="user-form__login" id="login" name="login" required>
+      </div>
+      <div class="form-input">
+        <label for="pass">
+          Пароль
+        </label>
+         <input type="password" class="user-form__pass" id="pass" name="pass" required>
+      </div>
+      <button class="user-form__btn" name="auth">Войти</button>
+    </form>
+    <a href="#" data-role="recovery">Забыли пароль?</a>
+  </div>
+
+  <div class="form-reg">
+    <button type="button" class="user-form__close" data-role="closeForm">
+    </button>
+    <form id="form-reg" action="/" method="post" class="user-form">
+      <div class="form-input">
+        <label for="login">
+          Имя
+        </label>
+        <input type="text" class="user-form__login" id="login" name="login" required>
+      </div>
+      <div class="form-input">
+        <label for="pass">
+          Пароль
+        </label>
+         <input type="password" class="user-form__pass" id="pass" name="pass" required>
+      </div>
+      <div class="form-input">
+        <label for="pass">
+          Почта
+        </label>
+         <input type="email" class="user-form__pass" id="pass" name="pass" required>
+      </div>
+      <button class="user-form__btn" name="reg">Зарегистрироваться</button>
+    </form>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" defer></script>

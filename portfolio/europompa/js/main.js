@@ -152,3 +152,54 @@
 
 })();
 
+(function() {
+
+
+
+  var auth = $('a[data-role="auth"]'),
+      reg  = $('a[data-role="reg"]');
+
+  $('.main-nav__auth a').on('click', function(e) {
+    e.preventDefault();
+    if(e.target.getAttribute('data-role') == 'auth') {
+      $('.form-auth').addClass('showForm');
+      $('.form-reg').removeClass('showForm');
+    }
+    if(e.target.getAttribute('data-role') == 'reg') {
+      $('.form-reg').addClass('showForm');
+      $('.form-auth').removeClass('showForm');
+    }
+  });
+
+
+  $('.user-form__close').on('click', function() {
+    $(this).parent().removeClass('showForm');
+  });
+
+  $('#form-auth').on('submit', function(e) {
+    e.preventDefault();
+    var data = $(this).serialize();
+    userForm(data);
+  });
+
+  $('#form-reg').on('submit', function(e) {
+    e.preventDefault();
+    var data = $(this).serialize();
+    userForm(data);
+  });
+
+  function userForm(data) {
+    var userData = data;
+    $.ajax({
+      type: "POST",
+      url: "form.php",
+      data: {data: userData},
+      dataType: "JSON"
+    }).done(function(msg) {
+      console.log(msg);
+    }).fail(function(e) {
+      console.log(e);
+    });
+  }
+
+})();
