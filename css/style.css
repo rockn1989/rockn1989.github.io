@@ -155,14 +155,15 @@ a {
       margin-bottom: 3%;
       width: 45%;
       background-color: #ffffff; }
-      .gallery__item:nth-child(3n) {
-        margin-right: 0; }
       .gallery__item:last-child {
-        margin-bottom: 30px; } }
+        margin-bottom: 3%; } }
   @media (min-width: 1200px) {
     .gallery__item {
       width: 30%;
-      margin-right: 5%; } }
+      margin-right: 5%;
+      margin-bottom: 5%; }
+      .gallery__item:nth-child(3n) {
+        margin-right: 0; } }
 
 .gallery__item-preview {
   height: 200px; }
