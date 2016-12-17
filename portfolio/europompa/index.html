@@ -698,13 +698,13 @@
     </button>
     <form id="form-auth" action="/" method="post" class="user-form">
       <div class="form-input">
-        <label for="login">
+        <label for="login" class="form-label">
           Имя
         </label>
         <input type="text" class="user-form__login" id="login" name="login" required>
       </div>
       <div class="form-input">
-        <label for="pass">
+        <label for="pass" class="form-label">
           Пароль
         </label>
          <input type="password" class="user-form__pass" id="pass" name="pass" required>
@@ -719,28 +719,29 @@
     </button>
     <form id="form-reg" action="/" method="post" class="user-form">
       <div class="form-input">
-        <label for="login_reg">
+        <label for="login_reg" class="form-label">
           Имя
         </label>
-        <input type="text" class="user-form__login" id="login_reg" name="login" required>
+        <input type="text" class="user-form__login" id="login_reg" name="login">
       </div>
       <div class="form-input">
-        <label for="pass_reg">
+        <label for="pass_reg" class="form-label">
           Пароль
         </label>
-         <input type="password" class="user-form__pass" id="pass_reg" name="pass" required>
+         <input type="password" class="user-form__pass" id="pass_reg" name="pass">
       </div>
       <div class="form-input">
-        <label for="email_reg">
+        <label for="email_reg" class="form-label">
           Почта
         </label>
-         <input type="email" class="user-form__pass" id="email_reg" name="pass" required>
+         <input type="email" class="user-form__pass" id="email_reg" name="email">
       </div>
       <button class="user-form__btn" name="reg">Зарегистрироваться</button>
     </form>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" defer></script>
+  <script src="http://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js" defer></script>
   <script src="js/libs/slick.min.js" defer></script>
   <script src="js/main.js" defer></script>
 

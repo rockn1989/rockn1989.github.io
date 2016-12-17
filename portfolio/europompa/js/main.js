@@ -36,23 +36,26 @@
     $(menuCatalog).removeClass('open-catalog');
   }
 
-  $(catalogToggle).on('click', function() {
-    if($(window).width() >= 750) {
-     return false;
-   } else {
-      if(!$(menuCatalog).hasClass('open-catalog')) {
-        $(menuCatalog).slideDown('faster', function() {
-          $(this).addClass('open-catalog');
-        });
-      } else {
-        $(menuCatalog).slideUp('faster', function() {
-          $(this).removeClass('open-catalog')
-          $(this).removeAttr('style');
-        });
 
+  function menuOpen() {
+    if($(window).width() >= 750) {
+       return false;
+     } else {
+        if(!$(menuCatalog).hasClass('open-catalog')) {
+          $(menuCatalog).slideDown('faster', function() {
+            $(this).addClass('open-catalog');
+          });
+        } else {
+          $(menuCatalog).slideUp('faster', function() {
+            $(this).removeClass('open-catalog')
+            $(this).removeAttr('style');
+          });
+
+        }
       }
-    }
-  });
+  }
+
+  $(catalogToggle).on('click', menuOpen);
 
 
 
@@ -181,11 +184,84 @@
     var data = $(this).serialize();
     userForm(data);
   });
-
+/*
   $('#form-reg').on('submit', function(e) {
     e.preventDefault();
     var data = $(this).serialize();
     userForm(data);
+  });
+*/
+
+  $.validator.addClassRules({
+    myForm: {
+      required: true,
+      digits: true,
+      min: 5
+    }
+  });
+
+  $.validator.addMethod(
+    "regex", function(value, elem, regex) {
+      var re = new RegExp(regex);
+      return this.optional(elem) || re.test(value);
+    }, "Не корректное значение"
+  );
+
+
+
+  $('#form-reg').validate({
+   /* highlight: function(elem, errorClass) {
+      $(elem).addClass(errorClass);
+    },
+    unhighlight: function(elem, errorClass) {
+      $(elem).removeClass(errorClass);
+    },*/
+    rules: {
+      login: {
+        required: true,
+        minlength: 3,
+        maxlength: 24,
+        regex: /^[A-Za-z0-9_]+$/
+      },
+      pass: {
+        required: true,
+        minlength: 8,
+        maxlength: 40
+      },
+      email: {
+        required: true,
+        email: true,
+        regex: /^[A-Za-z0-9_]+\@[A-Za-z0-9_]+\.[A-Za-z0-9_]{2,}/
+      }
+    },
+
+    /*messages: {
+      login: {
+        required: "Это поле обязательно для заполнения",
+        regex: "В имени используются не допустимые символы",
+        minlength: "Слишком короткое имя",
+        maxlength: "Слишком длинное имя"
+      },
+      pass: {
+        required: "Это поле обязательно для заполнения",
+        minlength: "Слишком короткий пароль",
+        maxlength: "Слишком длинный пароль"
+      },
+      email: {
+        required: "Это поле обязательно для заполнения",
+        email: "Не корректное имя почты. Введите в формате name@domain.ru",
+        regex: "Не корректное имя почты. Введите в формате name@domain.ru"
+      }
+    },*/
+
+    errorElement: "div",
+    errorClass: "invalid",
+    validClass: "success",
+    errorPlacement: function(error) {},
+    submitHandler: function(form) {
+      form.submit();
+    }
+
   });
 
   function userForm(data) {
