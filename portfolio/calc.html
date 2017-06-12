@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Калькулятор подкладок</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		.wrapper {
+			margin: 100px auto;
+			width: 800px;
+		}
+		.result {
+			position: relative;
+			margin-bottom: 30px;
+			padding: 25px 30px;
+			background-color: #EACA81;
+			height: 0;
+			display: none;
+			visibility: hidden;
+			transition: height 1.3s ease-out;
+		}
+		h1 {
+			margin: 0;
+			margin-bottom: 30px;
+			padding: 0;
+			font-size: 2.5em;
+			text-transform: uppercase;
+		}
+		form {
+			margin-bottom: 30px;
+			padding: 25px 30px;
+			border: 2px solid #000;
+			border-radius: 10px;
+			background-color: #EACA81;
+		}
+		label {
+			margin-bottom: 10px;
+			display: block;
+		}
+		button {
+			margin: 30px 0 15px;
+			padding: 8px 12px;
+			border: 1px solid #000;
+			border-radius: 10px;
+			display: block;
+			text-transform: uppercase;
+			cursor: pointer;
+			outline: none;
+		}
+		select,
+		input {
+			margin-bottom: 20px;
+			width: 100%;
+		}
+		fieldset {
+			display: inline-block;
+			border: none;
+			width: 10%;
+		}
+		.hidden {
+			display: none;
+		}
+		.visible {
+			padding: 20px 25px;
+			height: 100%;
+			display: block;
+			visibility: visible;
+		}
+		.close {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			display: block;
+			width: 25px;
+			height: 25px;
+			text-align: center;
+			font-style: normal;
+			border: 1px solid #000;
+			border-radius: 50%;
+			cursor: pointer;
+			transition: transform .2s ease-out;
+		}
+		.close:hover {
+			transform: rotate(180deg);
+		}
+	</style>
+</head>
+<body>
+
+	<div class="wrapper">
+		<h1>Калькулятор для подкладок</h1>
+		<form action="" method="get">
+
+				<fieldset>
+					<label for="product-type">
+						Тип подкладки:
+					</label>
+					<select name="product-type" id="product-name">
+						<option value="45">45</option>
+						<option value="60">60</option>
+						<option value="75">75</option>
+						<option value="90">90</option>
+					</select>
+				</fieldset>
+
+				<fieldset>
+					<label for="count">
+						Кол-во подкладок:
+					</label>
+					<input type="text" id="count" name="count">
+				</fieldset>
+
+				<fieldset>
+					<label for="product-price">
+						Цена 1 подкладки:
+					</label>
+					<input type="text" id="price" name="product-price">
+				</fieldset>
+
+				<fieldset>
+					<label for="mod-1" class="mod">
+						Мод:
+					</label>
+					<select name="mod-1" id="mod-1">
+						<option value="19">19</option>
+						<option value="23">23</option>
+						<option value="28">28</option>
+						<option value="33">33</option>
+						<option value="35">35</option>
+					</select>
+				</fieldset>
+
+				<fieldset>
+					<label for="mod-price">
+						Цена 1 мода:
+					</label>
+					<input type="text" id="mod-price" name="mod-price">
+				</fieldset>
+			<button type="button">Посчитать</button>
+		</form>
+		<div class="result">
+			<div class="full-price">Общяя стоимость: <span></span></div>
+			<div class="product-price">Стоимость подкладок: <span></span></div>
+			<div class="mod-price">Стоимость камней: <span></span></div>
+			<div class="stats">Всего статов: <span></span></div>
+			<i class="close">✕</i>
+		</div>
+	</div>
+
+	<script>
+		(function () {
+			var form = document.querySelector('form');
+			var btn = form.querySelector('button');
+
+			btn.addEventListener('click', function() {
+				calc(form)
+			});
+
+
+			function calc(form) {
+				var result = {},
+						fullPrice = 0,
+						productPrice = 0,
+						modPrice = 0,
+						power = 0,
+						stats = 0;
+				var cash = 6.8;
+				var cloneResult = document.querySelector('.result').cloneNode(true);
+
+				cloneResult.querySelector('.close').addEventListener('click', function() {
+					console.log(this.parentNode.parentNode.removeChild(this.parentNode))
+				});
+
+				for( var i = 0; i < form.elements.length; i++) {
+					if(
+							form.elements[i].tagName == 'FIELDSET' ||
+							form.elements[i].tagName == 'LABEL' ||
+							form.elements[i].tagName == 'BUTTON'
+						) continue;
+					result[form.elements[i].name] = parseInt(form.elements[i].value);
+				}
+
+				fullPrice = (result.count * (result['product-price'] + (result['mod-price'] * 2))) * cash;
+				productPrice = result.count * result['product-price'] * cash;
+				modPrice = result.count * (result['mod-price'] * 2) * cash;
+				stats = result.count * (result['product-type'] - 15 ) + (result['mod-1'] * 2);
+				cloneResult.classList.add('visible');
+				cloneResult.querySelector('.full-price span').innerHTML = fullPrice + ' р.';
+				cloneResult.querySelector('.product-price span').innerHTML = productPrice + ' р.';
+				cloneResult.querySelector('.mod-price span').innerHTML = modPrice + ' р.';
+				cloneResult.querySelector('.stats span').innerHTML = stats;
+				document.querySelector('.wrapper').appendChild(cloneResult);
+			}
+
+		})();
+	</script>
+</body>
+</html>
