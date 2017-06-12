@@ -13,13 +13,11 @@
 		}
 		.result {
 			position: relative;
-			margin-bottom: 30px;
-			padding: 25px 30px;
 			background-color: #EACA81;
 			height: 0;
-			display: none;
 			visibility: hidden;
-			transition: height 1.3s ease-out;
+			opacity: 0;
+			transition: all 1.3s ease-out;
 		}
 		h1 {
 			margin: 0;
@@ -63,10 +61,12 @@
 			display: none;
 		}
 		.visible {
+			margin-bottom: 30px;
 			padding: 20px 25px;
 			height: 100%;
-			display: block;
+			//display: block;
 			visibility: visible;
+			opacity: 1;
 		}
 		.close {
 			position: absolute;
@@ -151,6 +151,7 @@
 
 	<script>
 		(function () {
+
 			var form = document.querySelector('form');
 			var btn = form.querySelector('button');
 
@@ -182,16 +183,17 @@
 					result[form.elements[i].name] = parseInt(form.elements[i].value);
 				}
 
-				fullPrice = (result.count * (result['product-price'] + (result['mod-price'] * 2))) * cash;
-				productPrice = result.count * result['product-price'] * cash;
-				modPrice = result.count * (result['mod-price'] * 2) * cash;
-				stats = result.count * (result['product-type'] - 15 ) + (result['mod-1'] * 2);
-				cloneResult.classList.add('visible');
+				fullPrice = Math.round((result.count * (result['product-price'] + (result['mod-price'] * 2))) * cash);
+				productPrice = Math.round(result.count * result['product-price'] * cash);
+				modPrice = Math.round(result.count * (result['mod-price'] * 2) * cash);
+				stats = Math.round(result.count * (result['product-type'] - 15 ) + (result['mod-1'] * 2));
 				cloneResult.querySelector('.full-price span').innerHTML = fullPrice + ' р.';
 				cloneResult.querySelector('.product-price span').innerHTML = productPrice + ' р.';
 				cloneResult.querySelector('.mod-price span').innerHTML = modPrice + ' р.';
 				cloneResult.querySelector('.stats span').innerHTML = stats;
+				form.reset();
 				document.querySelector('.wrapper').appendChild(cloneResult);
+				cloneResult.classList.add('visible');
 			}
 
 		})();
