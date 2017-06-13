@@ -140,6 +140,9 @@
 				</fieldset>
 			<button type="button">Посчитать</button>
 		</form>
+	</div>
+
+	<template class="resultBox">
 		<div class="result">
 			<div class="full-price">Общяя стоимость: <span></span></div>
 			<div class="product-price">Стоимость подкладок: <span></span></div>
@@ -147,7 +150,7 @@
 			<div class="stats">Всего статов: <span></span></div>
 			<i class="close">✕</i>
 		</div>
-	</div>
+	</template>
 
 	<script>
 		(function () {
@@ -156,9 +159,28 @@
 			var btn = form.querySelector('button');
 
 			btn.addEventListener('click', function() {
-				calc(form)
+				calc(form);
 			});
 
+
+			function renderBox(template) {
+				var cloneResult = document.querySelector('.' + template).content.cloneNode(true);
+
+				cloneResult.querySelector('.close').addEventListener('click', function() {
+					this.parentNode.parentNode.removeChild(this.parentNode);
+				});
+				cloneResult.querySelector('.result').classList.add('visible');
+				return cloneResult;
+			}
+
+			function renderResult(value) {
+				var cloneResult = renderBox('resultBox')
+				cloneResult.querySelector('.full-price span').innerHTML = value.fullPrice + ' р.';
+				cloneResult.querySelector('.product-price span').innerHTML = value.productPrice + ' р.';
+				cloneResult.querySelector('.mod-price span').innerHTML = value.modPrice + ' р.';
+				cloneResult.querySelector('.stats span').innerHTML = value.stats;
+				document.querySelector('.wrapper').appendChild(cloneResult);
+			}
 
 			function calc(form) {
 				var result = {},
@@ -166,13 +188,8 @@
 						productPrice = 0,
 						modPrice = 0,
 						power = 0,
-						stats = 0;
-				var cash = 6.8;
-				var cloneResult = document.querySelector('.result').cloneNode(true);
-
-				cloneResult.querySelector('.close').addEventListener('click', function() {
-					console.log(this.parentNode.parentNode.removeChild(this.parentNode))
-				});
+						stats = 0,
+						cash = 6.8;
 
 				for( var i = 0; i < form.elements.length; i++) {
 					if(
@@ -183,17 +200,15 @@
 					result[form.elements[i].name] = parseInt(form.elements[i].value);
 				}
 
-				fullPrice = Math.round((result.count * (result['product-price'] + (result['mod-price'] * 2))) * cash);
-				productPrice = Math.round(result.count * result['product-price'] * cash);
-				modPrice = Math.round(result.count * (result['mod-price'] * 2) * cash);
-				stats = Math.round(result.count * (result['product-type'] - 15 ) + (result['mod-1'] * 2));
-				cloneResult.querySelector('.full-price span').innerHTML = fullPrice + ' р.';
-				cloneResult.querySelector('.product-price span').innerHTML = productPrice + ' р.';
-				cloneResult.querySelector('.mod-price span').innerHTML = modPrice + ' р.';
-				cloneResult.querySelector('.stats span').innerHTML = stats;
+				var value = {
+					fullPrice : Math.round((result.count * (result['product-price'] + (result['mod-price'] * 2))) * cash),
+					productPrice : Math.round(result.count * result['product-price'] * cash),
+					modPrice : Math.round(result.count * (result['mod-price'] * 2) * cash),
+					stats : Math.round(result.count * (result['product-type'] - 15 ) + (result['mod-1'] * 2))
+				}
+
 				form.reset();
-				document.querySelector('.wrapper').appendChild(cloneResult);
-				cloneResult.classList.add('visible');
+				renderResult(value);
 			}
 
 		})();
