@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-<!DOCTYPE html>
-<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,7 +25,7 @@
 <body>
 	<header class="header">
 		<div class="video-block">
-			<video loop="" poster="" autoplay="" class="video-banner">
+			<video loop="" poster="" autoplay="" class="video-banner" preload="metadata">
 				<source src="img/video-bg.mp4" type="video/mp4">
 			</video>
 		</div>
@@ -36,14 +34,13 @@
 				<div class="header__logo">
 					<a href="/">
 						<img src="img/logo.png" alt="">
-						<span>Системы озонирования</span>
 					</a>
 				</div>
 				<div class="header__info">
-					<a href="" class="contacts">Контакты</a>
-					<a href="#callback" class="callback">
-						<svg class="callback__icon">
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/icon-svg/sprite-svg.svg#tel"></use>
+					<a href="#contacts" class="contacts" data-uk-smooth-scroll>Контакты</a>
+					<a href="#callback" class="callback" data-uk-smooth-scroll>
+						<svg class="callback__icon" width="20px" height="20px">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/icon-svg/sprite-svg.svg#telephone"></use>
 						</svg>
 						Заказать звонок
 					</a>
@@ -77,8 +74,8 @@
 				</div>
 			</div>
 			<div class="header__btn">
-				<a href="" class="btn">О компании</a>
-				<a href="" class="btn">Оборудование</a>
+				<a href="#about-company" class="btn" data-uk-smooth-scroll>О компании</a>
+				<a href="#equipments" class="btn" data-uk-smooth-scroll>Оборудование</a>
 			</div>
 			<div class="header__address">
 				Офис Санкт-Петербург, Невский проспект д.3
@@ -87,16 +84,340 @@
 
 	</header>
 
-	<section>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi vel, ipsam deleniti, dignissimos corporis consequatur possimus eaque voluptates quaerat suscipit ipsa, necessitatibus hic at distinctio!
-		<svg class="search-form-icon">
-			<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/icon-svg/sprite-svg.svg#btn-1"></use>
-		</svg>
+	<section class="section-wrapper" data-uk-scrollspy="{cls:'uk-animation-fade uk-invisible', target:'.about-company', delay: 200, repeat: false}">
+		<div class="uk-container">
+			<div id="about-company" class="about-company uk-invisible">
+				<div class="title">О компании</div>
+				<div class="desc">
+					«Озон-24» - инженерный центр, в компетентность которого входит разработка озонаторов воды и воздуха, а также решений на их основе в области технологий очистки воды и воздуха. <a href="#equipments" data-uk-smooth-scroll>Модельный ряд</a> нашей продукции включает в себя как озонаторы воды, так и озонаторы воздуха. Мы производим атмосферные и кислородные озонаторы воды. Для смешения озона с потоком воды мы предлагаем эжектора. Для удаления остаточного озона - каталитические адсорбционные деструкторы озона. В составе промышленных станций озонирования воды и воздуха мы используем анализаторы озона.
+				</div>
+				<div class="about-company__img">
+					<img src="img/about-company-bg.jpg" alt="">
+				</div>
+			</div>
+		</div>
 	</section>
 
+	<section class="section-wrapper bg-fill" data-uk-scrollspy="{cls:'uk-animation-fade uk-invisible', target:'.progress', delay: 200, repeat: false}">
+		<div class="uk-container">
+			<div class="progress uk-invisible">
+				<div class="uk-grid">
+					<div class="uk-width-1-1 uk-width-medium-1-2">
+	          <div class="uk-tab options" data-uk-tab="{connect:'#tab-content'}">
+	            <li><a href="">Питьевая вода</a></li>
+	            <li><a href="">Разлив в бутылки</a></li>
+	            <li><a href="">Очистка промешленных <br> и сточных вод</a></li>
+	          </div>
+	          <ul id="tab-content" class="uk-switcher">
+	            <li>
+								<div class="chart-wrap active">
+									<div class="chart-item">
+										<div class="progress-bar" style="width: 50%; background-color: #9DC8E8">Механическая фильтрация</div>
+										<span class="percent">10%</span>
+									</div>
+									<div class="chart-item">
+										<div class="progress-bar" style="width: 80%; background-color: #3B92D1">Озонирование и аэрация воды</div>
+										<span class="percent">40%</span>
+									</div>
+									<div class="chart-item">
+										<div class="progress-bar" style="width: 50%; background-color: #6CADDD">Введение флокулянтов и коагулянтов</div>
+										<span class="percent">10%</span>
+									</div>
+									<div class="chart-item">
+										<div class="progress-bar" style="width: 80%; background-color: #0a78c7">Микро и ультрафильтрация воды</div>
+										<span class="percent">40%</span>
+									</div>
+								</div>
+	            </li>
+	            <li>
+								<div class="chart-wrap active">
+									<div class="chart-item">
+										<div class="progress-bar" style="width: 50%; background-color: #9DC8E8">Механическая фильтрация</div>
+										<span class="percent">10%</span>
+									</div>
+									<div class="chart-item">
+										<div class="progress-bar" style="width: 80%; background-color: #0a78c7">Микро и ультрафильтрация воды</div>
+										<span class="percent">30%</span>
+									</div>
+									<div class="chart-item">
+										<div class="progress-bar" style="width: 50%; background-color: #6CADDD">Обессоливание и подготовка пермеата</div>
+										<span class="percent">30%</span>
+									</div>
+									<div class="chart-item">
+										<div class="progress-bar" style="width: 80%; background-color: #3B92D1">Финишное озонирование перед закупоркой бутыли</div>
+										<span class="percent">30%</span>
+									</div>
+								</div>
+	            </li>
+	            <li>
+								<div class="chart-wrap active">
+									<div class="chart-item">
+										<div class="progress-bar" style="width: 50%; background-color: #9DC8E8">Механическая фильтрация</div>
+										<span class="percent">10%</span>
+									</div>
+									<div class="chart-item">
+										<div class="progress-bar" style="width: 50%; background-color: #9DC8E8">Улавливание песка</div>
+										<span class="percent">10%</span>
+									</div>
+									<div class="chart-item">
+										<div class="progress-bar" style="width: 50%; background-color: #6CADDD">Введение флокулянтов и коагулянтов</div>
+										<span class="percent">20%</span>
+									</div>
+									<div class="chart-item">
+										<div class="progress-bar" style="width: 80%; background-color: #0a78c7">Озонирования и аэрация</div>
+										<span class="percent">30%</span>
+									</div>
+									<div class="chart-item">
+										<div class="progress-bar" style="width: 80%; background-color: #3B92D1">Фильтрация</div>
+										<span class="percent">30%</span>
+									</div>
+								</div>
+	            </li>
+	          </ul>
+					</div>
+					<div class="uk-width-1-1 uk-width-medium-1-2">
+						<div class="title">
+							Вклад озонирования <br>
+							в успех очистки воды
+						</div>
+						<div class="desc">
+							Лучшим и наиболее экологически безопасным дезинфектантом в природе является озонирование. Озон уничтожает бактерии, вирусы, грибки и аквапланктон. Затем разлагается, превращаясь в кислород, тем самым не нанося вред экологии. Озон позволяет перевести в осадок тяжелые металлы и снизить содержание органических веществ. Озон является наилучшим способом подготовки воды к фильтрованию.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-wrapper">
+		<div class="uk-container">
+			<div id="equipments" class="equipments">
+				<div class="title title--line-center">Оборудование</div>
+				<div class="equipments__list" data-uk-scrollspy="{cls:'uk-animation-fade uk-invisible', target:'.equipments__item', delay: 200, repeat: false}">
+					<div class="equipments__item uk-invisible">
+						<div class="equipments__img">
+							<img src="img/equipment-1.png" alt="">
+						</div>
+						<div class="equipments__desc">
+							<div class="equipments__title">Компоненты</div>
+							<div class="equipments__text">
+								«Озон-24» - инженерный центр, в компетентность которого входит разработка озонаторов воды и воздуха, а также решений на их основе в области
+							</div>
+						</div>
+					</div>
+
+					<div class="equipments__item uk-invisible">
+						<div class="equipments__img">
+							<img src="img/equipment-2.png" alt="">
+						</div>
+						<div class="equipments__desc">
+							<div class="equipments__title">Изделия</div>
+							<div class="equipments__text">
+								«Озон-24» - инженерный центр, в компетентность которого входит разработка озонаторов воды и воздуха, а также решений на их основе в области
+							</div>
+						</div>
+					</div>
+
+					<div class="equipments__item uk-invisible">
+						<div class="equipments__img">
+							<img src="img/equipment-3.png" alt="">
+						</div>
+						<div class="equipments__desc">
+							<div class="equipments__title">Установки</div>
+							<div class="equipments__text">
+								«Озон-24» - инженерный центр, в компетентность которого входит разработка озонаторов воды и воздуха, а также решений на их основе в области
+							</div>
+						</div>
+					</div>
+
+					<div class="equipments__item uk-invisible">
+						<div class="equipments__img">
+							<img src="img/equipment-4.png" alt="">
+						</div>
+						<div class="equipments__desc">
+							<div class="equipments__title">Станции</div>
+							<div class="equipments__text">
+								«Озон-24» - инженерный центр, в компетентность которого входит разработка озонаторов воды и воздуха, а также решений на их основе в области
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="callback" class="offer-form">
+					<form action="" method="">
+						<div class="offer-form__title">Интересует наша продукция?</div>
+						<div class="offer-form__subtitle">
+							Заполните данные и мы вышлем Вам подробный каталог, а так же проконсультируем по продукции
+						</div>
+						<div class="offer-form__field-group">
+							<input type="text" class="offer-form__input name" name="name" placeholder="Имя">
+							<input type="text" class="offer-form__input tel js__mask" name="tel" placeholder="Номер телефона">
+							<button type="submit" class="offer-form__btn">Отправить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-wrapper bg-fill">
+		<div class="uk-container">
+			<div class="applications">
+				<div class="title">Отрасли применения</div>
+				<ul class="applications__list">
+					<li class="applications__item">
+						<div class="applications__title">А</div>
+						<ul class="applications__sublist">
+							<li>ЖКХ</li>
+							<li>Электроэнергетика</li>
+							<li>Коттеджные поселки</li>
+							<li>Частные дома</li>
+							<li>Пищевые предприятия</li>
+						</ul>
+					</li>
+					<li class="applications__item">
+						<div class="applications__title">Б</div>
+						<ul class="applications__sublist">
+							<li>Обрабатывающая промышленность</li>
+							<li>Бутилирование воды</li>
+							<li>Машиностроительные предприятия</li>
+							<li>Гальванически производства</li>
+							<li>Рыбоводческие хозяйства</li>
+							<li>Автомойки</a></li>
+							<li>Гостинницы</li>
+						</ul>
+					</li>
+					<li class="applications__item">
+						<div class="applications__title">Г</div>
+						<ul class="applications__sublist">
+							<li>Фармацевтические предприятия</li>
+							<li>Яхты</li>
+							<li>Корабли</li>
+							<li>Прибрежные районы - водоподготовка для питьевых целей</li>
+							<li>Водоподготовка для теплоэнергетики (котельных)</li>
+							<li>Квартиры</li>
+						</ul>
+					</li>
+					<li class="applications__item">
+						<div class="applications__title">Р</div>
+						<ul class="applications__sublist">
+							<li>Водоподготовка для теплоэнергетики (котельных)</li>
+							<li>Пищевые и фармацевтические предприятия</li>
+							<li>Изготовление микроэлектроники</li>
+							<li>Скотофермы</li>
+							<li>Склады хранения пищевой и плодоовощной продукции</li>
+							<li>Помещения промышленного назначения</li>
+							<li>Квартиы</li>
+							<li>Машины</li>
+							<li>Муниципальные и частные бассейны</li>
+							<li>Химчиски и прачечные</li>
+							<li>Гостиницы</li>
+							<li>Санатории</li>
+							<li>Тюрьмы</li>
+							<li>Больницы</li>
+							<li>Комбинаты РЖД</li>
+						</ul>
+					</li>
+					<li class="applications__item">
+						<div class="applications__title">Л</div>
+						<ul class="applications__sublist">
+							<li>Частные аквариумы</li>
+							<li>Станции техобслуживания</li>
+							<li>Гостиницы</li>
+							<li>Квартиры</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-wrapper">
+		<div class="uk-container">
+			<div class="advantages">
+				<div class="title title--line-center">Наши преимущества</div>
+				<div class="advantages__list" data-uk-scrollspy="{cls:'uk-animation-fade uk-invisible', target:'.advantages__item', delay: 200, repeat: false}">
+					<div class="advantages__item uk-invisible">
+						<div class="advantages__img">
+							<img src="img/icon-svg/advantages-1.svg" alt="" width="90" height="90">
+						</div>
+						<div class="advantages__title">Поддержка 24/7</div>
+						<div class="advantages__text">
+							Лучшим и наиболее экологически безопасным дезинфектантом в природе является озонирование.
+						</div>
+					</div>
+					<div class="advantages__item uk-invisible">
+						<div class="advantages__img">
+							<img src="img/icon-svg/advantages-2.svg" alt="" width="90" height="90">
+						</div>
+						<div class="advantages__title">Качетсво продукции</div>
+						<div class="advantages__text">
+							Лучшим и наиболее экологически безопасным дезинфектантом в природе является озонирование.
+						</div>
+					</div>
+					<div class="advantages__item uk-invisible">
+						<div class="advantages__img">
+							<img src="img/icon-svg/advantages-3.svg" alt="" width="90" height="90">
+						</div>
+						<div class="advantages__title">Подробное описание</div>
+						<div class="advantages__text">
+							Лучшим и наиболее экологически безопасным дезинфектантом в природе является озонирование.
+						</div>
+					</div>
+					<div class="advantages__item uk-invisible">
+						<div class="advantages__img">
+							<img src="img/icon-svg/advantages-4.svg" alt="" width="90" height="90">
+						</div>
+						<div class="advantages__title">Гарантия 3 года</div>
+						<div class="advantages__text">
+							Лучшим и наиболее экологически безопасным дезинфектантом в природе является озонирование.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-wrapper bg-fill">
+		<div class="uk-container">
+			<div id="contacts" class="contacts">
+				<div class="uk-grid">
+					<div class="uk-width-1-1 uk-width-medium-1-2">
+						<div class="title">Контакты</div>
+							<p>Санкт-Петербург</p>
+							<p>Адрес: Россия, Санкт-Петербург, 197136, <br> Большой пр. П.С. 76/78, офис 367</p>
+							<p>Телефон: <a href="tel:+78123841103">+7 (812) 384-11-03</a></p>
+							<p>E-mail: <a href="mailto:info@ozon-24.ru">info@ozon-24.ru</a> </p>
+							<p>Часы работы: Пн-Пт: с 10:00 до 19:00 </p>
+					</div>
+					<div class="uk-width-1-1 uk-width-medium-1-2">
+						<div class="map">
+							<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa32b2a376d37835a5807fade50ba2f6457ac4be59e6876db8e01d39612d1a442&amp;width=730&amp;height=425&amp;lang=ru_RU&amp;scroll=true"></script>
+						</div>
+					</div>
+				</div>
+				<div class="offer-form">
+					<form action="" method="">
+						<div class="offer-form__title">Интересует наша продукция?</div>
+						<div class="offer-form__field-group">
+							<input type="text" class="offer-form__input name" placeholder="Имя">
+							<input type="text" class="offer-form__input tel js__mask" placeholder="Номер телефона">
+							<button type="submit" class="offer-form__btn">Отправить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
 	<footer class="footer">
-		FOOTER TEXT
+		<div class="uk-container">
+			<a href="/">
+				<img src="img/logo.png" alt="">
+			</a>
+		</div>
 	</footer>
+
 
 
 
