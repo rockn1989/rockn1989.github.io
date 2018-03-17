@@ -99,13 +99,23 @@ svg {
     opacity: .7;
   }
 }
+.header:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #0c2b59;
+}
 .header__wrapper {
   position: relative;
   padding: 30px 25px;
   z-index: 50;
   min-height: 100vh;
 }
-@media (max-width: 1360px) {
+@media (max-width: 767px) {
   .header__wrapper {
     min-height: auto;
   }
@@ -138,7 +148,12 @@ svg {
 }
 @media (min-width: 768px) and (max-width: 959px) {
   .header__top {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 960px) and (max-width: 1300px) {
+  .header__top {
+    margin-bottom: 20px;
   }
 }
 .header__logo {
@@ -290,7 +305,7 @@ svg {
   max-height: 100%;
   z-index: 1;
 }
-@media (max-width: 1360px) {
+@media (max-width: 960px) {
   .video-block {
     display: none;
   }
