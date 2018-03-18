@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ru">
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Направления</title>
+	<meta property="og:url" content="">
+	<meta property="og:type" content="Article">
+	<meta property="og:site_name" content="">
+	<meta property="og:image" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+	<link rel="stylesheet" href="libs/css/uikit.min.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/slick/slick-theme.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!--[if lte IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+		<script src="libs/html5shiv.min.js"></script>
+		<script src="libs/placholder.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header class="header">
+		<div class="header__top">
+			<div class="uk-container">
+				<div class="uk-grid">
+					<div class="uk-width-2-10">
+						<a href="/" class="logo">
+							<img src="img/logo.png" alt="">
+						</a>
+					</div>
+					<div class="uk-width-8-10">
+						<div class="contacts">
+							<div class="uk-grid">
+								<div class="uk-width-2-10">
+									<div class="contacts__timework">
+										<div>пн-пт: 08:00-21:00</div>
+										<div>сб-вс: 09:00-18:00</div>
+									</div>
+								</div>
+								<div class="uk-width-3-10">
+									<div class="contacts__address">
+										<div>г. Москва ул. Сретенка, д. 9</div>
+										<a href="/contacts" class="icon-pick">Посмотреть на карте</a>
+									</div>
+								</div>
+								<div class="uk-width-2-10 uk-padding-remove">
+									<div class="soc-links">
+										<a href="" class="soc-link icon-instagram"></a>
+										<a href="" class="soc-link icon-vk"></a>
+										<a href="" class="soc-link icon-faceboook"></a>
+									</div>
+								</div>
+								<div class="uk-width-2-10">
+									<div class="contacts__telephones">
+										<a href="tel:+74951042350" class="main-tel">+7 (495) 104 23 50</a>
+										<a href="#callback" class="icon-telephone" data-uk-modals>Заказать звонок</a>
+									</div>
+								</div>
+								<div class="uk-width-1-10">
+									<a href="" class="header__search icon-search"></a>
+								</div>
+							</div>
+							<form action="" method="" class="search-form">
+							    <input type="text" name="term" placeholder="Поиск нужного направления">
+							    <button type="submit" class="search-form__btn icon-search">
+							    </button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__bottom">
+			<div class="uk-container">
+				<div class="uk-grid">
+					<div class="uk-width-3-4">
+						<nav class="page-nav">
+							<ul class="nav-list uk-flex">
+								<li><a href="#">Направления</a></li>
+								<li><a href="#">Услуги и цены</a></li>
+								<li><a href="#">Анализы и диагностика</a></li>
+								<li><a href="#">Врачи</a></li>
+								<li><a href="#">О клинике</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="uk-width-1-4"><a href="" class="btn btn--fill icon-doctor-symbol">Запись на прием</a></div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="content">
+		<div class="content-header">
+			<div class="uk-container">
+				<ul class="breadcrumbs">
+					<li><a href="">Главная</a></li>
+					<li>Направления</li>
+				</ul>
+				<h1>Наши направления</h1>
+				<form action="" class="page-form-search">
+					<input type="text" placeholder="Поиск нужного направления">
+					<button class="page-form-search__btn icon-search"></button>
+				</form>
+				<div class="services-filter">
+					Фильтр направлений по алфавиту:
+					<ul class="services-filter__list">
+						<li><a href="#" class="active">А</a></li>
+						<li><a href="#">Б</a></li>
+						<li><a href="#">В</a></li>
+						<li><a href="#">Г</a></li>
+						<li><a href="#">Д</a></li>
+						<li><a href="#">Ж</a></li>
+						<li><a href="#">З</a></li>
+						<li><a href="#">И</a></li>
+						<li><a href="#">К</a></li>
+						<li><a href="#">Л</a></li>
+						<li><a href="#">М</a></li>
+						<li><a href="#">Н</a></li>
+						<li><a href="#">О</a></li>
+						<li><a href="#">П</a></li>
+						<li><a href="#">Р</a></li>
+						<li><a href="#">С</a></li>
+						<li><a href="#">Т</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="content-body">
+			<div class="uk-container">
+					<div class="services-list" data-uk-scrollspy="{cls:'uk-animation-fade uk-invisible', target:'.services-list__item', delay:200, repeat: false}">
+						<div class="services-list__item uk-invisible">
+							<div class="services-list__inner">
+								<div class="services-list__name">Акушерство</div>
+								<a href="#" class="services-list__link">Перейти в раздел</a>
+							</div>
+						</div>
+						<div class="services-list__item uk-invisible">
+							<div class="services-list__inner">
+								<div class="services-list__name">Аллергология</div>
+								<a href="#" class="services-list__link">Перейти в раздел</a>
+							</div>
+						</div>
+						<div class="services-list__item uk-invisible">
+							<div class="services-list__inner">
+								<div class="services-list__name">Гастроэнтерология</div>
+								<a href="#" class="services-list__link">Перейти в раздел</a>
+							</div>
+						</div>
+						<div class="services-list__item uk-invisible">
+							<div class="services-list__inner">
+								<div class="services-list__name">Гинеокология</div>
+								<a href="#" class="services-list__link">Перейти в раздел</a>
+							</div>
+						</div>
+						<div class="services-list__item uk-invisible">
+							<div class="services-list__inner">
+								<div class="services-list__name">Готовые медицинские программы</div>
+								<a href="#" class="services-list__link">Перейти в раздел</a>
+							</div>
+						</div>
+						<div class="services-list__item uk-invisible">
+							<div class="services-list__inner">
+								<div class="services-list__name">Гомеопатия</div>
+								<a href="#" class="services-list__link">Перейти в раздел</a>
+							</div>
+						</div>
+						<div class="services-list__item uk-invisible">
+							<div class="services-list__inner">
+								<div class="services-list__name">Дерматология и Трихология</div>
+								<a href="#" class="services-list__link">Перейти в раздел</a>
+							</div>
+						</div>
+						<div class="services-list__item uk-invisible">
+							<div class="services-list__inner">
+								<div class="services-list__name">Диетология</div>
+								<a href="#" class="services-list__link">Перейти в раздел</a>
+							</div>
+						</div>
+						<div class="services-list__item uk-invisible">
+							<div class="services-list__inner">
+								<div class="services-list__name">Диспансеризация (CHECK-UP)</div>
+								<a href="#" class="services-list__link">Перейти в раздел</a>
+							</div>
+						</div>
+						<div class="services-list__item uk-invisible">
+							<div class="services-list__inner">
+								<div class="services-list__name">Кардиология</div>
+								<a href="#" class="services-list__link">Перейти в раздел</a>
+							</div>
+						</div>
+						<div class="services-list__item uk-invisible">
+							<div class="services-list__inner">
+								<div class="services-list__name">Колопроктология</div>
+								<a href="#" class="services-list__link">Перейти в раздел</a>
+							</div>
+						</div>
+						<div class="services-list__item uk-invisible">
+							<div class="services-list__inner">
+								<div class="services-list__name">Косметология инъекционная</div>
+								<a href="#" class="services-list__link">Перейти в раздел</a>
+							</div>
+						</div>
+						<div class="services-list__item uk-invisible">
+							<div class="services-list__inner">
+								<div class="services-list__name">Лечение и диагностика за рубежом</div>
+								<a href="#" class="services-list__link">Перейти в раздел</a>
+							</div>
+						</div>
+						<div class="services-list__item uk-invisible">
+							<div class="services-list__inner">
+								<div class="services-list__name">Маммология</div>
+								<a href="#" class="services-list__link">Перейти в раздел</a>
+							</div>
+						</div>
+						<div class="services-list__item uk-invisible">
+							<div class="services-list__inner">
+								<div class="services-list__name">Мануальная терапия</div>
+								<a href="#" class="services-list__link">Перейти в раздел</a>
+							</div>
+						</div>
+						<div class="services-list__item uk-invisible">
+							<div class="services-list__inner">
+								<div class="services-list__name">Массаж</div>
+								<a href="#" class="services-list__link">Перейти в раздел</a>
+							</div>
+						</div>
+						<div class="services-list__item uk-invisible">
+							<div class="services-list__inner">
+								<div class="services-list__name">Неврология</div>
+								<a href="#" class="services-list__link">Перейти в раздел</a>
+							</div>
+						</div>
+						<div class="services-list__item uk-invisible">
+							<div class="services-list__inner">
+								<div class="services-list__name">Онкология</div>
+								<a href="#" class="services-list__link">Перейти в раздел</a>
+							</div>
+						</div>
+						<div class="services-list__item uk-invisible">
+							<div class="services-list__inner">
+								<div class="services-list__name">Оториноларингология</div>
+								<a href="#" class="services-list__link">Перейти в раздел</a>
+							</div>
+						</div>
+						<div class="services-list__item uk-invisible">
+							<div class="services-list__inner">
+								<div class="services-list__name">Офтальмология</div>
+								<a href="#" class="services-list__link">Перейти в раздел</a>
+							</div>
+						</div>
+						<div class="services-list__item uk-invisible">
+							<div class="services-list__inner">
+								<div class="services-list__name">Справки</div>
+								<a href="#" class="services-list__link">Перейти в раздел</a>
+							</div>
+						</div>
+						<div class="services-list__item uk-invisible">
+							<div class="services-list__inner">
+								<div class="services-list__name">Стоматология</div>
+								<a href="#" class="services-list__link">Перейти в раздел</a>
+							</div>
+						</div>
+						<div class="services-list__item uk-invisible">
+							<div class="services-list__inner">
+								<div class="services-list__name">Терапия</div>
+								<a href="#" class="services-list__link">Перейти в раздел</a>
+							</div>
+						</div>
+						<div class="services-list__item uk-invisible">
+							<div class="services-list__inner">
+								<div class="services-list__name">Травмотология и ортопедия</div>
+								<a href="#" class="services-list__link">Перейти в раздел</a>
+							</div>
+						</div>
+						<div class="services-list__item uk-invisible">
+							<div class="services-list__inner">
+								<div class="services-list__name">Урология</div>
+								<a href="#" class="services-list__link">Перейти в раздел</a>
+							</div>
+						</div>
+						<div class="services-list__item uk-invisible">
+							<div class="services-list__inner">
+								<div class="services-list__name">Физиотерапия</div>
+								<a href="#" class="services-list__link">Перейти в раздел</a>
+							</div>
+						</div>
+						<div class="services-list__item uk-invisible">
+							<div class="services-list__inner">
+								<div class="services-list__name">Эндокринология</div>
+								<a href="#" class="services-list__link">Перейти в раздел</a>
+							</div>
+						</div>
+						<div class="services-list__item uk-invisible">
+							<div class="services-list__inner">
+								<div class="services-list__name">Эндоскопия</div>
+								<a href="#" class="services-list__link">Перейти в раздел</a>
+							</div>
+						</div>
+					</div>
+			</div>
+			<div class="promo">
+				<div class="uk-container">
+					<h2>Не знаете к кому записаться ?</h2>
+					<div class="promo__text">
+						Обратитесь к нам и в течении 15 минут мы Вас проконсультриуем
+					</div>
+					<a href="#" class="btn btn--fill">Консультация</a>
+					<img src="img/promo-img.png" alt="" class="promo__img">
+				</div>
+			</div>
+			<div class="uk-container">
+				<div class="seo-text">
+					Нуждаетесь ли Вы в быстрой и качественной медицинской помощи в Москве или хотите получить консультацию европейского эксперта – мы сделаем все, чтобы Вы могли восстановить свое здоровье и остались довольны нашим сервисом. Среди наших партнеров в Москве и Европе лишь те, чье качество лечения и чуткое отношение к пациенту уже подтверждены многолетним опытом и рекомендациями. Все специалисты клиник-партнеров работают в системе преемственности методов лечения. Нуждаетесь ли Вы в быстрой и качественной медицинской помощи в Москве или хотите получить консультацию европейского эксперта – мы сделаем все, чтобы Вы могли восстановить свое здоровье и остались довольны нашим сервисом. Среди наших партнеров в Москве и Европе лишь те, чье качество лечения и чуткое отношение к пациенту уже подтверждены многолетним опытом и рекомендациями. Все специалисты клиник-партнеров работают в системе преемственности методов лечения. Нуждаетесь ли Вы в быстрой и качественной медицинской помощи в Москве или хотите получить консультацию европейского эксперта – мы сделаем все, чтобы Вы могли восстановить свое здоровье и остались довольны нашим сервисом. Среди наших партнеров в Москве и Европе лишь те, чье качество лечения и чуткое отношение к пациенту уже подтверждены многолетним опытом и рекомендациями. Все специалисты клиник-партнеров работают в системе преемственности методов лечения.
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="uk-container">
+			<form action="" class="page-form-search">
+				<input type="text" placeholder="Искать по направлениям, врачам и услугам">
+				<button class="page-form-search__btn icon-search"></button>
+			</form>
+			<div class="uk-grid">
+				<div class="uk-width-1-5">
+					<div class="footer-contacts">
+						<div class="contacts__telephones">
+							<a href="tel:+74951042350" class="main-tel">+7 (495) 104 23 50</a>
+							<a href="#callback" class="icon-telephone" data-uk-modals="">Заказать звонок</a>
+						</div>
+						<div class="contacts__timework">
+							<div>пн-пт: 08:00-21:00</div>
+							<div>сб-вс: 09:00-18:00</div>
+						</div>
+						<div class="contacts__address">
+							<div>г. Москва ул. Сретенка, д. 9</div>
+							<a href="/contacts" class="icon-pick">Посмотреть на карте</a>
+						</div>
+					</div>
+				</div>
+				<div class="uk-width-1-5">
+					<div class="footer__title" data-role="toggle-list">Специалисты</div>
+					<ul class="footer__list">
+						<li><a href="#">Аллерголог-иммунолог</a></li>
+						<li><a href="#">Гинеколог</a></li>
+						<li><a href="#">Кардиолог</a></li>
+						<li><a href="#">Уролог</a></li>
+						<li><a href="#">Эндокринолог</a></li>
+						<li><a href="#">Психотерапевт</a></li>
+					</ul>
+				</div>
+				<div class="uk-width-1-5">
+					<div class="footer__title" data-role="toggle-list">Направления</div>
+					<ul class="footer__list">
+						<li><a href="#">Акушерство</a></li>
+						<li><a href="#">Аллергология</a></li>
+						<li><a href="#">Гастроэнтерология</a></li>
+						<li><a href="#">Гинекология</a></li>
+						<li><a href="#">Годовые медицинские программы</a></li>
+						<li><a href="#">Гомеопатия</a></li>
+					</ul>
+				</div>
+				<div class="uk-width-1-5">
+					<div class="footer__title" data-role="toggle-list">Услуги</div>
+					<ul class="footer__list">
+						<li><a href="#">Акушерство</a></li>
+						<li><a href="#">Ведение беременности</a></li>
+						<li><a href="#">Программы ведения беременности</a></li>
+						<li><a href="#">Уролог</a></li>
+						<li><a href="#">Расцеживание груди</a></li>
+						<li><a href="#">Гинекология</a></li>
+					</ul>
+				</div>
+				<div class="uk-width-1-5">
+					<div class="footer__add-info">
+						<div>
+							<a href="#">О клинике</a>
+						</div>
+						<div>
+							<a href="#">Врачи</a>
+						</div>
+						<div>
+							<a href="#">Контакты</a>
+						</div>
+					</div>
+					<div class="soc-links">
+						<a href="" class="soc-link icon-instagram"></a>
+						<a href="" class="soc-link icon-vk"></a>
+						<a href="" class="soc-link icon-faceboook"></a>
+					</div>
+				</div>
+			</div>
+			<div class="footer__politics">
+				Все медицинские услуги клиники осуществляются в полном соответствии с Лицензией и стандартами оказания медицинской помощи, утвержденными Минздравом России.  Диагностика и лечение проводятся сертифицированными врачами на высокоточном оборудовании, регулярно проходящем проверку по системе АНТИ-ВИЧ и АНТИ-ГЕПАТИТ, а также проверку санитарно-гигиенического контроля.
+			</div>
+		</div>
+	</footer>
+
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" defer></script>
+	<script src="libs/jquery-mask/jquery.maskedinput.min.js" defer></script>
+	<script src="libs/js/uikit.min.js" defer></script>
+	<script src="libs/slick/slick.min.js" defer></script>
+	<script src="libs/svg4everybody.min.js" defer></script>
+	<script type="text/javascript" src="https://www.youtube.com/iframe_api"></script>
+	<script src="js/main.js" defer></script>
+
+</body>
+</html>
