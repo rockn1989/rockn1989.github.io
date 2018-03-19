@@ -59,7 +59,7 @@
 								<div class="uk-width-2-10">
 									<div class="contacts__telephones">
 										<a href="tel:+74951042350" class="main-tel">+7 (495) 104 23 50</a>
-										<a href="#callback" class="icon-telephone" data-uk-modals>Заказать звонок</a>
+										<a href="#callback-modal" class="icon-telephone" data-uk-modal>Заказать звонок</a>
 									</div>
 								</div>
 								<div class="uk-width-1-10">
@@ -91,7 +91,7 @@
 							</ul>
 						</nav>
 					</div>
-					<div class="uk-width-1-4"><a href="" class="btn btn--fill icon-doctor-symbol">Запись на прием</a></div>
+					<div class="uk-width-1-4"><a href="#callback-modal" class="btn btn--fill icon-doctor-symbol" data-uk-modal>Запись на прием</a></div>
 				</div>
 			</div>
 		</div>
@@ -347,7 +347,7 @@
 					<div class="footer-contacts">
 						<div class="contacts__telephones">
 							<a href="tel:+74951042350" class="main-tel">+7 (495) 104 23 50</a>
-							<a href="#callback" class="icon-telephone" data-uk-modals="">Заказать звонок</a>
+							<a href="#callback-modal" class="icon-telephone" data-uk-modal>Заказать звонок</a>
 						</div>
 						<div class="contacts__timework">
 							<div>пн-пт: 08:00-21:00</div>
@@ -418,6 +418,33 @@
 	</footer>
 
 
+<div id="callback-modal" class="uk-modal default-modal">
+	<div class="uk-modal-dialog">
+		<div class="uk-modal-header">
+			<div class="title">Записаться на прием</div>
+			<a class="uk-modal-close uk-close"></a>
+		</div>
+		<div class="uk-modal-body">
+			<form action="">
+				<fieldset>
+					<input type="text" placeholder="Имя">
+					<input type="text" placeholder="Телефон">
+					<input type="text" placeholder="E-mail">
+				</fieldset>
+				<fieldset>
+					<input type="text" data-uk-datepicker="{format:'DD.MM.YYYY'}">
+					<input type="text" data-uk-timepicker="{format:'24h'}">
+				</fieldset>
+				<label for="politics">
+					<input type="checkbox" id="politics">
+					<span class="custom-checkbox"></span>
+					<span class="custom-label">Я ознакомлен и согласен с условиями обработки данных</span>
+				</label>
+				<button type="submit" class="modal-btn btn btn--fill">Записаться</button>
+			</form>
+		</div>
+	</div>
+</div>
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" defer></script>
