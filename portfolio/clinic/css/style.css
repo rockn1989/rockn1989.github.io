@@ -899,6 +899,9 @@ button.btn.icon-doctor-symbol:before {
   color: #2a3246;
   text-decoration: none;
 }
+.services-list-title {
+  margin-bottom: 45px;
+}
 .services-list {
   margin: 0;
   padding: 0;
