@@ -1087,7 +1087,7 @@ button.btn.icon-doctor-symbol:before {
   color: #dd0039;
 }
 .uk-pagination {
-  margin-top: -30px;
+  margin-top: 30px;
   text-align: left;
 }
 .uk-pagination li {
