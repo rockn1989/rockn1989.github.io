@@ -148,4 +148,25 @@ $('.about-company-slider').slick({
 
 	initPlayer();
 
+	/* CUSTOM SELECT */
+
+	function formatState (state) {
+	  if (!state.id) {
+	    return state.text;
+	  }
+	  if($(state.element).data('status') == 'disabled') {
+	    var $state = $('<div class="disabled">' + state.text + '<a href="#subscribe" data-uk-modal="{target: "#subscribe", modal: false}">Подписаться</a>' + '</div>');
+	  } else {
+	    var $state = $('<div>' + state.text + '!</div>');
+	  }
+
+	  return $state;
+	};
+
+	$('.js__custom-select').select2({
+	  placeholder: "Выберите специалиста",
+	  minimumResultsForSearch: -1
+	});
+
+
 });
