@@ -117,6 +117,29 @@ $('.about-company-slider').slick({
 	});
 
 
+	/* FILTER DIRECTIONS MOBILE */
+
+	$('.directions-filter__title').on('click', function() {
+		var filterWrapper = $(this).parents('.directions-filter'),
+				filterList = $(this).siblings('.directions-filter__list');
+		if(!filterWrapper.hasClass('open')) {
+			filterWrapper.addClass('open');
+			filterList
+				.stop(true,true)
+				.slideDown('350');
+		} else {
+			filterList
+				.stop(true,true)
+				.slideUp('350', function() {
+					$(this).removeAttr('style');
+					filterWrapper.removeClass('open');
+				});
+		}
+
+
+	});
+
+
 	/* YOUTUBE API*/
 
 
@@ -172,5 +195,14 @@ $('.about-company-slider').slick({
 	  minimumResultsForSearch: -1
 	});
 
+
+
+// DISABLED UIKIT ANIMATION FOR MOBILE
+
+  UIkit.on('beforeready.uk.dom', function () {
+    if (UIkit.$win.width() < 767 && $('html').hasClass('uk-touch')) {
+      UIkit.$('[data-uk-scrollspy]').removeAttr('data-uk-scrollspy');
+    }
+  });
 
 });
