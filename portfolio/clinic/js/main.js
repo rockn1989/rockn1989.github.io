@@ -71,7 +71,7 @@ $('.about-company-slider').slick({
 			$('.search-form').fadeIn('350', function() {
 				$('.search-form input').focus();
 			});
-			$('.search-form').toggleClass('uk-animation-fade-in open');
+			$('.search-form').addClass('uk-animation-fade-in open');
 			$(document).on('click keyup', hiddenSearchForm);
 		});
 	});
@@ -84,11 +84,13 @@ $('.about-company-slider').slick({
 
 	function hiddenSearchForm (e) {
 		var form = $('.search-form');
-		if(e.which == 27 && $(form).hasClass('open')) {
-			console.log(123)
+		var input = document.querySelector('.search-form input');
+
+		if((e.which == 27 || e.target != input) && $(form).hasClass('open')) {
 			$(form).fadeOut('350', function() {
-				$(this).toggleClass('uk-animation-fade-out open');
+				$(this).removeClass('uk-animation-fade-in open');
 				$('.contacts .uk-grid').fadeIn('350');
+				$(document).unbind('click keyup', hiddenSearchForm);
 			});
 		};
 	}
@@ -105,10 +107,12 @@ $('.about-company-slider').slick({
 			$(sublist).slideUp('350', function() {
 				$(parents).removeClass('open');
 			});
+			_self.removeClass('open');
 		} else {
 			$(sublist).slideDown('350', function() {
 				$(parents).addClass('open');
 			});
+			_self.addClass('open');
 		}
 	});
 
