@@ -58,7 +58,6 @@ $('.about-company-slider').slick({
 		autoplay: true,
 		autoplaySpeed: 3000,
 		speed: 500,
-		lazyLoad: 'progressive',
 		slidesToShow: 1,
 		slidesToScroll: 1
 	});
@@ -94,6 +93,7 @@ $('.about-company-slider').slick({
 			});
 		};
 	}
+
 
 	/* SERVICE COAST */
 
@@ -134,23 +134,20 @@ $('.about-company-slider').slick({
 					$(this).removeAttr('style');
 					filterWrapper.removeClass('open');
 				});
-		}
-
-
+		};
 	});
 
 
 	/* YOUTUBE API*/
 
-
 	var player;
 
 	function initPlayer() {
-		function onYouTubeIframeAPIReady() {
+		function onYouTubeIframeAPIReady(id) {
 			player = new YT.Player('player', {
 				height: '100%',
 				width: '100%',
-				videoId: 'Y8NS-iBrh_A',
+				videoId: id,
 				events: {
 						'onReady': onPlayerReady
 				}
@@ -163,7 +160,8 @@ $('.about-company-slider').slick({
 
 		$('.video-preview').on('click', function(event) {
 			event.preventDefault();
-			onYouTubeIframeAPIReady();
+			var id = $(this).data('id');
+			onYouTubeIframeAPIReady(id);
 
 			var that = this;
 			$(this).addClass('hidden');
@@ -175,34 +173,129 @@ $('.about-company-slider').slick({
 
 	initPlayer();
 
+
 	/* CUSTOM SELECT */
 
 	function formatState (state) {
-	  if (!state.id) {
-	    return state.text;
-	  }
-	  if($(state.element).data('status') == 'disabled') {
-	    var $state = $('<div class="disabled">' + state.text + '<a href="#subscribe" data-uk-modal="{target: "#subscribe", modal: false}">Подписаться</a>' + '</div>');
-	  } else {
-	    var $state = $('<div>' + state.text + '!</div>');
-	  }
+		if (!state.id) {
+			return state.text;
+		}
+		if($(state.element).data('status') == 'disabled') {
+			var $state = $('<div class="disabled">' + state.text + '<a href="#subscribe" data-uk-modal="{target: "#subscribe", modal: false}">Подписаться</a>' + '</div>');
+		} else {
+			var $state = $('<div>' + state.text + '!</div>');
+		}
 
-	  return $state;
+		return $state;
 	};
 
 	$('.js__custom-select').select2({
-	  placeholder: "Выберите специалиста",
-	  minimumResultsForSearch: -1
+		placeholder: "Выберите специалиста",
+		minimumResultsForSearch: -1
 	});
 
 
 
 // DISABLED UIKIT ANIMATION FOR MOBILE
 
-  UIkit.on('beforeready.uk.dom', function () {
-    if (UIkit.$win.width() < 767 && $('html').hasClass('uk-touch')) {
-      UIkit.$('[data-uk-scrollspy]').removeAttr('data-uk-scrollspy');
-    }
-  });
+	UIkit.on('beforeready.uk.dom', function () {
+		if (UIkit.$win.width() < 767 && $('html').hasClass('uk-touch')) {
+			UIkit.$('[data-uk-scrollspy]').removeAttr('data-uk-scrollspy');
+		}
+	});
+
+	/* FORM VALIDATION */
+
+	$('.default-modal form').each(function(i, el) {
+		$(el).validate({
+				rules: {
+					name: {
+						required: true
+					},
+					tel: {
+						required: true
+					}
+				},
+				messages: {
+					name: "Обязательноe поле",
+					tel: "Обязательноe поле"
+				},
+			});
+	});
+
+	/* MASK FORM */
+	$('.default-modal input.js__mask').mask('+7 999 999-99-99', {clearIfNotMatch: true}).focus(function (e) {
+		if (!$(this).val()) {
+			$(this).val('+7 ');
+		}
+	});
 
 });
+
+/* FILTER SORT */
+
+(function() {
+
+	var servicesArray = [];
+
+	$('.services-list__item').each(function(i, el) {
+		servicesArray.push($(el));
+	});
+
+	var filterLetterList = $('.services-filter__list a');
+
+	filterLetterList.on('click', function(e) {
+		e.preventDefault();
+
+		var _self = $(this).text().toLowerCase();
+
+		filterLetterList.filter(function(i, el) {
+			if($(el) != $(this)) {
+				$(el).removeClass('active');
+			};
+		});
+
+		$(this).addClass('active');
+
+		sortList(servicesArray, _self);
+
+	});
+
+
+	/* DIRECTIONS FILTER */
+
+	var formFilter = ('.js__directions-filter input');
+
+	$(formFilter).on('focus', function() {
+		servicesArray.filter(function(el, i) {
+			$(el).removeClass('uk-hidden');
+		});
+	});
+
+	$(formFilter).on('keyup', function() {
+		var value = $(this).val().toLowerCase();
+		var valueLength = value.length;
+
+		if(value.length == 0) {
+			servicesArray.map(function(el) {
+				$(el).removeClass('uk-hidden');
+			});
+		} else {
+			sortList(servicesArray, value);
+		};
+
+	});
+
+	function sortList(arr, value) {
+		var val = value,
+				valueLength = val.length;
+		arr.map(function(el) {
+			if(el.data('value').slice(0, valueLength).toLowerCase().toString() != val.toLowerCase().toString()) {
+				$(el).addClass('uk-hidden');
+			} else {
+				$(el).removeClass('uk-hidden');
+			}
+		});
+	};
+
+})();
