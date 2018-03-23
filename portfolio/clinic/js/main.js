@@ -298,4 +298,48 @@ $('.about-company-slider').slick({
 		});
 	};
 
+
+	/* STAFF FILTER */
+
+	var staffFormFilter = $('.js__staff-filter input');
+	var staffArray = [];
+
+	$('.staff-card').each(function(i, el) {
+		staffArray.push($(el));
+	});
+
+
+	$(staffFormFilter).on('keyup', function() {
+		var value = $(this).val().toLowerCase();
+		var valueLength = value.length;
+
+		if(value.length == 0) {
+			staffArray.map(function(el) {
+				$(el).removeClass('uk-hidden');
+			});
+		} else {
+			sortStaffList(staffArray, value);
+		};
+	});
+
+	function sortStaffList(arr, value) {
+		var val = value,
+				valueLength = val.length,
+				obj;
+		arr.map(function(el) {
+			obj = el.data('user');
+			if(obj) {
+				if(
+					obj["name"].slice(0, valueLength).toLowerCase().toString() != val.toLowerCase().toString() &&
+					obj["staff"].slice(0, valueLength).toLowerCase().toString() != val.toLowerCase().toString()
+					) {
+					$(el).addClass('uk-hidden');
+				} else {
+					$(el).removeClass('uk-hidden');
+				}
+			} else {
+				$(el).addClass('uk-hidden');
+			}
+		});
+	};
 })();
