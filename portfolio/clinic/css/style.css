@@ -644,7 +644,7 @@ html.uk-touch body *.uk-invisible {
   margin-bottom: 70px;
 }
 .content-header h1 {
-  margin-bottom: 45px;
+  margin-bottom: 0;
 }
 @media (min-width: 0) and (max-width: 767px) {
   .content-header h1 {
@@ -655,7 +655,7 @@ html.uk-touch body *.uk-invisible {
   margin-bottom: 10px;
 }
 .content-header .page-form-search {
-  margin-bottom: 40px;
+  margin: 40px 0;
 }
 .services-detail-header {
   padding-top: 15px;
@@ -707,17 +707,20 @@ html.uk-touch body *.uk-invisible {
 .content-body {
   padding: 40px 0 80px;
 }
+.content-body p:not([class]) {
+  max-width: 80%;
+}
 .content-body ul,
 .content-body ol {
   padding-left: 0;
 }
-.content-body ul {
+.content-body ul:not([class]) {
   list-style: none;
 }
-.content-body ul li {
+.content-body ul:not([class]) li {
   position: relative;
 }
-.content-body ul li:before {
+.content-body ul:not([class]) li:before {
   content: '';
   position: absolute;
   top: 5px;
@@ -729,14 +732,15 @@ html.uk-touch body *.uk-invisible {
           border-radius: 50%;
   background-color: #ff0043;
 }
-.content-body ol {
+.content-body ol:not([class]) {
+  margin-top: 20px;
   counter-reset: section;
   list-style: none;
 }
-.content-body ol li {
+.content-body ol:not([class]) li {
   position: relative;
 }
-.content-body ol li:before {
+.content-body ol:not([class]) li:before {
   counter-increment: section;
   content: counter(section) ".";
   position: absolute;
@@ -744,8 +748,8 @@ html.uk-touch body *.uk-invisible {
   left: 0;
   color: #ff0043;
 }
-.content-body ul li,
-.content-body ol li {
+.content-body ul:not([class]) li,
+.content-body ol:not([class]) li {
   margin-bottom: 7px;
   padding-left: 25px;
 }
@@ -777,6 +781,12 @@ html.uk-touch body *.uk-invisible {
 }
 .content-body .seo-text {
   padding-top: 100px;
+}
+.content-body h2,
+.content-body h3,
+.content-body h4,
+.content-body h5 {
+  margin-top: 45px;
 }
 .breadcrumbs {
   margin: 0;
