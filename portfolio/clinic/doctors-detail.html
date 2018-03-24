@@ -26,7 +26,6 @@
 	<![endif]-->
 </head>
 <body>
-
 	<header class="header">
 		<div class="header__top uk-visible-large">
 			<div class="uk-container">
@@ -85,7 +84,7 @@
 						<nav class="page-nav">
 							<ul class="nav-list uk-flex">
 								<li><a href="#">Направления</a></li>
-								<li><a href="#">Услуги и цены</a></li>
+								<li><a href="#interview-modal" data-uk-modal>Услуги и цены</a></li>
 								<li><a href="#">Анализы и диагностика</a></li>
 								<li><a href="#">Врачи</a></li>
 								<li><a href="#">О клинике</a></li>
@@ -137,7 +136,6 @@
 			</div>
 		</div>
 	</header>
-
 
 
 
@@ -325,7 +323,6 @@
 	</footer>
 
 
-
 <div id="order-modal" class="uk-modal default-modal">
 	<div class="uk-modal-dialog">
 		<div class="uk-modal-header">
@@ -355,10 +352,10 @@
 						<option value="Петров Павел Юрьевич">Петров Павел Юрьевич</option>
 					</select>
 				</fieldset>
-				<label for="politics" class="custom-checkbox">
+				<label for="politics" class="custom-checkbox-wrapper">
 					<input type="checkbox" id="politics">
 					<span class="custom-checkbox"></span>
-					<span class="custom-label">Я ознакомлен и согласен с условиями обработки данных</span>
+					<span class="custom-checkbox-label">Я ознакомлен и согласен с условиями обработки данных</span>
 				</label>
 				<button type="submit" class="modal-btn btn btn--fill">Записаться</button>
 			</form>
@@ -378,10 +375,10 @@
 					<input type="text" name="name" placeholder="Имя">
 					<input type="text" name="tel" placeholder="Телефон" class="js__mask" required>
 				</fieldset>
-				<label for="callback-politics" class="custom-checkbox">
+				<label for="callback-politics" class="custom-checkbox-wrapper">
 					<input type="checkbox" id="callback-politics">
 					<span class="custom-checkbox"></span>
-					<span class="custom-label">Я ознакомлен и согласен с условиями обработки данных</span>
+					<span class="custom-checkbox-label">Я ознакомлен и согласен с условиями обработки данных</span>
 				</label>
 				<button type="submit" class="modal-btn btn btn--fill">Оставить заявку</button>
 			</form>
@@ -389,6 +386,75 @@
 	</div>
 </div>
 
+<div id="interview-modal" class="uk-modal default-modal interview-modal">
+	<div class="uk-modal-dialog">
+		<div class="uk-modal-header">
+			<div class="title">Ответьте на 7 вопрос и получите скидку!</div>
+			<a class="uk-modal-close uk-close"></a>
+		</div>
+		<div class="uk-modal-body">
+			<form action="">
+				<fieldset class="question-group active">
+					<div class="interview-title">1. Когда Вы заболели и покупаете лекарства:</div>
+					<label for="1-btn" class="custom-radio-wrapper">
+						<input type="radio" id="1-btn" name="quest-1" value="">
+						<span class="custom-radio-btn"></span>
+						<span class="custom-radio-label">Руководствуясь рекламой, Интернетом, советами соседей</span>
+					</label>
+					<label for="2-btn" class="custom-radio-wrapper">
+						<input type="radio" id="2-btn" name="quest-1" value="">
+						<span class="custom-radio-btn"></span>
+						<span class="custom-radio-label">Руководствуясь рекомендациями фармацевта в аптеке</span>
+					</label>
+					<label for="3-btn" class="custom-radio-wrapper">
+						<input type="radio" id="3-btn" name="quest-1" value="" checked>
+						<span class="custom-radio-btn"></span>
+						<span class="custom-radio-label">После приема врача, руководствуясь его назначениями</span>
+					</label>
+				</fieldset>
+
+				<fieldset class="question-group">
+					<div class="interview-title">2. Когда Вы заболели и покупаете лекарства:</div>
+					<label for="4-btn" class="custom-radio-wrapper">
+						<input type="radio" id="4-btn" name="quest-2" value="" checked>
+						<span class="custom-radio-btn"></span>
+						<span class="custom-radio-label">Руководствуясь рекламой, Интернетом, советами соседей</span>
+					</label>
+					<label for="5-btn" class="custom-radio-wrapper">
+						<input type="radio" id="5-btn" name="quest-2" value="">
+						<span class="custom-radio-btn"></span>
+						<span class="custom-radio-label">Руководствуясь рекомендациями фармацевта в аптеке</span>
+					</label>
+					<label for="6-btn" class="custom-radio-wrapper">
+						<input type="radio" id="6-btn" name="quest-2" value="">
+						<span class="custom-radio-btn"></span>
+						<span class="custom-radio-label">После приема врача, руководствуясь его назначениями</span>
+					</label>
+				</fieldset>
+
+				<fieldset class="question-group">
+					<div class="interview-title">3. Когда Вы заболели и покупаете лекарства:</div>
+					<label for="7-btn" class="custom-radio-wrapper">
+						<input type="radio" id="7-btn" name="quest-3" value="">
+						<span class="custom-radio-btn"></span>
+						<span class="custom-radio-label">Руководствуясь рекламой, Интернетом, советами соседей</span>
+					</label>
+					<label for="8-btn" class="custom-radio-wrapper">
+						<input type="radio" id="8-btn" name="quest-3" value="" checked>
+						<span class="custom-radio-btn"></span>
+						<span class="custom-radio-label">Руководствуясь рекомендациями фармацевта в аптеке</span>
+					</label>
+					<label for="9-btn" class="custom-radio-wrapper">
+						<input type="radio" id="9-btn" name="quest-3" value="">
+						<span class="custom-radio-btn"></span>
+						<span class="custom-radio-label">После приема врача, руководствуясь его назначениями</span>
+					</label>
+				</fieldset>
+				<button type="submit" class="modal-btn btn btn--fill uk-float-right">Завершить опрос</button>
+			</form>
+		</div>
+	</div>
+</div>
 
 
 

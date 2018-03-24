@@ -257,7 +257,11 @@ $('.about-company-slider').slick({
 
 		$(this).addClass('active');
 
-		sortList(servicesArray, _self);
+		$('.services-list').fadeOut(function() {
+			sortList(servicesArray, _self);
+		});
+
+		$('.services-list').fadeIn();
 
 	});
 
@@ -272,17 +276,26 @@ $('.about-company-slider').slick({
 		});
 	});
 
+	var lastTime = 0;
+
 	$(formFilter).on('keyup', function() {
 		var value = $(this).val().toLowerCase();
 		var valueLength = value.length;
+	  if(Date.now() - lastTime >= 800) {
 
-		if(value.length == 0) {
-			servicesArray.map(function(el) {
-				$(el).removeClass('uk-hidden');
-			});
-		} else {
-			sortList(servicesArray, value);
-		};
+			if(value.length == 0) {
+				servicesArray.map(function(el) {
+					$(el).removeClass('uk-hidden');
+				});
+			} else {
+				$('.services-list').fadeOut(function() {
+					sortList(servicesArray, value);
+				});
+
+				$('.services-list').fadeIn();
+			};
+			lastTime = Date.now();
+	  }
 
 	});
 
@@ -301,8 +314,8 @@ $('.about-company-slider').slick({
 
 	/* STAFF FILTER */
 
-	var staffFormFilter = $('.js__staff-filter input');
-	var staffArray = [];
+	var staffFormFilter = $('.js__staff-filter input'),
+			staffArray = [];
 
 	$('.staff-card').each(function(i, el) {
 		staffArray.push($(el));
@@ -312,14 +325,20 @@ $('.about-company-slider').slick({
 	$(staffFormFilter).on('keyup', function() {
 		var value = $(this).val().toLowerCase();
 		var valueLength = value.length;
+		if(Date.now() - lastTime >= 800) {
+			if(value.length == 0) {
+				staffArray.map(function(el) {
+					$(el).removeClass('uk-hidden');
+				});
+			} else {
+				$('.staff-cards-list').fadeOut(function() {
+					sortStaffList(staffArray, value);
+				});
 
-		if(value.length == 0) {
-			staffArray.map(function(el) {
-				$(el).removeClass('uk-hidden');
-			});
-		} else {
-			sortStaffList(staffArray, value);
-		};
+				$('.staff-cards-list').fadeIn();
+			};
+			lastTime = Date.now();
+		}
 	});
 
 	function sortStaffList(arr, value) {
