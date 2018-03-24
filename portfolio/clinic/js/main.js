@@ -271,7 +271,7 @@ $('.about-company-slider').slick({
 	var formFilter = ('.js__directions-filter input');
 
 	$(formFilter).on('focus', function() {
-		servicesArray.filter(function(el, i) {
+		$.each(servicesArray, function(i, el) {
 			$(el).removeClass('uk-hidden');
 		});
 	});
@@ -321,6 +321,11 @@ $('.about-company-slider').slick({
 		staffArray.push($(el));
 	});
 
+	$(staffFormFilter).on('focus', function() {
+		$.each(staffArray, function(i, el) {
+			$(el).removeClass('uk-hidden');
+		});
+	});
 
 	$(staffFormFilter).on('keyup', function() {
 		var value = $(this).val().toLowerCase();
