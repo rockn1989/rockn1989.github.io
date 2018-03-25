@@ -2756,7 +2756,6 @@ html.uk-touch body *.uk-invisible {
 }
 /* CUSTOM SELECT */
 .select2-container--default {
-  width: 100% !important;
   height: 40px;
   max-width: 100%;
   line-height: 40px;
