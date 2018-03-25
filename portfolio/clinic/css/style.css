@@ -2305,7 +2305,6 @@ html.uk-touch body *.uk-invisible {
 .default-modal .uk-modal-header .title {
   position: relative;
   margin-bottom: 60px;
-  padding-right: 30%;
   color: #2a3246;
   font-size: 36px;
   line-height: 42px;
@@ -2314,32 +2313,11 @@ html.uk-touch body *.uk-invisible {
   font-family: "Proxima Nova";
   text-transform: uppercase;
 }
-.default-modal .uk-modal-header .title:after {
-  position: absolute;
-  top: 5px;
-  right: 0;
-  color: #ff0043;
-  font-size: 66px;
-  content: "\e902";
-  font-family: 'icomoon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 @media (min-width: 0) and (max-width: 767px) {
   .default-modal .uk-modal-header .title {
     margin-bottom: 30px;
     font-size: 24px;
     line-height: 30px;
-  }
-  .default-modal .uk-modal-header .title:after {
-    font-size: 30px;
   }
 }
 .default-modal .uk-modal-header .uk-modal-close {
@@ -2516,20 +2494,31 @@ html.uk-touch body *.uk-invisible {
   display: block !important;
   color: #ff0043;
 }
-.callback-modal .uk-modal-header .title {
-  padding-right: 0;
+.order-modal .title {
+  padding-right: 30%;
 }
-.success-modal .uk-modal-header .title {
-  padding-right: 0;
+.order-modal .title:after {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  color: #ff0043;
+  font-size: 66px;
+  content: "\e902";
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-.success-modal .uk-modal-header .title:after {
-  content: '';
-}
-.interview-modal .uk-modal-header .title {
-  padding-right: 0;
-}
-.interview-modal .uk-modal-header .title:after {
-  content: '';
+@media (min-width: 0) and (max-width: 767px) {
+  .order-modal .title:after {
+    font-size: 30px;
+  }
 }
 .interview-modal .interview-title {
   margin-bottom: 25px;
