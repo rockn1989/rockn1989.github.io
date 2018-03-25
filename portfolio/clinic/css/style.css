@@ -2160,14 +2160,36 @@ html.uk-touch body *.uk-invisible {
   z-index: 10;
 }
 .main-slider .slick-dots {
-  margin: 0 auto;
-  left: 0;
-  right: 0;
+  right: 7.5%;
   bottom: 100px;
   width: auto;
-  max-width: 1170px;
   text-align: right;
   z-index: 28;
+}
+@media (min-width: 768px) and (max-width: 959px) {
+  .main-slider .slick-dots {
+    right: 0;
+  }
+}
+@media (min-width: 960px) and (max-width: 1160px) {
+  .main-slider .slick-dots {
+    right: 2%;
+  }
+}
+@media (min-width: 1380px) and (max-width: 1500px) {
+  .main-slider .slick-dots {
+    right: 10%;
+  }
+}
+@media (min-width: 1500px) and (max-width: 1900px) {
+  .main-slider .slick-dots {
+    right: 15%;
+  }
+}
+@media (min-width: 1900px) {
+  .main-slider .slick-dots {
+    right: 20%;
+  }
 }
 .main-slider .slick-dots li {
   margin-right: 23px;
