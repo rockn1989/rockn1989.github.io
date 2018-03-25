@@ -1217,6 +1217,7 @@ html.uk-touch body *.uk-invisible {
           box-shadow: 0 5px 30px #d7e3e9;
 }
 .staff-card__img {
+  position: relative;
   margin-bottom: 20px;
   text-align: center;
   max-height: 196px;
@@ -2448,6 +2449,13 @@ html.uk-touch body *.uk-invisible {
           border-radius: 20px 20px 0 0;
   border-bottom: none !important;
 }
+.default-modal .custom-input__wrapper input[type="text"].focused {
+  background: url('../img/icon-svg/arrow-up-icon.svg') right 20px center no-repeat;
+  border-color: #293146 !important;
+  -webkit-border-radius: 20px 20px 0 0;
+          border-radius: 20px 20px 0 0;
+  border-bottom: none !important;
+}
 .default-modal .custom-input__wrapper:hover {
   cursor: pointer;
 }
@@ -2488,6 +2496,12 @@ html.uk-touch body *.uk-invisible {
 }
 .callback-modal .uk-modal-header .title {
   padding-right: 0;
+}
+.success-modal .uk-modal-header .title {
+  padding-right: 0;
+}
+.success-modal .uk-modal-header .title:after {
+  content: '';
 }
 .interview-modal .uk-modal-header .title {
   padding-right: 0;

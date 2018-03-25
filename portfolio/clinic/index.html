@@ -22,7 +22,7 @@
 		<link rel="stylesheet" href="css/ie-style.css">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 		<script src="libs/html5shiv.min.js"></script>
-		<script src="libs/placholder.js"></script>
+		<script src="libs/placeholders.min.js"></script>
 	<![endif]-->
 </head>
 <body>
@@ -84,7 +84,7 @@
 						<nav class="page-nav">
 							<ul class="nav-list uk-flex">
 								<li><a href="#">Направления</a></li>
-								<li><a href="#interview-modal" data-uk-modal>Услуги и цены</a></li>
+								<li><a href="#">Услуги и цены</a></li>
 								<li><a href="#">Анализы и диагностика</a></li>
 								<li><a href="#">Врачи</a></li>
 								<li><a href="#">О клинике</a></li>
@@ -411,6 +411,9 @@
 	</footer>
 
 
+
+<!-- ФОРМА ЗАПИСИ НА ПРИЕМ  -->
+
 <div id="order-modal" class="uk-modal default-modal">
 	<div class="uk-modal-dialog">
 		<div class="uk-modal-header">
@@ -451,6 +454,9 @@
 	</div>
 </div>
 
+
+<!-- ФОРМА ЗАКАЗАТЬ ЗВОНОК -->
+
 <div id="callback-modal" class="uk-modal default-modal callback-modal">
 	<div class="uk-modal-dialog">
 		<div class="uk-modal-header">
@@ -473,6 +479,23 @@
 		</div>
 	</div>
 </div>
+
+
+<!-- ФОРМА УСПЕШНОЙ ОТПРАВКИ ЗАЯВКИ/ЗВОНОК -->
+
+<div id="success-modal" class="uk-modal default-modal success-modal">
+	<div class="uk-modal-dialog">
+		<div class="uk-modal-header">
+			<div class="title">Ваша заявка успешно отправлена</div>
+			<a class="uk-modal-close uk-close"></a>
+		</div>
+		<div class="uk-modal-body">
+		</div>
+	</div>
+</div>
+
+
+<!-- ФОРМА ОПРОСНИК -->
 
 <div id="interview-modal" class="uk-modal default-modal interview-modal">
 	<div class="uk-modal-dialog">
