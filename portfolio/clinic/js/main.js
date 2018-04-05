@@ -196,12 +196,50 @@ $('.about-company-slider').slick({
 		if((e.which == 27 || e.target != input) && $(form).hasClass('open')) {
 			$(form).fadeOut('350', function() {
 				$(this).removeClass('uk-animation-fade-in open');
+				template.removeClass('visible');
 				$('.contacts .uk-grid').fadeIn('350');
 				$(document).unbind('click keyup', hiddenSearchForm);
 			});
 		};
 	};
 
+	/* AUTOCOMPLETE */
+
+	var result = [
+  {"value":"Массажист","url":"/doctors-detail.html"},
+  {"value":"Уролог","url":"/doctors-detail.html"},
+  {"value":"Узи","url":"/doctors-detail.html"},
+  {"value":"Косметолог","url":"/doctors-detail.html"},
+  {"value":"Педиатр","url":"/doctors-detail.html"},
+  {"value":"Онколог","url":"/doctors-detail.html"},
+  {"value":"Психотерапевт","url":"/doctors-detail.html"}
+];
+
+
+	$('.search-form input').on('keyup', autocomplete);
+
+	var template = $('.autocomplete');
+
+	var relativeBlock = $('.contacts');
+
+	function autocomplete() {
+		var value = $(this).val().toLowerCase();
+		template.find('ul').html('');
+		if(value.length !== 0) {
+			$.each(result, function(i, el) {
+				if(el.value.toLowerCase().indexOf(value) !== -1 && el.value.toLowerCase().indexOf(value) == 0) {
+					$('.search-form').addClass('find');
+					template.addClass('visible');
+					var result = '<li><a href="'+el.url+'">'+el.value+'</a></li>'
+					template.find('ul').append(result);
+				}
+			});
+		} else {
+			template.removeClass('visible');
+			$('.search-form').removeClass('find');
+		}
+
+	}
 
 	/* SERVICE COAST */
 

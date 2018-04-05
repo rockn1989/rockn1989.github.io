@@ -2586,10 +2586,10 @@ html.uk-touch body *.uk-invisible {
   border: 1px solid #e7f2f8;
   -webkit-border-radius: 100px;
           border-radius: 100px;
-  -webkit-transition: all .3s ease;
-  -o-transition: all .3s ease;
-  -moz-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: border-color 0.3s ease;
+  -o-transition: border-color 0.3s ease;
+  -moz-transition: border-color 0.3s ease;
+  transition: border-color 0.3s ease;
   font-size: 16px;
 }
 .search-form input:focus {
@@ -2971,4 +2971,69 @@ label.custom-radio-wrapper .custom-radio-label {
   overflow: hidden;
   color: #9b9b9b;
   font-size: 14px;
+}
+/* AUTOCOMPLETE */
+.header .contacts {
+  position: relative;
+}
+.mobile-search {
+  position: relative;
+}
+.mobile-search .search-form.find ~ .autocomplete {
+  border-color: #ff0043;
+}
+.search-form.find input[type="text"] {
+  -webkit-border-radius: 20px 20px 0 0;
+          border-radius: 20px 20px 0 0;
+  border-bottom: 1px solid #e7f2f8;
+}
+.search-form.find input[type="text"]:focus {
+  border-bottom: 1px solid #e7f2f8 !important;
+}
+.search-form.find button {
+  -webkit-border-radius: 20px 20px 0 20px;
+          border-radius: 20px 20px 0 20px;
+}
+.autocomplete {
+  position: absolute;
+  top: 51px;
+  left: 0;
+  z-index: 500;
+  width: 100%;
+  border: 1px solid #293146;
+  border-top: none;
+  display: block;
+  opacity: 0;
+  -webkit-transition: opacity .35s linear;
+  -o-transition: opacity .35s linear;
+  -moz-transition: opacity .35s linear;
+  transition: opacity .35s linear;
+}
+.autocomplete ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.autocomplete ul li {
+  width: 100%;
+}
+.autocomplete ul li a {
+  padding: 9px 0 9px 5%;
+  padding-left: 5%;
+  display: block;
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #444;
+}
+@media (max-width: 960px) {
+  .autocomplete ul li a {
+    padding-left: 20px;
+  }
+}
+.autocomplete ul li a:hover {
+  color: #ff0043;
+}
+.autocomplete.visible {
+  display: block;
+  opacity: 1;
 }

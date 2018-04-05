@@ -25,6 +25,7 @@
 		<script src="libs/placeholders.min.js"></script>
 	<![endif]-->
 </head>
+
 <body>
 	<header class="header">
 		<div class="header__top uk-visible-large">
@@ -68,10 +69,11 @@
 								</div>
 							</div>
 							<form action="" method="" class="search-form blue">
-									<input type="text" name="term" placeholder="Поиск нужного направления">
+									<input type="text" name="term" placeholder="Поиск нужного направления" autocomplete="off">
 									<button type="submit" class="search-form__btn icon-search">
 									</button>
 							</form>
+							<div class="autocomplete"><ul class="list-result"></ul></div>
 						</div>
 					</div>
 				</div>
@@ -132,6 +134,7 @@
 						<button type="submit" class="search-form__btn icon-search">
 						</button>
 					</form>
+					<div class="autocomplete"><ul class="list-result"></ul></div>
 				</div>
 			</div>
 		</div>
@@ -141,14 +144,27 @@
 
 
 
+
+
 	<div class="content">
 		<div class="services-detail-header" style="background-image: url('img/detail-bg.png')">
 			<div class="uk-container">
 				<ul class="breadcrumbs">
-					<li><a href="">Главная</a></li>
-					<li><a href="">Направления</a></li>
-					<li>Гинекология</li>
-				</ul>
+		
+		
+	<li><a href="">Главная</a></li>
+	
+	
+		
+	<li><a href="">Направления</a></li>
+	
+	
+		
+	<li>Гинекология</li>
+		
+	
+	</ul>
+
 				<h1>Гинекология</h1>
 			</div>
 		</div>
@@ -256,6 +272,8 @@
 		</div>
 	</div>
 
+
+
 	<footer class="footer">
 		<div class="uk-container">
 			<form action="" class="page-form-search">
@@ -339,6 +357,9 @@
 
 
 
+
+
+
 <!-- ФОРМА ЗАПИСИ НА ПРИЕМ  -->
 
 <div id="order-modal" class="uk-modal default-modal order-modal">
@@ -363,6 +384,21 @@
 					</div>
 					<select name="" id="" class="customSelect js__custom-select">
 						<option value="" class="placeholder"></option>
+						<option value="Петров Павел Юрьевич">Петров Павел Юрьевич</option>
+						<option value="Петров Павел Юрьевич">Петров Павел Юрьевич</option>
+						<option value="Петров Павел Юрьевич">Петров Павел Юрьевич</option>
+						<option value="Петров Павел Юрьевич">Петров Павел Юрьевич</option>
+						<option value="Петров Павел Юрьевич">Петров Павел Юрьевич</option>
+						<option value="Петров Павел Юрьевич">Петров Павел Юрьевич</option>
+						<option value="Петров Павел Юрьевич">Петров Павел Юрьевич</option>
+						<option value="Петров Павел Юрьевич">Петров Павел Юрьевич</option>
+						<option value="Петров Павел Юрьевич">Петров Павел Юрьевич</option>
+						<option value="Петров Павел Юрьевич">Петров Павел Юрьевич</option>
+						<option value="Петров Павел Юрьевич">Петров Павел Юрьевич</option>
+						<option value="Петров Павел Юрьевич">Петров Павел Юрьевич</option>
+						<option value="Петров Павел Юрьевич">Петров Павел Юрьевич</option>
+						<option value="Петров Павел Юрьевич">Петров Павел Юрьевич</option>
+						<option value="Петров Павел Юрьевич">Петров Павел Юрьевич</option>
 						<option value="Петров Павел Юрьевич">Петров Павел Юрьевич</option>
 						<option value="Петров Павел Юрьевич">Петров Павел Юрьевич</option>
 						<option value="Петров Павел Юрьевич">Петров Павел Юрьевич</option>
@@ -496,6 +532,8 @@
 
 
 
+
+
 	<script src="libs/jquery.mask.min.js" defer></script>
 	<script src="libs/jquery.validate.min.js" defer></script>
 	<script src="libs/js/uikit.min.js" defer></script>
@@ -504,6 +542,7 @@
 	<script src="libs/svg4everybody.min.js" defer></script>
 	<script type="text/javascript" src="https://www.youtube.com/iframe_api"></script>
 	<script src="js/main.js" defer></script>
+
 
 </body>
 </html>
