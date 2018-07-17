@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Главная</title>
+	<meta property="og:url" content="">
+	<meta property="og:type" content="Article">
+	<meta property="og:site_name" content="">
+	<meta property="og:image" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+	<link rel="stylesheet" href="libs/css/uikit.min.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/slick/slick-theme.css">
+	<link rel="stylesheet" href="libs/select2/select2.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!--[if lte IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+		<script src="libs/html5shiv.min.js"></script>
+		<script src="libs/placeholders.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+<header class="header">
+	<div class="uk-container">
+		 <div class="header__desktop uk-visible-large">
+				<div class="uk-grid">
+				<div class="uk-width-2-10">
+					<a href="/" class="logo">
+						<img src="img/logo.png" alt="Ostron" title="Ostron">
+					</a>
+				</div>
+				<div class="uk-width-8-10">
+					<div class="uk-grid uk-grid-collapse">
+						<div class="uk-width-1-2">
+							<nav class="main-nav">
+								<ul>
+									<li><a href="">Применение</a></li>
+									<li><a href="">Комплектация</a></li>
+									<li><a href="">О компании</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="uk-width-1-2">
+						<div class="header__contacts">
+								<a href="tel:+74954445634" class="telephone">+7 (495) 444-56-34</a>
+								<a href="#feedback-modal" class="btn btn--yellow uk-float-right" data-uk-modal>Заказать звонок</a>
+						</div>
+						</div>
+					</div>
+				</div>
+				</div>
+		 </div>
+		 <div class="header__mobile uk-hidden-large">
+
+		 		<div class="uk-grid">
+		 			<div class="uk-width-1-2">
+		 				<a href="/" class="logo">
+		 					<img src="img/logo.png" alt="">
+		 				</a>
+		 			</div>
+		 			<div class="uk-width-1-2">
+						<ul class="mobile-menu">
+							<li>
+				 				<a href="tel:+74954445634">
+				 					<svg width="20px" height="20px" class="icon-tel">
+				 					  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite-svg.svg#icon-tel"></use>
+				 					</svg>
+				 				</a>
+							</li>
+							<li>
+				 				<a href="#offcanvas-menu" data-uk-offcanvas>
+				 					<svg width="25px" height="25px" class="icon-menu">
+				 					  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite-svg.svg#icon-menu"></use>
+				 					</svg>
+				 				</a>
+							</li>
+						</ul>
+		 			</div>
+		 		</div>
+			<div id="offcanvas-menu" class="uk-offcanvas">
+				<div class="uk-offcanvas-bar">
+						<div class="uk-panel">
+							<ul class="uk-nav">
+									<li><a href="">Применение</a></li>
+									<li><a href="">Комплектация</a></li>
+									<li><a href="">О компании</a></li>
+							</ul>
+						</div>
+				</div>
+			</div>
+		 </div>
+		 <div class="banner">
+		 	 <div class="uk-grid uk-grid-collapse">
+		 	 	<div class="uk-width-1-1 uk-width-medium-1-2">
+		 	 		<div class="title-h1">
+		 	 			ГАЗОАНАЛИТИЧЕСКАЯ СИСТЕМА OSTRON 
+		 	 		</div>
+		 	 		<p>
+		 	 			Гибкое решение сконфигурированное под  ваш тип задач, оптимальная цена, евроейское качество Гибкое решение сконфигурированное под  ваш тип задач, оптимальная цена, евроейское качество
+		 	 		</p>
+					<div class="banner__btn-wrapper">
+						<a href="#calc" class="btn btn--fill btn--medium" data-uk-smooth-scroll>Рассчитать комплект</a>
+						<a href="#feedback-modal" class="btn btn--medium" data-uk-modal>Консультация</a>
+					</div>
+		 	 	</div>
+		 	 	<div class="uk-width-1-1 uk-width-medium-1-2">
+		 	 		<div class="banner__img">
+		 	 			<img src="img/box.png" alt="">
+		 	 		</div>
+		 	 	</div>
+		 	 </div>
+		 </div>
+	</div>
+</header>
+
+	
+	<div class="application">
+		<div class="uk-container">
+			<div class="services" data-uk-scrollspy="{cls:'uk-animation-fade uk-invisible', target:'.services__item', delay: 250}">
+				<div class="uk-grid">
+					<div class="uk-width-1-1 uk-width-large-1-3">
+						<div class="services__item uk-invisible">
+							<div class="services__img">
+								<svg width="50px" height="50px" class="icon-suitcase">
+								  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite-svg.svg#icon-suitcase"></use>
+								</svg>
+							</div>
+							<div class="services__desc">
+								<div class="services__title">
+									Персональное решение под каждый объект
+								</div>
+								<div class="services__text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis nibh sapien, sit amet mattis elit tristique vitae. 
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="uk-width-1-1 uk-width-large-1-3">
+						<div class="services__item uk-invisible">
+							<div class="services__img">
+								<svg width="28px" height="64px" class="icon-tel">
+								  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite-svg.svg#icon-tel"></use>
+								</svg>
+							</div>
+							<div class="services__desc">
+								<div class="services__title">
+									Оптимальная цена проверенное качество
+								</div>
+								<div class="services__text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis nibh sapien, sit amet mattis elit tristique vitae. 
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="uk-width-1-1 uk-width-large-1-3">
+						<div class="services__item uk-invisible">
+							<div class="services__img">
+								<svg width="35px" height="48px" class="icon-bookmark">
+								  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite-svg.svg#icon-bookmark"></use>
+								</svg>
+							</div>
+							<div class="services__desc">
+								<div class="services__title">
+									Гарантия на всю систему до 2 лет
+								</div>
+								<div class="services__text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis nibh sapien, sit amet mattis elit tristique vitae. 
+								</div>
+							</div>
+						</div>
+					</div> 
+				</div>
+			</div>
+			<div class="application-area">
+				<div class="uk-grid">
+					<div class="uk-width-1-1 uk-width-medium-6-10">
+						<div class="title-h2">
+							Большой спектр области применеия
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis nibh sapien, sit amet mattis elit tristique vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis nibh sapien, sit amet mattis elit tristique vitae. 
+						</p>
+						<a href="#consultation-modal" class="btn btn--fill btn--medium" data-uk-modal>Консультация</a>
+					</div>
+					<div class="uk-width-1-1 uk-width-medium-4-10">
+						<div class="area-counter">
+							<div class="area-counter__val">65</div>
+							<div class="area-counter__text">видов измеряемых газов</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="about-system">
+		<div class="uk-container">
+			<div class="title-h2 uk-text-center">
+				Что входит в газоаналитическую систему
+			</div>
+			<p class="uk-text-center mw700">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis nibh sapien, sit amet mattis elit tristique vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis nibh sapien, sit amet mattis elit tristique vitae. 
+			</p>
+			<div class="system">
+				<div class="uk-grid uk-grid-collapse">
+					<div class="uk-width-1-1 uk-width-large-1-3">
+						<div class="system__tooltip arrow-right">
+							<div class="system__title">Газоанализатор</div>
+							<div class="system__text">
+								Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. 
+							</div>
+						</div>
+						<div class="system__tooltip arrow-right">
+							<div class="system__title">Датчики</div>
+							<div class="system__text">
+								Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. 
+							</div>
+						</div>
+					</div>
+					<div class="uk-width-1-1 uk-width-large-1-3">
+						<div class="system-slider">
+							<div class="slider">
+								<div class="slide">
+									<img src="img/slider-img-1.png" alt="">
+								</div>
+								<div class="slide">
+									<img src="https://via.placeholder.com/300x350" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="uk-width-1-1 uk-width-large-1-3">
+						<div class="system__tooltip arrow-left">
+							<div class="system__title">Монтажные материалы</div>
+							<div class="system__text">
+								Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. 
+							</div>
+						</div>
+						<div class="system__tooltip arrow-left">
+							<div class="system__title">Документация</div>
+							<div class="system__text">
+								Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. 
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="request-block" id="calc">
+		<div class="uk-container">
+			<div class="title-h2">Заявка на просчет вашей газоаналитической системы</div>
+			<form method="post" class="request-form">
+				<div class="uk-grid">
+					<div class="uk-width-1-1 uk-width-medium-3-4">
+						<div class="request-form__inner">
+							<fieldset class="uk-margin-large-bottom">
+								<div class="toolbar-wrapper">
+									<label for="display" class="form-label">
+										<input type="checkbox" id="display">
+										<span class="custom-label">Дисплей</span>
+										<span class="custom-checkbox"></span>
+									</label>
+								</div>
+								<div class="toolbar-wrapper">
+									<label for="temp" class="form-label">
+										<input type="checkbox" id="temp">
+										<span class="custom-label">Правка на температуру и влажность</span>
+										<span class="custom-checkbox"></span>
+									</label>
+								</div>
+							</fieldset>
+							<div class="uk-grid">
+								<div class="uk-width-1-1 uk-width-medium-1-2">
+									<div class="form-title">Газ</div>
+									<select multiple class="custom-select">
+										<option>Газ</option>
+										<option>Текст-2</option>
+										<option>Текст-3</option>
+										<option>Текст-4</option>
+										<option>Текст-5</option>
+										<option>Текст-6</option>
+										<option>Текст-6</option>
+										<option>Текст-6</option>
+										<option>Текст-6</option>
+										<option>Текст-6</option>
+										<option>Текст-6</option>
+										<option>Текст-6</option>
+										<option>Текст-6</option>
+										<option>Текст-6</option>
+										<option>Текст-6</option>
+										<option>Текст-6</option>
+										<option>Текст-6</option>
+										<option>Текст-6</option>
+									</select>
+								</div>
+								<div class="uk-width-1-1 uk-width-medium-1-2">
+									
+									<fieldset>
+										<div class="form-title">Интерфейс</div>
+										<label for="pid" class="no-mrl">
+											<input type="checkbox" name="" id="pid">
+											<span class="custom-checkbox"></span>
+											<span class="custom-label">ПИД</span>
+										</label>
+										<label for="gsm">
+											<input type="checkbox" name="" id="gsm">
+											<span class="custom-checkbox"></span>
+											<span class="custom-label">GSM</span>
+										</label>
+										<label for="rs">
+											<input type="checkbox" name="" id="rs">
+											<span class="custom-checkbox"></span>
+											<span class="custom-label">RS-485</span>
+										</label>
+									</fieldset>
+								</div>
+								<div class="uk-width-1-1 uk-width-medium-1-2">
+									<div class="form-title">Количество датчиков</div>
+									<select>
+										<option value="" disabled selected>Количество датчиков</option>
+										<option>2</option>
+										<option>2</option>
+										<option>2</option>
+										<option>2</option>
+									</select>
+								</div>
+								<div class="uk-width-1-1 uk-width-medium-1-2">
+									<fieldset>
+										<div class="form-title">Порог срабатывания</div>
+										<label for="pdk" class="no-mrl">
+											<input type="radio" name="porog" id="pdk">
+											<span class="custom-radio"></span>
+											<span class="custom-label">ПДК</span>
+										</label>
+										<label for="cons">
+											<input type="radio" name="porog" id="cons">
+											<span class="custom-radio"></span>
+											<span class="custom-label fw400">Другая концентрация</span>
+										</label>
+									</fieldset>
+								</div>
+								<div class="uk-width-1-1 uk-width-medium-1-2">
+									<div class="form-title">Тип датчиков</div>
+									<select>
+										<option value="" disabled selected>Тип датчиков</option>
+										<option>2</option>
+										<option>2</option>
+										<option>2</option>
+										<option>2</option>
+									</select>
+								</div>
+								<div class="uk-width-1-1 uk-width-medium-1-2">
+									<div class="form-title">Количество каналов</div>
+									<select>
+										<option value="" disabled selected>Количество каналов</option>
+										<option>2</option>
+										<option>2</option>
+										<option>2</option>
+										<option>2</option>
+									</select>
+								</div>
+								<div class="uk-width-1-1 uk-width-medium-1-2">
+									<div class="form-title">Количество реле</div>
+									<select>
+										<option value="" disabled selected>Количество реле</option>
+										<option>2</option>
+										<option>2</option>
+										<option>2</option>
+										<option>2</option>
+									</select>
+								</div>
+								<div class="uk-width-1-1 uk-width-medium-1-2">
+									<div class="form-title">Длина линии</div>
+									<select>
+										<option value="" disabled selected>Длина линии</option>
+										<option>2</option>
+										<option>2</option>
+										<option>2</option>
+										<option>2</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="uk-width-1-1 uk-width-medium-1-4">
+						<button class="btn btn--fill btn--medium">Отправить</button>
+						<a href="#consultation-modal" class="btn btn--medium" data-uk-modal>Консультация</a>
+						<div class="add-info">
+							<div class="title">Примечание</div>
+							<div class="text">
+								Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. 
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div class="about-company">
+		<div class="uk-container">
+			<div class="uk-grid">
+				<div class="uk-width-1-1 uk-width-medium-2-3">
+					<div class="title-h2">О компании</div>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis nibh sapien, sit amet mattis elit tristique vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis nibh sapien, sit amet mattis elit tristique vitae. 
+					</p>
+				</div>
+				<div class="uk-width-1-1 uk-width-medium-1-3">
+					<div class="about-company__img">
+						<img src="img/about-company.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="question-block">
+		<div class="uk-container">
+			<div class="title-h2 uk-text-center mw700">Остались вопросы ?</div>
+			<p class="uk-text-center mw700">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis nibh sapien, sit amet mattis elit tristique vitae.
+			</p>
+			<form action="" class="question-form">
+				<div class="uk-grid">
+					<div class="uk-width-1-1 uk-width-medium-1-3">
+						<label for="question-user-name">Имя</label>
+						<input type="text" name="question-user-name" id="question-user-name" placeholder="Имя">
+					</div>
+					<div class="uk-width-1-1 uk-width-medium-1-3">
+						<label for="question-user-tel">Номер телефона</label>
+						<input type="text" name="question-user-tel" id="question-user-tel" class="js__input-mask" placeholder="+7 (499) 499-99-99">
+					</div>
+					<div class="uk-width-1-1 uk-width-medium-1-3">
+						<button class="btn btn--fill">Отправить</button>
+						<div class="form-politics">
+							<label for="question-politics" class="js__toggle-checkbox">
+								<span class="custom-checkbox"></span>
+								<span class="custom-label">
+									Согласие на обработку персональных данных
+								</span>
+								<input type="checkbox" name="question-politics" id="question-politics" required>
+							</label>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
+<footer class="footer">
+	<div class="uk-container">
+		<div class="uk-grid">
+			<div class="uk-width-1-1 uk-width-medium-1-4 uk-width-large-1-4">
+				<a href="" class="logo">
+					<img src="img/logo-footer.png" alt="">
+					<span class="logo__subtitle">Газоаналитическая  система</span>
+				</a>
+			</div>
+			<div class="uk-width-1-1 uk-width-medium-1-4 uk-width-large-2-10">
+				<ul class="footer-nav">
+					<li><a href="#">Комплектация</a></li>
+					<li><a href="#">Применение</a></li>
+					<li><a href="#">О компании</a></li>
+				</ul>
+			</div>
+			<div class="uk-width-1-1 uk-width-medium-2-4 uk-width-large-3-10">
+				<div class="company-contacts">
+					<div class="address">
+						<div class="label">Адрес:</div>
+						<div class="text">
+							г.Москва, ул. Переменых д 12, офис 245
+						</div>
+					</div>
+					<div class="email">
+						<div class="label">Почта:</div>
+						<div class="text">
+							<a href="mailto:info@nikilect.ru">info@nikilect.ru</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="uk-width-1-1 uk-width-medium-1-2 uk-width-large-1-4">
+				<div class="footer__tel">
+					<a href="tel:+74954445634" class="telephone">+7 (495) 444-56-34</a>
+					<a href="#feedback-modal" class="btn btn--yellow" data-uk-modal>Заказать звонок</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+
+
+<div id="feedback-modal" class="uk-modal default-modal">
+	<div class="uk-modal-dialog">
+		<div class="uk-modal-header">
+			<div class="title">Обратный звонок</div>
+			<div class="subtitle">
+				Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. 
+			</div>
+			<a class="uk-modal-close uk-close"></a>
+		</div>
+		<div class="uk-modal-body">
+			<form action="" class="feedback-form">
+
+				<fieldset>
+					<label for="feedback-name">Имя</label>
+					<input type="text" id="feedback-name" placeholder="Ваше имя">
+				</fieldset>
+
+				<fieldset>
+					<label for="feedback-tel">Номер телефона</label>
+					<input type="text" id="feedback-tel" class="js__input-mask" name="tel" placeholder="+7 (499) 999-99-99" required>
+				</fieldset>
+
+				<fieldset>
+					<button type="submit" class="btn btn--fill modal-btn">Отправить</button>
+					<div class="form-politics">
+						<label for="feedback-politics" class="js__toggle-checkbox">
+							<span class="custom-checkbox"></span>
+							<span class="custom-label">
+								Согласие на обработку персональных данных
+							</span>
+							<input type="checkbox" name="feedback-politics" id="feedback-politics" required>
+						</label>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div id="consultation-modal" class="uk-modal default-modal">
+	<div class="uk-modal-dialog">
+		<div class="uk-modal-header">
+			<div class="title">Заказать консультацию</div>
+			<div class="subtitle">
+				Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. 
+			</div>
+			<a class="uk-modal-close uk-close"></a>
+		</div>
+		<div class="uk-modal-body">
+			<form action="" class="consultation-form">
+
+				<fieldset>
+					<label for="consultation-name">Имя</label>
+					<input type="text" id="consultation-name" placeholder="Ваше имя">
+				</fieldset>
+
+				<fieldset>
+					<label for="consultation-tel">Номер телефона</label>
+					<input type="text" id="consultation-tel" class="js__input-mask" name="tel" placeholder="+7 (499) 999-99-99" required>
+				</fieldset>
+
+				<fieldset>
+					<button type="submit" class="btn btn--fill modal-btn">Отправить</button>
+					<div class="form-politics">
+						<label for="consultation-politics" class="js__toggle-checkbox">
+							<span class="custom-checkbox"></span>
+							<span class="custom-label">
+								Согласие на обработку персональных данных
+							</span>
+							<input type="checkbox" name="consultation-politics" id="consultation-politics" required>
+						</label>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="libs/jquery-mask/jquery.maskedinput.min.js"></script>
+<script src="libs/jquery.validate.min.js"></script>
+<script src="libs/js/uikit.min.js"></script>
+<script src="libs/select2/select2.min.js"></script>
+<script src="libs/slick/slick.min.js"></script>
+<script src="libs/svg4everybody.min.js"></script>
+<script src="libs/ofi.min.js"></script>
+<script src="js/main.js"></script>
+
+
+</body>
+</html>
