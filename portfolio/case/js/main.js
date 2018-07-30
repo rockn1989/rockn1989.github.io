@@ -95,4 +95,35 @@ var counter = 0;
 
     });
 
+	$('.uk-modal').on('show.uk.modal', function() {
+		var width = $('.default-modal input[type="text"]').outerWidth();
+		$('.js__custom-select').select2({
+			placeholder: "Выберите специалиста",
+			minimumResultsForSearch: -1,
+			dropdownPosition: 'below',
+			width: width+'px'
+		});
+	});
+		var width = $('.form input[type="text"]').outerWidth();
+		$('.js__custom-select').select2({
+			placeholder: "Выберите специалиста",
+			minimumResultsForSearch: -1,
+			dropdownPosition: 'below',
+			width: width+'px'
+		});
+
+
+	/* DATEPICKER EVENTS */
+
+	var datepicker = UIkit.datepicker($('.custom-input[data-uk-datepicker]'),{offsettop: 0});
+
+	datepicker.on('show.uk.datepicker', function() {
+		var width = $('.custom-input[data-uk-datepicker]').outerWidth();
+		$('.uk-dropdown.uk-datepicker').css({'width': width + 'px'});
+		$('.custom-input[data-uk-datepicker]').addClass('focused');
+	})
+	datepicker.on('hide.uk.datepicker', function() {
+		$('.custom-input[data-uk-datepicker]').removeClass('focused')
+	})
+
 });

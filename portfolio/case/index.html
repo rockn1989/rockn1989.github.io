@@ -13,8 +13,7 @@
 	<meta property="og:description" content="">
 	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 	<link rel="stylesheet" href="libs/css/uikit.min.css">
-	<link rel="stylesheet" href="libs/slick/slick.css">
-	<link rel="stylesheet" href="libs/slick/slick-theme.css">
+	<link rel="stylesheet" href="libs/select2/select2.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<!--[if lte IE 9]>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
@@ -24,17 +23,11 @@
 </head>
 <body>
 <header class="header uk-animation-slide-up">
-	<div class="uk-container">
-		<div class="header__inner">
-			<img src="img/header-bg-2.png" alt="">
-		</div>
-<!-- 		<a href="" class="logo">
-	<img src="img/logo.png" alt="">
-</a>
-<div class="title-h1">Столичная Медицинская Клиника</div>
-<div class="subtitle">Редизайн</div> -->
-
+<!-- 	<div class="uk-container">
+	<div class="header__inner">
+		<img src="img/header-bg-2.png" alt="">
 	</div>
+</div> -->
 </header>
 
 
@@ -187,7 +180,44 @@
 				</p>
 			</div>
 			<div class="form uk-invisible" data-uk-scrollspy="{cls:'uk-slide-up uk-invisible', delay:200, repeat: false}">
-				<img class="lazy" data-src="img/form.png" alt="">
+				<!-- <img class="lazy" data-src="img/form.png" alt=""> -->
+			<div class="uk-modal-dialog">
+					<div class="uk-modal-header">
+						<div class="title">Записаться на прием</div>
+						<a class="uk-modal-close uk-close"></a>
+					</div>
+					<div class="uk-modal-body">
+						<form novalidate="novalidate">
+							<fieldset>
+								<input type="hidden" name="formid" value="order">
+								<input type="text" name="name" placeholder="Имя" required="" aria-required="true">
+								<input type="text" name="phone" placeholder="Телефон" class="js__mask" required="" aria-required="true" maxlength="16">
+								<input type="text" name="email" placeholder="E-mail">
+							</fieldset>
+							<fieldset>
+								<div class="custom-input__wrapper">
+									<input type="text" name="date" class="custom-input" data-uk-datepicker="{format:'DD.MM.YYYY',weekstart: 0, i18n:{months:['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'], weekdays: ['Пн','Вт','Ср','Чт','Пт','Сб','Вс']}, pos: 'bottom', offsettop: 0}" placeholder="Дата" readonly="">
+								</div>
+								<div class="custom-input__wrapper">
+									<input type="text" name="time" class="custom-input" data-uk-timepicker="{format:'24h', start: 8, end: 21}" placeholder="Время" readonly="">
+								</div>
+								<label>
+									<select name="doctor" class="customSelect js__custom-select select2-hidden-accessible" data-select2-id="1" tabindex="-1" aria-hidden="true">
+									<option value="" class="placeholder" data-select2-id="3">&nbsp;</option>
+									<option value="Агафонова Елена Владимировна">Агафонова Елена Владимировна</option><option value="Амирова Ольга Николаевна">Амирова Ольга Николаевна</option><option value="Бабкина Елена Павловна">Бабкина Елена Павловна</option><option value="Башкирова Оксана Викторовна">Башкирова Оксана Викторовна</option><option value="Генералова Наталья Константиновна">Генералова Наталья Константиновна</option><option value="Гомбожапова Маргарита Цыбеновна">Гомбожапова Маргарита Цыбеновна</option><option value="Горбунова Алена Владимировна">Горбунова Алена Владимировна</option><option value="Горяинова Татьяна Викторовна">Горяинова Татьяна Викторовна</option><option value="Дубинский Артём Игоревич">Дубинский Артём Игоревич</option><option value="Елисеева Лариса Анатольевна">Елисеева Лариса Анатольевна</option><option value="Журавлева Елена Леонидовна">Журавлева Елена Леонидовна</option><option value="Закиров Марат Вилович">Закиров Марат Вилович</option><option value="Зорин Артем Александрович">Зорин Артем Александрович</option><option value="Корнейчук Светлана Николаевна">Корнейчук Светлана Николаевна</option><option value="Кусочкина Наталья Александровна">Кусочкина Наталья Александровна</option><option value="Лазарев Алексей Владимирович">Лазарев Алексей Владимирович</option><option value="Максимов Олег Владимирович">Максимов Олег Владимирович</option><option value="Маркина Ирина Александровна">Маркина Ирина Александровна</option><option value="Межиева Жанна Андиевна">Межиева Жанна Андиевна</option><option value="Милова Нина Павловна">Милова Нина Павловна</option><option value="Никоноров Валерий Михайлович">Никоноров Валерий Михайлович</option><option value="Новик Светлана Ивановна">Новик Светлана Ивановна</option><option value="Новикова Лариса Андреевна">Новикова Лариса Андреевна</option><option value="Папугин Андрей Владимирович">Папугин Андрей Владимирович</option><option value="Парадник Диана Юрьевна">Парадник Диана Юрьевна</option><option value="Петухова Кристина Сергеевна">Петухова Кристина Сергеевна</option><option value="Рожков Тимофей Феликсович">Рожков Тимофей Феликсович</option><option value="Садыков Рустам Назимович">Садыков Рустам Назимович</option><option value="Самарская Наталья Григорьевна">Самарская Наталья Григорьевна</option><option value="Свинцов Дмитрий Олегович">Свинцов Дмитрий Олегович</option><option value="Слоневская  Людмила Николаевна">Слоневская  Людмила Николаевна</option><option value="Смирнов Михаил Евгеньевич">Смирнов Михаил Евгеньевич</option><option value="Уракова Яна Ченгизовна">Уракова Яна Ченгизовна</option><option value="Чернова Марина Владимировна">Чернова Марина Владимировна</option><option value="Шарафутдинов Ильдар  Рафаилович">Шарафутдинов Ильдар  Рафаилович</option><option value="Широких Елена Владимировна">Широких Елена Владимировна</option><option value="Шпаченко Федор Александрович">Шпаченко Федор Александрович</option><option value="Яновская Елизавета Абрамовна">Яновская Елизавета Абрамовна</option>
+								</select>
+								</label>
+							</fieldset>
+							<label for="politics" class="custom-checkbox-wrapper">
+								<input type="checkbox" name="agree" id="politics">
+								<span class="custom-checkbox"></span>
+								<span class="custom-checkbox-label">Я ознакомлен и согласен с условиями обработки данных</span>
+							</label>
+							<ul class="formErrors"></ul>
+							<button type="submit" class="modal-btn btn btn--fill">Записаться</button>
+						</form>
+					</div>
+				</div>
 			</div>
 			<img class="lazy stetoskop uk-visible-large" data-src="img/stetoskop.png" alt="">
 		</div>
@@ -263,10 +293,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
-<script src="libs/jquery-mask/jquery.maskedinput.min.js"></script>
 <script src="libs/js/uikit.min.js"></script>
-<script src="libs/slick/slick.min.js"></script>
 <script src="libs/svg4everybody.min.js"></script>
+<script src="libs/select2/select2.min.js"></script>
 <script src="js/main.js"></script>
 
 </body>
