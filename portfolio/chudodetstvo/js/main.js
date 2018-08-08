@@ -144,21 +144,67 @@ $(function() {
 	/*______ Google Map ______*/
 
 	function initMap() {
-        var myLatLng = {lat: -25.363, lng: 131.044};
+				var myLatLng = {lat: -25.363, lng: 131.044};
 
-        // Create a map object and specify the DOM element
-        // for display.
-        var map = new google.maps.Map(document.getElementById('map'), {
-          center: myLatLng,
-          zoom: 4
-        });
+				// Create a map object and specify the DOM element
+				// for display.
+				var map = new google.maps.Map(document.getElementById('map'), {
+					center: myLatLng,
+					zoom: 4
+				});
 
-        // Create a marker and set its position.
-        var marker = new google.maps.Marker({
-          map: map,
-          position: myLatLng,
-          title: 'Hello World!'
-        });
-      };
-  //initMap();
+				// Create a marker and set its position.
+				var marker = new google.maps.Marker({
+					map: map,
+					position: myLatLng,
+					title: 'Hello World!'
+				});
+			};
+	//initMap();
+});
+
+
+
+
+$(function ($) {
+	var $courseNav = $('.courses-nav'),
+		$courseNavList = $('.courses-nav li'),
+		$coursesWrapper = $('.courses-list'),
+		$coursesList = $('.courses-list__item');
+
+	$courseNav.on('click', 'a', function (e) {
+		e.preventDefault();
+
+		$.each($courseNavList, function (i, el) {
+			$(el).removeClass('active');
+		});
+
+		$(this).parent('li').addClass('active');
+
+		filterList($(this).data('age'));
+	});
+
+	function filterList(value) {
+		var val = value;
+
+		if(val != 100) {
+			$coursesWrapper.fadeOut('350', function() {
+				$coursesList.filter(function (i, el) {
+					$(el).data('age') == val ? $(el).removeClass('uk-hidden') : $(el).addClass('uk-hidden');
+				});
+				$(this).fadeIn('350');
+			});
+
+		} else {
+			$coursesWrapper.fadeOut('350', function() {
+				$.each($coursesList, function (i, el) {
+					$(el).removeClass('uk-hidden');
+				});
+				$(this).fadeIn('350');
+			});
+
+		}
+
+	};
+
 });
