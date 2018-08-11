@@ -1130,7 +1130,7 @@ img[data-src] {
   box-shadow: 0 0 14px 5px #d7e3e9;
 }
 .form .uk-modal-body {
-  padding: 0 12.3%;
+  padding: 0 8.3%;
 }
 .form .uk-modal-body:after {
   content: '';
@@ -1291,6 +1291,9 @@ img[data-src] {
   display: block !important;
   color: #ff0043;
 }
+.uk-datepicker-table a {
+  width: 20px !important;
+}
 .select2-container--default.select2-container--open {
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
@@ -1318,6 +1321,7 @@ img[data-src] {
 .select2-container--default .select2-selection__rendered {
   height: 40px;
   line-height: 40px !important;
+  text-align: left;
 }
 .select2-container--default .select2-selection__arrow {
   right: 15px !important;
