@@ -69,31 +69,7 @@ var words = ["Гинекология", "Акушерство", "Кардиоло
 	setInterval(function () {
 		$('.separate').toggleClass('hidden');
 	}, 800);
-var counter = 0;
-    $('body').on('mousewheel', function(e){
-    	if($('.capsules').hasClass('uk-slide-up')) {
-    		
-        if(e.originalEvent.wheelDelta > 0) {
-        	counter++;
-        	console.log(counter)
-        	if(counter > 10) {
-        		counter = 10;
-        	}
-        	$('.capsules').css({'top': (100+(counter*15))+'px'});
-        }
-        else {
-        	counter--;
-        	console.log(counter)
-        	if(counter < -10) {
-        		counter = -10;
-        	}
-        	$('.capsules').css({'top': (100+(counter*15))+'px'});
-        	console.log(counter)	
 
-        }
-    	} 
-
-    });
 
 	$('.uk-modal').on('show.uk.modal', function() {
 		var width = $('.default-modal input[type="text"]').outerWidth();
@@ -115,7 +91,7 @@ var counter = 0;
 
 	/* DATEPICKER EVENTS */
 
-	var datepicker = UIkit.datepicker($('.custom-input[data-uk-datepicker]'),{offsettop: 0});
+	var datepicker = UIkit.datepicker($('.custom-input[data-uk-datepicker]'),{offsettop: 0, pos: 'bottom'});
 
 	datepicker.on('show.uk.datepicker', function() {
 		var width = $('.custom-input[data-uk-datepicker]').outerWidth();
@@ -124,6 +100,6 @@ var counter = 0;
 	})
 	datepicker.on('hide.uk.datepicker', function() {
 		$('.custom-input[data-uk-datepicker]').removeClass('focused')
-	})
+	});
 
 });
