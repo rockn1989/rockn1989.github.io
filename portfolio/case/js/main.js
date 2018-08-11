@@ -69,7 +69,28 @@ var words = ["Гинекология", "Акушерство", "Кардиоло
 	setInterval(function () {
 		$('.separate').toggleClass('hidden');
 	}, 800);
+		var counter = 0;
+    $('body').on('mousewheel', function(e){
+    	if($('.capsules').hasClass('uk-slide-up')) {
+    		
+        if(e.originalEvent.wheelDelta > 0) {
+        	counter++;
+        	if(counter > 10) {
+        		counter = 10;
+        	}
+        	$('.capsules').css({'top': (100+(counter*15))+'px'});
+        }
+        else {
+        	counter--;
+        	if(counter < -10) {
+        		counter = -10;
+        	}
+        	$('.capsules').css({'top': (100+(counter*15))+'px'});
 
+        }
+    	} 
+
+    });
 
 	$('.uk-modal').on('show.uk.modal', function() {
 		var width = $('.default-modal input[type="text"]').outerWidth();
@@ -101,5 +122,4 @@ var words = ["Гинекология", "Акушерство", "Кардиоло
 	datepicker.on('hide.uk.datepicker', function() {
 		$('.custom-input[data-uk-datepicker]').removeClass('focused')
 	});
-
 });
