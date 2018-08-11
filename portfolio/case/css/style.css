@@ -228,60 +228,60 @@ img[data-src] {
 @-webkit-keyframes slide-diagonally {
   0% {
     visibility: hidden;
-    -webkit-transform: translate(50%, 50%);
-            transform: translate(50%, 50%);
+    -webkit-transform: translate(50%, 100%);
+            transform: translate(50%, 100%);
     opacity: 0;
   }
   50% {
     visibility: visible;
-    -webkit-transform: translate(25%, 25%);
-            transform: translate(25%, 25%);
+    -webkit-transform: translate(25%, 75%);
+            transform: translate(25%, 75%);
     opacity: .5;
   }
   100% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
+    -webkit-transform: translate(0, 50%);
+            transform: translate(0, 50%);
     opacity: 1;
   }
 }
 @-moz-keyframes slide-diagonally {
   0% {
     visibility: hidden;
-    -moz-transform: translate(50%, 50%);
-         transform: translate(50%, 50%);
+    -moz-transform: translate(50%, 100%);
+         transform: translate(50%, 100%);
     opacity: 0;
   }
   50% {
     visibility: visible;
-    -moz-transform: translate(25%, 25%);
-         transform: translate(25%, 25%);
+    -moz-transform: translate(25%, 75%);
+         transform: translate(25%, 75%);
     opacity: .5;
   }
   100% {
-    -moz-transform: translate(0, 0);
-         transform: translate(0, 0);
+    -moz-transform: translate(0, 50%);
+         transform: translate(0, 50%);
     opacity: 1;
   }
 }
 @keyframes slide-diagonally {
   0% {
     visibility: hidden;
-    -webkit-transform: translate(50%, 50%);
-       -moz-transform: translate(50%, 50%);
-            transform: translate(50%, 50%);
+    -webkit-transform: translate(50%, 100%);
+       -moz-transform: translate(50%, 100%);
+            transform: translate(50%, 100%);
     opacity: 0;
   }
   50% {
     visibility: visible;
-    -webkit-transform: translate(25%, 25%);
-       -moz-transform: translate(25%, 25%);
-            transform: translate(25%, 25%);
+    -webkit-transform: translate(25%, 75%);
+       -moz-transform: translate(25%, 75%);
+            transform: translate(25%, 75%);
     opacity: .5;
   }
   100% {
-    -webkit-transform: translate(0, 0);
-       -moz-transform: translate(0, 0);
-            transform: translate(0, 0);
+    -webkit-transform: translate(0, 50%);
+       -moz-transform: translate(0, 50%);
+            transform: translate(0, 50%);
     opacity: 1;
   }
 }
@@ -876,7 +876,7 @@ img[data-src] {
 }
 .stetoskop {
   position: absolute;
-  bottom: -50%;
+  bottom: 0;
   right: 0;
 }
 @media (min-width: 0) {
