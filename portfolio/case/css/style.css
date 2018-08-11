@@ -1511,7 +1511,6 @@ label.custom-checkbox-wrapper input[type="checkbox"]:checked ~ .custom-checkbox 
 .uk-datepicker {
   border: 1px solid #293146;
   border-top: 1px solid #e7f2f8;
-  max-width: 236px;
   background: #ffffff;
 }
 .form .custom-input__wrapper input[type="text"].focused {
