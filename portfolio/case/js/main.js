@@ -112,7 +112,7 @@ var words = ["Гинекология", "Акушерство", "Кардиоло
 
 	/* DATEPICKER EVENTS */
 
-	var datepicker = UIkit.datepicker($('.custom-input[data-uk-datepicker]'),{offsettop: 0, pos: 'bottom'});
+	var datepicker = UIkit.datepicker($('.custom-input[data-uk-datepicker]'),{format:'DD.MM.YYYY',weekstart: 0, i18n:{months:['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'], weekdays: ['Пн','Вт','Ср','Чт','Пт','Сб','Вс']}, pos: 'bottom', offsettop: 0});
 
 	datepicker.on('show.uk.datepicker', function() {
 		var width = $('.custom-input[data-uk-datepicker]').outerWidth();
