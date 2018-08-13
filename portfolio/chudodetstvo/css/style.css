@@ -982,6 +982,9 @@ p {
   line-height: 30px;
   font-weight: 400;
 }
+.content {
+  padding-bottom: 90px;
+}
 .content-text-block {
   margin-bottom: 90px;
 }
@@ -1000,6 +1003,43 @@ p {
   .content-text-block * + img {
     margin-top: 30px;
   }
+}
+.content-text-block:last-child {
+  margin-bottom: 0;
+}
+table.price {
+  border: none !important;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+table.price tr td {
+  padding: 6px 10px;
+  font-size: 14px;
+  line-height: 18px;
+}
+table.price tr td a {
+  color: #666666	;
+}
+table.price tr:nth-child(even) {
+  background: #f9f9f9;
+}
+tr.table-head td {
+  background: #5A7F45;
+  text-align: center;
+  color: #fff;
+  border: 2px solid;
+}
+td.title-table {
+  text-align: center;
+  background: #ABBE81;
+  color: #5A7F45;
+  font-weight: bold;
+}
+td.light-title-table {
+  text-align: center;
+  border-top: 1px solid #abbe81;
+  border-bottom: 1px solid #abbe81;
+  color: #5A7F45;
 }
 .align-right {
   margin-left: auto;
