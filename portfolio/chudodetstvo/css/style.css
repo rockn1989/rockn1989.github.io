@@ -1809,6 +1809,99 @@ td.light-title-table {
 .all-news:hover {
   color: #b3b3b3;
 }
+/*______ GALLERY ______*/
+.gallery-wrapper {
+  margin: 0 auto;
+  max-width: 700px;
+  text-align: center;
+}
+.gallery-wrapper a {
+  margin-right: 15px;
+  margin-bottom: 15px;
+  display: inline-block;
+  vertical-align: top;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.11);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.11);
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+}
+.uk-lightbox-content {
+  position: relative;
+}
+.uk-lightbox-content .uk-slidenav-previous,
+.uk-lightbox-content .uk-slidenav-next {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+     -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: block;
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.uk-lightbox-content .uk-slidenav-previous:before,
+.uk-lightbox-content .uk-slidenav-next:before {
+  content: "\e909";
+  color: #fff;
+  font-size: 24px;
+  -webkit-transition: color .3s ease;
+  -o-transition: color .3s ease;
+  -moz-transition: color .3s ease;
+  transition: color .3s ease;
+}
+.uk-lightbox-content .uk-slidenav-previous:hover,
+.uk-lightbox-content .uk-slidenav-next:hover {
+  text-decoration: none;
+}
+.uk-lightbox-content .uk-slidenav-previous:hover:before,
+.uk-lightbox-content .uk-slidenav-next:hover:before {
+  color: #666666;
+}
+.uk-lightbox-content .uk-slidenav-previous {
+  -webkit-transform: translateY(-50%) rotate(180deg);
+     -moz-transform: translateY(-50%) rotate(180deg);
+      -ms-transform: translateY(-50%) rotate(180deg);
+          transform: translateY(-50%) rotate(180deg);
+  left: 0;
+}
+.uk-lightbox-content .uk-slidenav-next {
+  right: 0;
+}
+.uk-modal-dialog-lightbox > .uk-close:first-child {
+  z-index: 200;
+}
+/*______ REVIEWS ______*/
+@media (min-width: 768px) {
+  .review-small-title {
+    max-width: 80%;
+  }
+}
+.review {
+  margin-bottom: 30px;
+  padding: 30px;
+  background-color: #ffffff;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+.review__name {
+  margin-bottom: 40px;
+  font-size: 24px;
+  line-height: 30px;
+  font-family: 'Arial';
+  font-weight: 700;
+}
 /*______ PAGE FOOTER ______*/
 .footer-form {
   padding-bottom: 240px;
