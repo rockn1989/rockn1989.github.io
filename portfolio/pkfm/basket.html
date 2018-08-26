@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Оформление заказа</title>
+	<meta property="og:url" content="">
+	<meta property="og:type" content="Article">
+	<meta property="og:site_name" content="">
+	<meta property="og:image" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="libs/css/uikit.min.css">
+	<link rel="stylesheet" href="libs/footable/css/footable.standalone.min.css">
+	<link rel="stylesheet" href="libs/select2/select2.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!--[if lte IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+		<script src="libs/html5shiv.min.js"></script>
+		<script src="libs/placeholders.min.js"></script>
+	<![endif]-->
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+  </script>
+<script src="libs/jquery-mask/jquery.maskedinput.min.js"></script>
+<script src="libs/footable/js/footable.min.js"></script>
+<script src="libs/select2/select2.min.js"></script>
+<script src="libs/js/uikit.min.js"></script>
+<body>
+<div class="uk-container uk-text-center">HEADER</div>
+	
+	<div class="uk-container">
+		<div class="breadcrumbs-wrapper">
+			<ul class="bread-crumbs">
+				<li><a href="/">Главная</a></li>
+				<li><span>Оформление заказа</span><li>
+			</ul>
+		</div>
+
+		<h1 class="title-h1 basket-title">Оформление заказа</h1>
+		
+		<!-- begin page-basket -->
+		<div class="page-basket">
+			<div class="uk-grid">
+
+				<div class="uk-width-1-1">
+
+					<div class="basket-order-calculation float-right">
+						<div class="coast">
+							<div class="coast__name">Сумма:</div>
+							<div class="coast__separate"></div>
+							<div class="coast__val">18 252 руб</div>
+						</div>
+						<div class="coast">
+							<div class="coast__name">НДС:</div>
+							<div class="coast__separate"></div>
+							<div class="coast__val">200 руб</div>
+						</div>
+						<div class="coast total">
+							<div class="coast__name">Итого:</div>
+							<div class="coast__separate"></div>
+							<div class="coast__val">18 252 руб</div>
+						</div>
+					</div>
+
+					<table class="orders-list js__adaptive-table">
+						<thead>
+							<tr>
+								<td data-breakpoints="mobile tablet">Наименование</td>
+								<td data-breakpoints="mobile tablet">Количество Т</td>
+								<td data-breakpoints="mobile tablet">Количество М</td>
+								<td data-breakpoints="mobile tablet">Цена с НДС</td>
+								<td data-breakpoints="mobile tablet">&nbsp</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr data-expanded="true">
+								<td>
+									<div class="order-name">
+										<a href="">Труба электросварная 100х4 ст  09Г2С </a>
+									</div>
+								</td>
+								<td>
+									<div class="order-val weight">0.18 т</div>
+								</td>
+								<td>
+									<div class="order-val count">6 м</div>
+								</td>
+								<td>
+									<div class="order-coast">18 252 руб</div>
+								</td>
+								<td>
+									<div class="order-delete">
+										<a href="" class="js__order-delete">&#10005;</a>
+									</div>
+								</td>
+							</tr>
+							<tr data-expanded="true">
+								<td>
+									<div class="order-name">
+										<a href="">Труба электросварная 100х4 ст  09Г2С </a>
+									</div>
+								</td>
+								<td>
+									<div class="order-val weight">0.18 т</div>
+								</td>
+								<td>
+									<div class="order-val count">6 м</div>
+								</td>
+								<td>
+									<div class="order-coast">18 252 руб</div>
+								</td>
+								<td>
+									<div class="order-delete">
+										<a href="" class="js__order-delete">&#10005;</a>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+				</div>
+
+				<div class="uk-width-1-1 uk-width-large-3-4">
+					<div class="basket-add-services">
+						<div class="basket-small-title gray">Дополнительные услуги</div>
+						<div class="uk-grid uk-grid-collapse">
+							<div class="uk-width-1-1 uk-width-large-1-2">
+								<form action="" class="basket-add-services-list">
+									<label for="type-1" class="service-type">
+										<input type="checkbox" id="type-1" name="type-1" class="basket-checkbox">
+										<span class="custom-checkbox"></span>
+										<span class="custom-label">Резка в размер</span>
+									</label>
+									<label for="type-2" class="service-type">
+										<input type="checkbox" id="type-2" name="type-2" class="basket-checkbox">
+										<span class="custom-checkbox"></span>
+										<span class="custom-label">Сварка</span>
+									</label>
+									<label for="type-3" class="service-type">
+										<input type="checkbox" id="type-3" name="type-3" class="basket-checkbox">
+										<span class="custom-checkbox"></span>
+										<span class="custom-label">Нарезка резьбы</span>
+									</label>
+									<label for="type-4" class="service-type">
+										<input type="checkbox" id="type-4" name="type-4" class="basket-checkbox">
+										<span class="custom-checkbox"></span>
+										<span class="custom-label">Покраска</span>
+									</label>
+									<label for="type-5" class="service-type">
+										<input type="checkbox" id="type-5" name="type-5" class="basket-checkbox">
+										<span class="custom-checkbox"></span>
+										<span class="custom-label">Гибка</span>
+									</label>
+								</form>
+							</div>
+							<div class="uk-width-1-1 uk-width-large-1-2">
+								<div class="big-tooltip">
+									<div class="big-tooltip__text">
+										Стоимость дополнительных услуг рассчитывается менеджером при подтверждении заказаз
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="uk-width-1-1 uk-width-large-3-4">
+					<div class="basket-fast-order">
+						<form action="" class="basket-fast-order-form">
+							<label for="basket-fast-order__tel">
+								Введите свой номер телефона и оформите заказа прямо сейчас
+							</label>
+							<input id="basket-fast-order__tel" type="text" class="js__input-phone" placeholder="+7 (___) ____-__-___">
+							<button class="basket-fast-order__btn" type="submit">Заказать в 1 клик</button>
+						</form>
+					</div>
+				</div>
+					
+				<div class="uk-width-1-1">
+
+					<div class="basket-delivery">
+						<div class="uk-grid">
+							<div class="uk-width-1-1 uk-width-large-3-4">
+								<div class="basket-delivery-type">
+									<div class="basket-title">1. Способ доставки</div>
+									<div class="basket-tabs">
+										<ul class="uk-tab" data-uk-tab="{connect:'#tab-content', swiping: false}">
+											<li><a href="">Доставка</a></li>
+											<li><a href="">Самовывоз</a></li>
+										</ul>
+										<ul id="tab-content" class="uk-switcher">
+											<li>
+												<div class="basket-small-title mb10 black">Адрес и дата доставки:</div> 
+												<textarea name="basket-order-address" id="" class="basket-order-address" placeholder="Иван Иванович Иванов"></textarea>
+												<div class="basket-address-subtitle">
+													Приобретённый у нас металл будет доставлен транспортом компании. Стоимость доставки расчитывает менеджер при оформлении заказа
+												</div>
+											</li>
+											<li>
+												<div class="uk-grid">
+													<div class="uk-width-1-1 uk-width-medium-1-2">
+														<div class="basket-small-title mb10 black">
+															Пункт самовывоза:
+														</div>
+														<select name="" id="" class="basket-address-list select2">
+															<option value="">Склад Толбино: МО, Подольский р-н, д. Б.Толбино, Су-14</option>
+															<option value="">Склад Ивантеевка: МО, г. Ивантеевка, ул. Толмачево 80А</option>
+														</select>
+													</div>
+													<div class="uk-width-1-1 uk-width-medium-1-2">
+														<div class="basket-small-title mb10 black">Время работы:</div>
+														<div class="basket-time-work">пн-чт с 8:00 до 17:00; пт с 8:00 до 16:00</div>
+													</div>
+													<div class="uk-width-1-1">
+														<div id="map" class="map"></div>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="uk-width-1-1 uk-width-large-3-4">
+								<div class="basket-delivery-payments">
+									<div class="basket-title">2. Способ оплаты</div>
+									<div class="uk-grid">
+										<div class="uk-width-1-1 uk-width-medium-3-4">
+											<form action="" class="basket-payments-list">
+												<label for="pay-1">
+													<input type="radio" id="pay-1" name="pay-type" value="beznal" checked="true" class="js__toggle-payments-add-block">
+													<span class="payments-custom-radio">
+														<span class="payments-custom-label">Безналичный расчет</span>
+													</span>
+												</label>
+												<label for="pay-2">
+													<input type="radio" id="pay-2" name="pay-type" value="card">
+													<span class="payments-custom-radio">
+														<span class="payments-custom-label">Банковской картой</span>
+													</span>
+												</label>
+												<label for="pay-3">
+													<input type="radio" id="pay-3" name="pay-type" value="cash">
+													<span class="payments-custom-radio">
+														<span class="payments-custom-label">Наличный расчет</span>
+													</span>
+												</label>
+											</form>
+										</div>
+										<div class="uk-width-1-1 uk-width-medium-1-4">
+											<div class="payments-add-block">
+												<form action="" class="payments-files-form">
+													<label for="payments-file">
+														<input type="file" name="payments-files[]" id="payments-file" multiple>
+														<span class="custom-file-label">Реквизиты вашей компании</span>
+														<span class="custom-file-input">Загрузить файл</span>
+													</label>
+													<div class="payments-file-name"></div>
+												</form>
+											</div>
+										</div>
+									</div> 
+								</div>
+							</div>
+							<div class="uk-width-1-1">
+								<div class="basket-delivery-user-data">
+									<div class="basket-title">3. Получатель заказа</div>
+									<form action="" class="basket-user-data-form">
+										<div class="uk-grid">
+											<div class="uk-width-1-1 uk-width-medium-1-3">
+												<label for="user-data-name">ФИО<sup>*</sup></label>
+												<input type="text" name="user-data-name" id="user-data-name" placeholder="Иван Иванович Иванов" required>
+											</div>
+											<div class="uk-width-1-1 uk-width-medium-1-3">
+												<label for="user-data-email">E-mail<sup>*</sup></label>
+												<input type="text" name="user-data-email" id="user-data-email" placeholder="yourmail@mail.ru" required>
+											</div>
+											<div class="uk-width-1-1 uk-width-medium-1-3">
+												<label for="user-data-tel">Телефон<sup>*</sup></label>
+												<input type="text" name="user-data-tel" id="user-data-tel" class="js__input-phone" placeholder="+7(____)____-__-__" required>
+											</div>
+											<div class="uk-width-1-1">
+												<fieldset>
+													<label for="user-data-info">Комментарий для заказа</label>
+													<textarea name="user-data-info" id="user-data-info" placeholder="Иван Иванович Иванов"></textarea>
+												</fieldset>
+											</div>
+										</div>
+									</form>
+									<div class="add-form-info">
+										Предложение не является публичной офертой. Цены на сайте и в розничной сети могут отличаться. Информация на сайте о товаре носит рекламный характер и расценивается как приглашение делать оферты на основании п.1 ст. 437 Гражданского кодекса РФ.Нажимая кнопку «Оформить заказ», Вы принимаете пользовательское соглашение
+									</div>
+								</div>
+								<div class="basket-order-calculation float-right">
+									<div class="coast">
+										<div class="coast__name">Сумма:</div>
+										<div class="coast__separate"></div>
+										<div class="coast__val">18 252 руб</div>
+									</div>
+									<div class="coast">
+										<div class="coast__name">НДС:</div>
+										<div class="coast__separate"></div>
+										<div class="coast__val">200 руб</div>
+									</div>
+									<div class="coast total">
+										<div class="coast__name">Итого:</div>
+										<div class="coast__separate"></div>
+										<div class="coast__val">18 252 руб</div>
+									</div>
+									<a href="" class="btn">Оформить заказ</a>
+								</div>
+							</div>
+						</div>
+					
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+		<!-- end page-basket -->
+		
+		<!-- Page Scripts -->
+		<script>
+
+			$(function() {
+
+					/*______ Удаление товара из списка ______*/
+
+					$('.js__order-delete').on('click', function (e) {
+						e.preventDefault();
+
+						var windowWidth = $(window).outerWidth();
+
+						if(windowWidth >= 992) {
+							var item = $(this).closest('tr');
+							$('.orders-list').find(item).fadeOut('350', function () {
+								$(this).remove();
+							});
+						} else {
+							var item = $(this).closest('tr').closest('table');
+							$('.orders-list').find(item).fadeOut('350', function () {
+								$(this).remove();
+							});
+						}
+
+
+					});
+
+
+					/*______ Способы оплаты ______*/
+
+					$('.basket-payments-list').on('click', 'input[type="radio"]', function (){
+						if($(this).hasClass('js__toggle-payments-add-block')) {
+							$('.payments-add-block').fadeIn('350');
+						} else {
+							$('.payments-add-block').fadeOut('350');
+						};
+					})
+
+					/*______ Загрузка реквизитов ______*/
+
+					$('.payments-files-form input[type="file"]').on('change', function (e) {
+
+						var fileName = $(this).val().replace('C:\\fakepath\\','');
+
+						var wrapperFileName = $('<div><span></span><i class="payments-file-delete">&#10005;</i></div>');
+
+						wrapperFileName.find('span').text(fileName);
+
+						$('.payments-file-name').append(wrapperFileName);
+
+						$('i.payments-file-delete').on('click', function () {
+
+							var file = $(this).closest('div')[0];
+
+							$('.payments-file-name').find(file).remove();
+						});
+					});
+
+
+					/*______ Маска формы ______*/
+
+					$('.js__input-phone').mask('+7 999 999-99-99', {clearIfNotMatch: true}).focus(function (e) {
+						if (!$(this).val()) {
+							$(this).val('+7 ');
+						}
+					});
+
+					/*______ Кастомный select ______*/
+
+					$('.select2').select2({
+						minimumResultsForSearch: -1,
+						dropdownPosition: 'below'
+					});
+
+					/*______ Валидация формы ______*/
+
+					if($('form').is('.default-form')) {
+
+						$('.default-form').validate({
+							rules: {
+								email: {
+									required: true,
+									email: true
+								}
+							},
+							messages: {
+								email: "Обязательноe поле",
+							},
+						});
+					};
+			});
+
+
+			/*______ Адаптация таблиц ______*/
+
+			$('.js__adaptive-table').footable({
+				calculateWidthOverride: function() {
+					return {width: $(window).width()};
+				},
+				breakpoints: {
+					mobile: 0,
+					tablet: 768,
+					desktop: 992
+				}
+			});
+
+			/*______ Карта пунктов самовывоза ______*/
+
+		  ymaps.ready(function () {  
+		    var map = new ymaps.Map("map", {
+		      center: [55.76, 37.64], 
+		      zoom: 10
+		    });
+
+		    if (map) {
+		      ymaps.modules.require(['Placemark', 'Circle'], function (Placemark, Circle) {
+		        var placemark = new Placemark([55.37, 35.45]);
+		      });
+		    }
+		  });
+		</script>
+		
+	</div>
+
+	<div class="uk-container uk-text-center">FOOTER</div>
+
+
+</body>
+</html>
