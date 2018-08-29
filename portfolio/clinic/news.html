@@ -25,7 +25,6 @@
 		<script src="libs/placeholders.min.js"></script>
 	<![endif]-->
 </head>
-
 <body>
 	<header class="header">
 		<div class="header__top uk-visible-large">
@@ -85,7 +84,7 @@
 					<div class="uk-width-3-4">
 						<nav class="page-nav">
 							<ul class="nav-list uk-flex">
-								<li><a href="#">Направления</a></li>
+								<li><a href="#interview-modal" data-uk-modal>Направления</a></li>
 								<li><a href="#">Услуги и цены</a></li>
 								<li><a href="#">Анализы и диагностика</a></li>
 								<li><a href="#">Врачи</a></li>
@@ -144,23 +143,13 @@
 
 
 
-
-
 	<div class="content">
 		<div class="content-header">
 			<div class="uk-container">
 				<ul class="breadcrumbs">
-		
-		
-	<li><a href="">Главная</a></li>
-	
-	
-		
-	<li>Новости</li>
-		
-	
-	</ul>
-
+					<li><a href="">Главная</a></li>
+					<li>Новости</li>
+				</ul>
 				<h1 class="uk-margin-small-bottom">Новости</h1>
 			</div>
 		</div>
@@ -266,8 +255,6 @@
 		</div>
 	</div>
 
-
-
 	<footer class="footer">
 		<div class="uk-container">
 			<form action="" class="page-form-search">
@@ -351,9 +338,6 @@
 
 
 
-
-
-
 <!-- ФОРМА ЗАПИСИ НА ПРИЕМ  -->
 
 <div id="order-modal" class="uk-modal default-modal order-modal">
@@ -410,6 +394,132 @@
 		</div>
 	</div>
 </div>
+
+<!-- ОСТАВИТЬ ОТЗЫВ(КЛИНИКА)  -->
+
+<div id="review-modal-clinic" class="uk-modal default-modal order-modal review-modal-clinic">
+	<div class="uk-modal-dialog">
+		<div class="uk-modal-header">
+			<div class="title">Оставить <br> отзыв</div>
+			<a class="uk-modal-close uk-close"></a>
+		</div>
+		<div class="uk-modal-body">
+			<form action="">
+				<fieldset>
+					<input type="text" name="name" placeholder="Ваше имя" required>
+				</fieldset>
+				<fieldset>
+					<div class="radio-wrapper">
+						<label for="radio-clinic" class="custom-radio-wrapper">
+							<input type="radio" id="radio-clinic" name="review-radio" value="review-clinic" checked>
+							<span class="custom-radio-btn"></span>
+							<span class="custom-radio-label">Отзыв о клинике</span>
+						</label>
+						<label for="radio-doctor" class="custom-radio-wrapper">
+							<input type="radio" id="radio-doctor" name="review-radio" value="review-doctor">
+							<span class="custom-radio-btn"></span>
+							<span class="custom-radio-label">Отзыв о враче</span>
+						</label>
+					</div>
+					<div class="radio-value-fields">
+						<div class="review-clinic">
+							<fieldset>
+								<textarea name="review-clinic" id="review-clinic" placeholder="Ваш отзыв"></textarea>
+							</fieldset>
+						</div>
+						<div class="review-doctor" style="display: none;">
+							<fieldset>
+								<select name="" id="" class="customSelect js__custom-select" data-placeholder="Выбирите специлизацию">
+									<option value="" class="placeholder"></option>
+									<option value="Петров Павел Юрьевич">Терапевт</option>
+									<option value="Петров Павел Юрьевич">Хирург</option>
+									<option value="Петров Павел Юрьевич">Окулист</option>
+									<option value="Петров Павел Юрьевич">Стоматолог</option>
+								</select>
+							</fieldset>
+							<fieldset>
+								<select name="" id="" class="customSelect js__custom-select" data-placeholder="Выбирите специалиста">
+									<option value="" class="placeholder"></option>
+									<option value="Петров Павел Юрьевич">Петров Павел Юрьевич</option>
+									<option value="Петров Павел Юрьевич">Петров Павел Юрьевич</option>
+									<option value="Петров Павел Юрьевич">Петров Павел Юрьевич</option>
+									<option value="Петров Павел Юрьевич">Петров Павел Юрьевич</option>
+								</select>
+							</fieldset>
+							<fieldset>
+								<textarea name="review-clinic" id="review-clinic" placeholder="Ваш отзыв"></textarea>
+							</fieldset>
+						</div>
+					</div>
+				</fieldset>
+				<fieldset>
+					<select name="" id="" class="customSelect js__custom-select">
+						<option value="" class="placeholder"></option>
+						<option value="Петров Павел Юрьевич">Петров Павел Юрьевич</option>
+						<option value="Петров Павел Юрьевич">Петров Павел Юрьевич</option>
+						<option value="Петров Павел Юрьевич">Петров Павел Юрьевич</option>
+						<option value="Петров Павел Юрьевич">Петров Павел Юрьевич</option>
+					</select>
+				</fieldset>
+				<fieldset>
+					<input type="text" placeholder="E-mail">
+					<input type="text" name="tel" placeholder="Номер телефон" class="js__mask" required>
+				</fieldset>
+				<label for="politics2" class="custom-checkbox-wrapper">
+					<input type="checkbox" id="politics2">
+					<span class="custom-checkbox"></span>
+					<span class="custom-checkbox-label">Я ознакомлен и согласен с условиями обработки данных</span>
+				</label>
+				<button type="submit" class="modal-btn btn btn--fill">Записаться</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+<!--- Шаблон отзыва для теста -->
+
+	<template id="reviews">
+		<div class="reviews-list-inner" data-uk-scrollspy="{cls: 'uk-slide-up uk-invisible', target: '.review', repeat: false, delay: 100}">
+			<div class="uk-grid">
+				<div class="uk-width-1-1 uk-width-medium-1-2">
+					<div class="review uk-invisible">
+						<time class="review__date" datetime="2018-30-01">30.01.2018</time>
+						<div class="review__author">Дмитрий</div>
+						<div class="review__target">Отзыв о враче Валерий Ломаносов</div>
+						<div class="review__text">
+							В середине года перенес операцию по удалению парапроктита. Хирург провела операцию хорошо, но ранка после операции окончательно не заживала несколько месяцев. Фактически наугад обратился к Валерию Михайловичу, повезло (не секрет, что поиск хорошего врача у нас в стране - это лотерея и деньги ничего не гарантируют) - на первой консультации доктор назначил ряд лекарств и процедур, которые за 2 недели радикально помогли. Мои наилучшие рекомендации - интеллигентный, внимательный и опытный доктор.
+						</div>
+					</div>
+					<div class="review uk-invisible">
+						<time class="review__date" datetime="2018-30-01">30.01.2018</time>
+						<div class="review__author">Дмитрий</div>
+						<div class="review__target">Отзыв о враче Валерий Ломаносов</div>
+						<div class="review__text">
+							В середине года перенес операцию по удалению парапроктита. Хирург провела операцию хорошо, но ранка после операции окончательно не заживала несколько месяцев. Фактически наугад обратился к Валерию Михайловичу, повезло (не секрет, что поиск хорошего врача у нас в стране - это лотерея и деньги ничего не гарантируют) - на первой консультации доктор назначил ряд лекарств и процедур, которые за 2 недели радикально помогли. Мои наилучшие рекомендации - интеллигентный, внимательный и опытный доктор.
+						</div>
+					</div>
+				</div>
+				<div class="uk-width-1-1 uk-width-medium-1-2">
+					<div class="review uk-invisible">
+						<time class="review__date" datetime="2018-30-01">30.01.2018</time>
+						<div class="review__author">Алексей</div>
+						<div class="review__target">Отзыв о клинике</div>
+						<div class="review__text">
+							В середине года перенес операцию по удалению парапроктита. Хирург провела операцию хорошо, но ранка после операции окончательно не заживала несколько месяцев. Фактически наугад обратился к Валерию Михайловичу
+						</div>
+					</div>
+					<div class="review uk-invisible">
+						<time class="review__date" datetime="2018-30-01">30.01.2018</time>
+						<div class="review__author">Дмитрий</div>
+						<div class="review__target">Отзыв о враче Валерий Ломаносов</div>
+						<div class="review__text">
+							В середине года перенес операцию по удалению парапроктита. Хирург провела операцию хорошо, но ранка после операции окончательно не заживала несколько месяцев. Фактически наугад обратился к Валерию Михайловичу, повезло (не секрет, что поиск хорошего врача у нас в стране - это лотерея и деньги ничего не гарантируют) - на первой консультации доктор назначил ряд лекарств и процедур, которые за 2 недели радикально помогли. Мои наилучшие рекомендации - интеллигентный, внимательный и опытный доктор.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</template>
 
 
 <!-- ФОРМА ЗАКАЗАТЬ ЗВОНОК -->
@@ -526,8 +636,6 @@
 
 
 
-
-
 	<script src="libs/jquery.mask.min.js" defer></script>
 	<script src="libs/jquery.validate.min.js" defer></script>
 	<script src="libs/js/uikit.min.js" defer></script>
@@ -536,7 +644,6 @@
 	<script src="libs/svg4everybody.min.js" defer></script>
 	<script type="text/javascript" src="https://www.youtube.com/iframe_api"></script>
 	<script src="js/main.js" defer></script>
-
 
 </body>
 </html>
