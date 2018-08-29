@@ -365,15 +365,17 @@ $('.about-company-slider').slick({
 	$('.uk-modal').on('show.uk.modal', function() {
 		var btnValue = $('.gray-btn').attr('data-val'),
 			$radioWrapper = $(this).find('.radio-wrapper');
+
 		if (btnValue == 'radio-doctor') {
-			console.log($(this))
 			$(this).find('.review-clinic').css('display','none');
 			$radioWrapper.find('input#radio-doctor').attr('checked', 'true')
-		}
+		};
+
 		if (btnValue == 'radio-clinic') {
 			$(this).find('.review-doctor').css('display','none')
 			$radioWrapper.find('input#radio-clinic').attr('checked', 'true')
 		};
+		
 	});
 
 	$('.radio-wrapper').on('change','input[type="radio"]', function () {
