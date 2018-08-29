@@ -363,7 +363,7 @@ $('.about-company-slider').slick({
 	/* MODAL FORM RADIO-BUTTON CHANGE */
 
 	$('.uk-modal').on('show.uk.modal', function() {
-		var btnValue = $('.gray-btn').attr('data-val'),
+		var btnValue = $('.review-add-comments').attr('data-val'),
 			$radioWrapper = $(this).find('.radio-wrapper');
 
 		if (btnValue == 'radio-doctor') {
