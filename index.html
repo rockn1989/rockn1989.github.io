@@ -1,302 +1,193 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Главная</title>
-	<meta property="og:url" content="">
-	<meta property="og:type" content="Article">
-	<meta property="og:site_name" content="">
-	<meta property="og:image" content="">
-	<meta property="og:title" content="">
-	<meta property="og:description" content="">
-	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-	<link rel="stylesheet" href="libs/css/uikit.min.css">
-	<link rel="stylesheet" href="libs/select2/select2.min.css">
-	<link rel="stylesheet" href="css/style.css">
-	<!--[if lte IE 9]>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-		<script src="libs/html5shiv.min.js"></script>
-		<script src="libs/placeholders.min.js"></script>
-	<![endif]-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Артём Рябков</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="header uk-animation-slide-up">
-<!-- 	<div class="uk-container">
-	<div class="header__inner">
-		<img src="img/header-bg-2.png" alt="">
-	</div>
-</div> -->
-</header>
+  <section class="page-content">
+      <div class="wrapper">
+        <div class="feature">
+          <header class="feature__header">
+            <h1 class="feature__header-title">Артём Рябков</h1>
+            <p class="feature__header-text">
+              Начинающий фронтенд-разработчик
+            </p>
+          </header>
+          <div class="feature__desc">
+            <p class="feature__text">
+              Верстаю сайты из макетов в формате <i>PSD</i>. Для нарезки макета использую <i>Adobe Photoshop</i>. Всю графику оптимизирую. Не стесняюсь работать с <i>SVG</i>. Верстку делаю для современных браузеров ( с частичной поддержкой IE-9, но не ниже).
+            </p>
+            <p class="feature__text">
+              Верстка адаптивная, кроссбраузерная, семантическая. Использую методологию БЭМ ( можно и без нее). Работаю с препроцессором <i>LESS</i> ( так же знаком с <i>SASS</i>). Знания <i>HTML4 - 5/ CSS2 - 3</i>. Делаю несложную анимацию на CSS3.
+            </p>
+            <p class="feature__text">
+              Пишу на нативном JavaScript. Где уместно, использую <i>JQuery</i>.
+            </p>
+            <p class="feature__text">
+              Для ускорения верстки, использую <i>Gulp</i> (так же знаком и с <i>Grunt</i>, но остановился на Gulp). Пользуюсь пакетным менеджером <i>NPM</i>, а так же <i>GIT</i>, но по минимуму(<i>pull, push, add, commit, squash, merge</i>).
+            </p>
+          </div>
+        </div>
 
+        <div class="trained">
+          <p class="trained__title"><a href="https://htmlacademy.ru/profile/id72912" target="_blank" class="contacts__link">Прошел обучение в HTMLAcademy:</a> продвинутый курс по вёрстке и базовый курс по Javscript</p>
+        </div>
 
-	<section class="first-block" data-uk-scrollspy="{cls:'ellipse-active', delay:200, repeat: false}">
-		<div class="uk-container">
-			<div class="first-block__inner">
-				<div class="small-title">Задача</div>
-				<div class="uk-grid uk-grid-collapse">
-					<div class="uk-width-1-1 uk-width-medium-1-2">
-						<div class="title-h1">Мы создали <br> удобный продукт <br> для людей</div>
-						<p>
-							Nunc ut eros vel ex vestibulum ornare. In varius nisl nec turpis sollicitudin, a placerat risus gravida. Vivamus nec purus molestie mauris blandit imperdiet et ac odio. Morbi sed orci nec tellus egestas malesuada a a nisl. Etiam at enim ante. Donec quis tempor elit, vitae maximus nisl. Proin felis libero, rhoncus sit amet pellentesque vel, rhoncus vitae magna.
-						</p>
-					</div>
-					<div class="uk-width-1-1 uk-width-medium-1-2">
-						<img class="lazy uk-invisible mt40" data-src="img/right-view-mcp.png" alt="" data-uk-scrollspy="{cls:'uk-slide-up uk-invisible', delay:200, repeat: false}">
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+        <div class="gallery">
+          <header class="gallery__header">
+            <h2 class="gallery__title"><a class="no-link" name="portfolio">Мои работы</a></h2>
+          </header>
+          <ul class="gallery__lists">
+            <li class="gallery__item">
+              <div class="gallery__item-preview">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/preview-pink.jpg 1x, img/preview-pink@2.jpg 2x">
+                  <img src="img/preview-pink.jpg" alt="Макет Pink" width="100%" height="100%" class="gallery__promo-img">
+                </picture>
+                <div class="gallery__shadowbox">
+                  <span class="gallery__open">
+                    <a href="portfolio/pink/index.html" target="_blank">
+                      <svg width="40px" height="40px" class="gallery__open-icon">
+                        <use xlink:href="img/icon/symbols.svg#search-icon"></use>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
+              <div class="gallery__item desc">
+                <h2 class="desc__title">Pink. Промо-сайт мобильного приложения</h2>
+                <ul class="desc__list">
+                  <li class="desc__item">Адаптивность</li>
+                  <li class="desc__item">SVG-спрайты, ретиновая графика</li>
+                  <li class="desc__item">Препроцессор LESS</li>
+                  <li class="desc__item">Нативный JS</li>
+                  <li class="desc__item">Gulp</li>
+                  <li class="desc__item">Поддержка IE9+, Chrome, FireFox, Opera</li>
+                </ul>
+              </div>
+            </li>
+            <li class="gallery__item">
+              <div class="gallery__item-preview">
+                <picture>
+                <source media="(min-width: 1200px)" srcset="img/preview-sedona.jpg 1x, img/preview-sedona@2.jpg 2x"/>
+                  <img src="img/preview-sedona.jpg" alt="Макет Sedona" width="100%" height="100%" class="gallery__promo-img">
+                </picture>
+                <div class="gallery__shadowbox">
+                  <span class="gallery__open">
+                    <a href="portfolio/sedona/index.html" target="_blank">
+                      <svg width="40" height="40" class="gallery__open-icon">
+                        <use xlink:href="img/icon/symbols.svg#search-icon"></use>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
+              <div class="gallery__item desc">
+                <h2 class="desc__title">Sedona. Туристический сайт города</h2>
+                <ul class="desc__list">
+                  <li class="desc__item">Адаптивность</li>
+                  <li class="desc__item">SVG-спрайты, ретиновая графика</li>
+                  <li class="desc__item">Препроцессор LESS</li>
+                  <li class="desc__item">Нативный JS</li>
+                  <li class="desc__item">Gulp</li>
+                  <li class="desc__item">Поддержка IE9+, Chrome, FireFox, Opera</li>
+                </ul>
+              </div>
+            </li>
+            <li class="gallery__item">
+              <div class="gallery__item-preview">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/preview-adventure.jpg 1x, img/preview-adventure@2.jpg 2x"/>
+                  <img src="img/preview-adventure.jpg" alt="Макет Adveture" width="100%" height="100%" class="gallery__promo-img">
+                </picture>
+                <div class="gallery__shadowbox">
+                  <span class="gallery__open">
+                    <a href="portfolio/adventure/index.html" target="_blank">
+                      <svg width="40" height="40" class="gallery__open-icon">
+                        <use xlink:href="img/icon/symbols.svg#search-icon"></use>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
+              <div class="gallery__item desc">
+                <h2 class="desc__title">Adventure. Сайт компании</h2>
+                <ul class="desc__list">
+                  <li class="desc__item">Фиксированный</li>
+                  <li class="desc__item">SVG-спрайты</li>
+                  <li class="desc__item">Препроцессор LESS</li>
+                  <li class="desc__item">Нативный JS</li>
+                  <li class="desc__item">JQuery</li>
+                  <li class="desc__item">Gulp</li>
+                  <li class="desc__item">Поддержка IE9+, Chrome, FireFox, Opera</li>
+                </ul>
+              </div>
+            </li>
+            <li class="gallery__item">
+              <div class="gallery__item-preview">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/preview-pump.jpg 1x, img/preview-pump@2.jpg 2x"/>
+                  <img src="img/preview-pump.jpg" alt="Макет Pump" width="100%" height="100%" class="gallery__promo-img">
+                </picture>
+                <div class="gallery__shadowbox">
+                  <span class="gallery__open">
+                    <a href="portfolio/europompa/index.html" target="_blank">
+                      <svg width="40" height="40" class="gallery__open-icon">
+                        <use xlink:href="img/icon/symbols.svg#search-icon"></use>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
+              <div class="gallery__item desc">
+                <h2 class="desc__title">Europompa. Сайт компании</h2>
+                <ul class="desc__list">
+                  <li class="desc__item">Адаптивный</li>
+                  <li class="desc__item">Препроцессор LESS</li>
+                  <li class="desc__item">JQuery</li>
+                  <li class="desc__item">Gulp</li>
+                  <li class="desc__item">Поддержка IE10+, Chrome, FireFox, Opera</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <div class="gallery__caption">
+            <p class="gallery__caption__text">Да, работ пока что мало, но будет пополнение :)</p>
+            <p class="gallery__caption__text">
+              Продолжаю учиться и развиваться в данных направлениях.
+            </p>
+            <p class="gallery__caption__text">
+              P.S. О себе добавлю: имею инвалидность из-за травмы позвоночника. Перемещаюсь с тростью.
+            </p>
+          </div>
+        </div>
+      </div>
+  </section>
 
-	<section class="second-block">
-		<div class="uk-container">
-			<div class="small-title text-center">Страницы</div>
-			<div class="title-h1 text-center">Главная страница</div>
-			<div class="img-wrapper text-center" data-uk-scrollspy="{cls:'uk-slide-up uk-invisible', target:'.big-img', delay: 150}">
-				<img class="lazy uk-invisible big-img" data-src="img/main-page.png" alt="">
-			</div>
-			<div class="devices-list" data-uk-scrollspy="{cls:'uk-animation-fade uk-invisible', target:'.device', delay: 150}">
-				<div class="device uk-invisible">
-					<div class="device__img">
-						<img class="device-tel" src="img/icon-svg/tel.svg" alt="">
-					</div>
-					<div class="device__text">
-						<div class="device__name">Смартфоны</div>
-						<div class="device__size"> <768px </div>
-					</div>
-				</div>
-				<div class="device uk-invisible">
-					<div class="device__img">
-						<img class="device-tablet" src="img/icon-svg/tablet.svg" alt="">
-					</div>
-					<div class="device__text">
-						<div class="device__name">Планшеты</div>
-						<div class="device__size">>768px</div>
-					</div>
-				</div>
-				<div class="device uk-invisible">
-					<div class="device__img">
-						<img class="device-notebook" src="img/icon-svg/notebook.svg" alt="">
-					</div>
-					<div class="device__text">
-						<div class="device__name">Ноутбуки</div>
-						<div class="device__size">>992px</div>
-					</div>
-				</div>
-				<div class="device uk-invisible">
-					<div class="device__img">
-						<img class="device-desktop" src="img/icon-svg/desktop.svg" alt="">
-					</div>
-					<div class="device__text">
-						<div class="device__name">Настольные ПК</div>
-						<div class="device__size">>1200px</div>
-					</div>
-				</div>
-			</div>
-			<div class="devices-screen text-center" data-uk-scrollspy="{cls:'uk-slide-up uk-invisible',target: '.devices-screen-img', delay:250, repeat: false}">
-				<img class="uk-invisible devices-screen-img" src="img/all-devices.png" alt="" >
-			</div>
-		</div>
-	</section>
-	
-	<section class="third-block">
-		<div class="uk-container">
-			<div class="small-title">Решения</div>
-			<div class="title-h1">Навигация, которая не <br> оставит вопросов</div>
-			<p>
-				Nunc ut eros vel ex vestibulum ornare. In varius nisl nec turpis sollicitudin, a placerat risus gravida. Vivamus nec purus molestie mauris blandit imperdiet et ac odio. Morbi sed orci nec tellus egestas malesuada a a nisl. Etiam at enim ante. Donec quis tempor elit, vitae maximus nisl. Proin felis libero, rhoncus sit amet pellentesque vel, rhoncus vitae magna.
-			</p>
-			<div class="filter">
-				<div class="filter-title">Наши направления</div>
-				<div class="page-form-search js__directions-filter">
-					<div class="input">
-						<span class="js-field"></span>
-						<i class="separate">|</i>
-					</div>
-					<button class="page-form-search__btn icon-search" disabled></button>
-				</div>
-				<div class="services-filter">
-					<span class="services-filter__text">Фильтр направлений по алфавиту:</span>
-					<ul class="services-filter__list">
-						  <li><a href="#">А</a></li>
-						  <li><a href="#">Г</a></li>
-						  <li><a href="#">Д</a></li>
-						  <li><a href="#">К</a></li>
-						  <li><a href="#">Л</a></li>
-						  <li><a href="#">М</a></li>
-						  <li><a href="#">Н</a></li>
-						  <li><a href="#">О</a></li>
-						  <li><a href="#">С</a></li>
-						  <li><a href="#">Т</a></li>
-						  <li><a href="#">У</a></li>
-						  <li><a href="#">Ф</a></li>
-						  <li><a href="#">Х</a></li>
-						  <li><a href="#">Э</a></li>  
-					</ul>
-				</div>
-			</div>
-			<div class="capsules uk-invisible" data-uk-scrollspy="{cls:'uk-slide-up uk-invisible', delay:200, repeat: false}">
-				<img class="lazy" data-src="img/capsules.png" alt="">
-			</div>
-		</div>
-	</section>
-
-	<section class="four-block gray-bg">
-		<div class="uk-container">
-			<div class="man" data-uk-scrollspy="{cls:'uk-animation-slide-left', delay:200, repeat: false}">
-				<img class="lazy" data-src="img/man.png" alt="">
-			</div>
-			<div class="services" data-uk-scrollspy="{cls:'uk-animation-slide-right', delay:200, repeat: false}">
-				<img class="lazy" data-src="img/services.png" alt="">
-			</div>
-		</div>
-	</section>
-
-	<section class="five-block red-bg">
-		<div class="uk-container">
-			<div class="small-title white">Страницы</div>
-			<div class="title-h1 white">Понятные услуги</div>
-			<p class="text-center white">
-				Nunc ut eros vel ex vestibulum ornare. In varius nisl nec turpis sollicitudin, a placerat risus gravida. Vivamus nec purus molestie mauris blandit imperdiet et ac odio. Morbi sed orci nec tellus egestas malesuada a a nisl. Etiam at enim ante. Donec quis tempor elit, vitae maximus nisl. Proin felis libero, rhoncus sit amet pellentesque vel, rhoncus vitae magna.
-			</p>
-			<div class="gif-block uk-invisible" data-uk-scrollspy="{cls:'uk-animation-fade uk-invisible', delay:200, repeat: false}">
-				<img class="lazy" data-src="img/front-view.png" alt="">
-				<div class="gif-content">
-					<img src="https://via.placeholder.com/840x470" alt="">
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="six-block gray-bg">
-		<div class="uk-container">
-			<div class="text-block">
-				<div class="small-title">Решения</div>
-				<div class="title-h1">Обратная связь</div>
-				<p>
-					Nunc ut eros vel ex vestibulum ornare. In varius nisl nec turpis sollicitudin, a placerat risus gravida. Vivamus nec purus molestie mauris blandit imperdiet et ac odio. Morbi sed orci nec tellus egestas malesuada a a nisl. Etiam at enim ante. Donec quis tempor elit, vitae maximus nisl. Proin felis libero, rhoncus sit amet pellentesque vel, rhoncus vitae magna.
-				</p>
-			</div>
-			<div class="form uk-invisible" data-uk-scrollspy="{cls:'uk-slide-up uk-invisible', delay:200, repeat: false}">
-				<!-- <img class="lazy" data-src="img/form.png" alt=""> -->
-			<div class="uk-modal-dialog">
-					<div class="uk-modal-header">
-						<div class="title">Записаться на прием</div>
-						<a class="uk-modal-close uk-close"></a>
-					</div>
-					<div class="uk-modal-body">
-						<form novalidate="novalidate">
-							<fieldset>
-								<input type="hidden" name="formid" value="order">
-								<input type="text" name="name" placeholder="Имя" required="" aria-required="true">
-								<input type="text" name="phone" placeholder="Телефон" class="js__mask" required="" aria-required="true" maxlength="16">
-								<input type="text" name="email" placeholder="E-mail">
-							</fieldset>
-							<fieldset>
-								<div class="custom-input__wrapper">
-									<input type="text" name="date" class="custom-input" data-uk-datepicker="{format:'DD.MM.YYYY',weekstart: 0, i18n:{months:['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'], weekdays: ['Пн','Вт','Ср','Чт','Пт','Сб','Вс']}, pos: 'bottom', offsettop: 0}" placeholder="Дата" readonly="">
-								</div>
-								<div class="custom-input__wrapper">
-									<input type="text" name="time" class="custom-input" data-uk-timepicker="{format:'24h', start: 8, end: 21}" placeholder="Время" readonly="">
-								</div>
-								<label>
-									<select name="doctor" class="customSelect js__custom-select select2-hidden-accessible" data-select2-id="1" tabindex="-1" aria-hidden="true">
-									<option value="" class="placeholder" data-select2-id="3">&nbsp;</option>
-									<option value="Агафонова Елена Владимировна">Агафонова Елена Владимировна</option><option value="Амирова Ольга Николаевна">Амирова Ольга Николаевна</option><option value="Бабкина Елена Павловна">Бабкина Елена Павловна</option><option value="Башкирова Оксана Викторовна">Башкирова Оксана Викторовна</option><option value="Генералова Наталья Константиновна">Генералова Наталья Константиновна</option><option value="Гомбожапова Маргарита Цыбеновна">Гомбожапова Маргарита Цыбеновна</option><option value="Горбунова Алена Владимировна">Горбунова Алена Владимировна</option><option value="Горяинова Татьяна Викторовна">Горяинова Татьяна Викторовна</option><option value="Дубинский Артём Игоревич">Дубинский Артём Игоревич</option><option value="Елисеева Лариса Анатольевна">Елисеева Лариса Анатольевна</option><option value="Журавлева Елена Леонидовна">Журавлева Елена Леонидовна</option><option value="Закиров Марат Вилович">Закиров Марат Вилович</option><option value="Зорин Артем Александрович">Зорин Артем Александрович</option><option value="Корнейчук Светлана Николаевна">Корнейчук Светлана Николаевна</option><option value="Кусочкина Наталья Александровна">Кусочкина Наталья Александровна</option><option value="Лазарев Алексей Владимирович">Лазарев Алексей Владимирович</option><option value="Максимов Олег Владимирович">Максимов Олег Владимирович</option><option value="Маркина Ирина Александровна">Маркина Ирина Александровна</option><option value="Межиева Жанна Андиевна">Межиева Жанна Андиевна</option><option value="Милова Нина Павловна">Милова Нина Павловна</option><option value="Никоноров Валерий Михайлович">Никоноров Валерий Михайлович</option><option value="Новик Светлана Ивановна">Новик Светлана Ивановна</option><option value="Новикова Лариса Андреевна">Новикова Лариса Андреевна</option><option value="Папугин Андрей Владимирович">Папугин Андрей Владимирович</option><option value="Парадник Диана Юрьевна">Парадник Диана Юрьевна</option><option value="Петухова Кристина Сергеевна">Петухова Кристина Сергеевна</option><option value="Рожков Тимофей Феликсович">Рожков Тимофей Феликсович</option><option value="Садыков Рустам Назимович">Садыков Рустам Назимович</option><option value="Самарская Наталья Григорьевна">Самарская Наталья Григорьевна</option><option value="Свинцов Дмитрий Олегович">Свинцов Дмитрий Олегович</option><option value="Слоневская  Людмила Николаевна">Слоневская  Людмила Николаевна</option><option value="Смирнов Михаил Евгеньевич">Смирнов Михаил Евгеньевич</option><option value="Уракова Яна Ченгизовна">Уракова Яна Ченгизовна</option><option value="Чернова Марина Владимировна">Чернова Марина Владимировна</option><option value="Шарафутдинов Ильдар  Рафаилович">Шарафутдинов Ильдар  Рафаилович</option><option value="Широких Елена Владимировна">Широких Елена Владимировна</option><option value="Шпаченко Федор Александрович">Шпаченко Федор Александрович</option><option value="Яновская Елизавета Абрамовна">Яновская Елизавета Абрамовна</option>
-								</select>
-								</label>
-							</fieldset>
-							<label for="politics" class="custom-checkbox-wrapper">
-								<input type="checkbox" name="agree" id="politics">
-								<span class="custom-checkbox"></span>
-								<span class="custom-checkbox-label">Я ознакомлен и согласен с условиями обработки данных</span>
-							</label>
-							<ul class="formErrors"></ul>
-							<button type="submit" class="modal-btn btn btn--fill" disabled>Записаться</button>
-						</form>
-					</div>
-				</div>
-			</div>
-			<img class="lazy stetoskop uk-invisible uk-visible-large" data-src="img/stetoskop.png" alt="" data-uk-scrollspy="{cls:'diagonally uk-invisible', delay:200, repeat: false}">
-		</div>
-	</section>
-
-	<section class="seven-block">
-		<div class="uk-container">
-			<div class="small-title text-center">Страницы</div>
-			<div class="title-h1 text-center">
-				Сделано более 20 макетов и <br> пользовательских сценариев
-			</div>
-			<p class="text-center">
-				Nunc ut eros vel ex vestibulum ornare. In varius nisl nec turpis sollicitudin, a placerat risus gravida. Vivamus nec purus molestie mauris blandit imperdiet et ac odio. Morbi sed orci nec tellus egestas malesuada a a nisl. Etiam at enim ante. Donec quis tempor elit, vitae maximus nisl. Proin felis libero, rhoncus sit amet pellentesque vel, rhoncus vitae magna.
-			</p>
-			<div class="examples" data-uk-scrollspy="{cls:'uk-animation-scale-up uk-invisible', target:'.example', delay: 250}">
-				<div class="uk-grid">
-					<div class="uk-width-1-2 uk-width-medium-1-3">
-						<img data-src="img/maket-1.png" alt="" class="lazy example uk-invisible">
-						<img data-src="img/maket-4.png" alt="" class="lazy example uk-invisible">
-					</div>
-					<div class="uk-width-1-2 uk-width-medium-1-3">
-						<img data-src="img/maket-2.png" alt="" class="lazy example uk-invisible">
-						<img data-src="img/maket-5.png" alt="" class="lazy example uk-invisible">
-					</div>
-					<div class="uk-width-1-1 uk-width-medium-1-3">
-						<img data-src="img/maket-3.png" alt="" class="lazy example uk-invisible">
-						<img data-src="img/maket-6.png" alt="" class="lazy example uk-invisible">
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="eight-block red-bg">
-		<div class="uk-container">
-			<div class="small-title text-center white">Решения</div>
-			<div class="title-h1 text-center white">Типографика и цвет</div>
-			<div class="typography">
-				<div class="uk-grid">
-					<div class="uk-width-1-1 uk-width-medium-4-10">
-						<div class="title">Цвет</div>
-						<ul class="color-list">
-							<li style="background-color: #f90f42;"></li>
-							<li style="background-color: #2a3148;"></li>
-							<li style="background-color: #f8f7e5;"></li>
-							<li style="background-color: #000000;"></li>
-						</ul>
-					</div>
-					<div class="uk-width-1-1 uk-width-medium-3-10">
-						<div class="title">Шрифт заголовка</div>
-						<div class="text bold">Proxima Nova <br> Extra Bold</div>
-					</div>
-					<div class="uk-width-1-1 uk-width-medium-3-10">
-						<div class="title">Шрифт текста</div>
-						<div class="text">Proxima Nova Regular</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="nine-block">
-		<div class="uk-container">
-			<div class="finish uk-invisible" data-uk-scrollspy="{cls:'uk-animation-fade uk-invisible anim-bg', delay:200, repeat: false}">
-				<img class="lazy" data-src="img/macbook.png" alt="">
-			</div>
-		</div>
-	</section>
-
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
-<script src="libs/js/uikit.min.js"></script>
-<script src="libs/svg4everybody.min.js"></script>
-<script src="libs/select2/select2.min.js"></script>
-<script src="js/main.js"></script>
-
+  <footer class="page-footer">
+    <div class="wrapper">
+      <div class="contacts">
+        <p class="contacts__title">Связаться со мной вы можете через: </p>
+        <div class="contacts__links">
+          <a href="https://github.com/rockn1989" target="_blank" class="contacts__link">Гитхаб</a>
+          <a href="skype:rock-n1989?chat" class="contacts__link">Skype</a>
+          <a href="https://vk.com/rock1989" target="_blank" class="contacts__link">
+            ВКонтакте
+          </a>
+          <a href="mailto:gold_100@bk.ru" class="contacts__link">gold_100@bk.ru</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/picturefill.js"></script>
+  <script src="js/svg4everybody.min.js"></script>
+  <script>
+    svg4everybody();
+  </script>
 </body>
 </html>
