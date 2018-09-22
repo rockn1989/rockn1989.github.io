@@ -1369,3 +1369,203 @@ footer.footer .telephone {
 label.error {
   color: red;
 }
+/*______ Application slider ______*/
+.application-slider {
+  position: relative;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.26);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.26);
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  background-color: #ffffff;
+}
+@media (min-width: 0) {
+  .application-slider {
+    padding: 20px 10px;
+  }
+}
+@media (min-width: 768px) {
+  .application-slider {
+    padding: 20px 40px;
+  }
+}
+@media (min-width: 960px) {
+  .application-slider {
+    padding: 60px 130px;
+  }
+}
+.application-slider .slider {
+  position: static;
+}
+@media (min-width: 0) {
+  .application-slider .slide-img {
+    margin-top: 20px;
+    margin-bottom: 40px !important;
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  .application-slider .slide-img {
+    margin-top: 80px;
+    margin-bottom: 0 !important;
+    text-align: left;
+  }
+}
+.application-slider .slide-img img {
+  display: inline;
+}
+.application-slider .desc-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 50px;
+}
+.application-slider .desc-list li {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+     -moz-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+}
+.application-slider .desc-list li .value {
+  color: #222222;
+  line-height: 1;
+  font-weight: 700;
+}
+.application-slider .desc-list li .separator {
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+     -moz-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  min-width: 10px;
+  border-bottom: 1px dashed #979797;
+}
+.application-slider .desc-list li .application-target {
+  padding-left: 14px;
+  width: 35%;
+  line-height: 1;
+}
+.application-slider .price {
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+@media (min-width: 0) {
+  .application-slider .price {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+@media (min-width: 960px) {
+  .application-slider .price {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+.application-slider .slick-prev,
+.application-slider .slick-next {
+  width: 50px;
+  height: 50px;
+  background-color: #044ff3;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  z-index: 500;
+  -webkit-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+.application-slider .slick-prev:hover,
+.application-slider .slick-next:hover {
+  background-color: #6191fc;
+}
+.application-slider .slick-prev:before,
+.application-slider .slick-next:before {
+  font-family: none;
+  font-size: 0;
+  background: url('../img/icon-svg/left-arrow.svg') center no-repeat;
+  -webkit-background-size: 20px;
+  background-size: 20px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+.application-slider .slick-next:before {
+  -webkit-transform: rotate(180deg);
+     -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.application-slider .counter {
+  position: absolute;
+  top: 60px;
+  left: 160px;
+  color: #b2bac4;
+  line-height: 28px;
+  font-weight: 400;
+  font-size: 0;
+}
+@media (min-width: 0) {
+  .application-slider .counter {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .application-slider .counter {
+    display: block;
+    top: 25px;
+  }
+}
+@media (min-width: 960px) {
+  .application-slider .counter {
+    top: 60px;
+  }
+}
+.application-slider .counter div {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 28px;
+}
+.application-slider .counter__current-slide {
+  position: relative;
+  padding-right: 15px;
+}
+.application-slider .counter__current-slide:after {
+  content: '/';
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.application-slider .slick-dots li.slick-active button:before {
+  background-color: #044ff3;
+}
+.application-slider .slick-dots {
+  bottom: 10px;
+}
+.application-slider .slick-dots li button:before {
+  content: '';
+  padding: 0;
+  border: 1px solid #044ff3;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  opacity: 1;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease;
+  width: 10px;
+  height: 10px;
+}

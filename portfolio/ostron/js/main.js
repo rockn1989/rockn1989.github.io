@@ -10,7 +10,51 @@ $(function() {
 		arrows: false,
 		dots: true,
 		fade: true,
-		autoplay: true
+		autoplay: false
+	});
+
+	var $currentsSlides = $('.counter__current-slide'),
+		$allSlides = $('.counter__all-slides'),
+		$appSlider = $('.application-slider .slider');
+
+	$appSlider.on('init', function (event, slick) {
+		$allSlides.text(slick.slideCount);
+		$currentsSlides.text(1);
+	});
+
+	$('.application-slider .slider').slick({
+		arrows: true,
+		dots: false,
+		fade: true,
+		autoplay: false,
+		responsive: [
+			{
+				breakpoint: 1025,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					infinite: true,
+				}
+			},
+			{
+				breakpoint: 940,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 600,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					arrows: false,
+					dots: true
+				}
+			}
+		]
+	}).on('afterChange', function(event, slick, currentSlide, nextSlide) {
+		$currentsSlides.text(currentSlide + 1);
 	});
 
 
