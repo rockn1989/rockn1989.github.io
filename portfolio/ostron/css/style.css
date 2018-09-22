@@ -593,7 +593,7 @@ html.uk-touch body *.uk-invisible {
 }
 @media (min-width: 960px) {
   .application-area {
-    padding-bottom: 150px;
+    padding-bottom: 0;
   }
 }
 .application-area p {
@@ -603,7 +603,6 @@ html.uk-touch body *.uk-invisible {
   margin-left: auto;
   padding: 0 30px 35px;
   max-width: 340px;
-  min-height: 255px;
   background-image: -webkit-linear-gradient(146deg, #f6f8fb 0%, #eaeff5 100%);
   background-image: -moz-linear-gradient(146deg, #f6f8fb 0%, #eaeff5 100%);
   background-image: -o-linear-gradient(146deg, #f6f8fb 0%, #eaeff5 100%);
@@ -619,6 +618,7 @@ html.uk-touch body *.uk-invisible {
   .area-counter {
     margin-top: 38px;
     margin-left: auto;
+    min-height: 520px;
   }
 }
 .area-counter__val {
@@ -651,6 +651,11 @@ html.uk-touch body *.uk-invisible {
   .about-system {
     padding-top: 80px;
     padding-bottom: 150px;
+  }
+}
+@media (min-width: 960px) {
+  .about-system {
+    padding-top: 295px;
   }
 }
 .about-system .title-h2 {
@@ -1385,11 +1390,15 @@ label.error {
 }
 @media (min-width: 768px) {
   .application-slider {
+    margin-top: -280px;
+    margin-bottom: -40px;
     padding: 20px 40px;
   }
 }
 @media (min-width: 960px) {
   .application-slider {
+    margin-top: -250px;
+    margin-bottom: -140px;
     padding: 60px 130px;
   }
 }

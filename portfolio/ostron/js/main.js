@@ -26,7 +26,7 @@ $(function() {
 		arrows: true,
 		dots: false,
 		fade: true,
-		autoplay: false,
+		autoplay: true,
 		responsive: [
 			{
 				breakpoint: 1025,
