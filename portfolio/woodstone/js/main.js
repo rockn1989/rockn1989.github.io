@@ -181,6 +181,6 @@ $(document).ready(function() {
 		setTimeout(function () {
 			$('body').removeClass('loading');
 			$('.preloader').addClass('another-page');
-		}, 1500);
+		}, 1000);
 
 });
