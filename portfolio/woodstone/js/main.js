@@ -175,11 +175,12 @@ $(function () {
 
 $(document).ready(function() {
 
-		$('.preloader').addClass('another-page');
+		
 
 
 		setTimeout(function () {
 			$('body').removeClass('loading');
+			$('.preloader').addClass('another-page');
 		}, 1500);
 
 });
