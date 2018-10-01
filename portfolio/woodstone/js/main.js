@@ -180,6 +180,6 @@ $(document).ready(function() {
 
 		setTimeout(function () {
 			$('body').removeClass('loading');
-		}, 1000);
+		}, 1500);
 
 });
