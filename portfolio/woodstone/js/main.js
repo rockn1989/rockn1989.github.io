@@ -191,11 +191,13 @@ $(function () {
 
 $(document).ready(function() {
 
-		if($('body').hasClass('main-page')) {
-			$('.preloader').addClass('diagonale20');
-		} else {
+			//$('.preloader').addClass('complete');
+
+		//if($('body').hasClass('main-page')) {
+		//	$('.preloader').addClass('diagonale20');
+		//} else {
 			$('.preloader').addClass('another-page');
-		}
+		//}
 
 		setTimeout(function () {
 			$('body').removeClass('loading');
