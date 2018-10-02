@@ -2,7 +2,15 @@
 
 $(function() {	
 
+	/*______ Окончание загрузки страницы ______*/
 
+	setTimeout(function () {
+		$('body').removeClass('loading');
+		$('.preloader').addClass('another-page');
+	}, 800);
+
+
+	/*______ Preloader для контентных картинок и фонов ______*/
 
 	function preloadImg (targetElement) {
 
@@ -37,6 +45,8 @@ $(function() {
 
 
 	preloadImg('div.preload');
+
+
 
 	/*______ Fancybox ______*/
 
@@ -155,7 +165,7 @@ $(function() {
 	
 	objectFitImages();
 
-
+	$("#video-banner")[0].play();
 });
 
 
@@ -171,16 +181,4 @@ $(function () {
 			window.location = redirect;
 		});		
 	});
-});
-
-$(document).ready(function() {
-
-		
-
-
-		setTimeout(function () {
-			$('body').removeClass('loading');
-			$('.preloader').addClass('another-page');
-		}, 1000);
-
 });
