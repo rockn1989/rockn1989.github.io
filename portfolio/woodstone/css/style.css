@@ -148,6 +148,12 @@
 
 /*______ Default style ______*/
 
+html,
+body {
+  position: relative;
+  z-index: 1;
+}
+
 body,
 table {
   font-family: "Montserrat";
