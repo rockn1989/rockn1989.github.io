@@ -616,10 +616,6 @@ html.uk-touch body *.uk-invisible {
 }
 
 .preloader.loaded img {
-  -webkit-transform: translate(-60%, -50%);
-  -moz-transform: translate(-60%, -50%);
-  -ms-transform: translate(-60%, -50%);
-  transform: translate(-60%, -50%);
   opacity: 0;
 }
 
@@ -889,6 +885,18 @@ html.uk-touch body *.uk-invisible {
   transition: width 1.2s ease .3s;
 }
 
+.header .uk-container {
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+  -moz-transform: translateY(20px);
+  -ms-transform: translateY(20px);
+  transform: translateY(20px);
+  -webkit-transition: all .8s ease .6s;
+  -o-transition: all .8s ease .6s;
+  -moz-transition: all .8s ease .6s;
+  transition: all .8s ease .6s;
+}
+
 .header .header-desk {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1118,6 +1126,14 @@ body {
 body.main-page {
   overflow: hidden;
   background-color: transparent;
+}
+
+body.animate .header .uk-container {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
 }
 
 body.animate .main-play-btn-wrapper {
@@ -1366,7 +1382,7 @@ body.animate .slide-left {
 }
 
 .portfolio-wrapper .text-block {
-  padding-top: 20px;
+  padding-top: 8px;
 }
 
 .portfolio-filter {
@@ -1452,6 +1468,7 @@ body.animate .slide-left {
 }
 
 .portfolio-list .portfolio-item {
+  margin-top: 30px;
   position: relative;
   overflow: hidden;
 }
@@ -1552,6 +1569,7 @@ body.animate .slide-left {
   line-height: 40px;
   font-weight: 400;
   text-decoration: underline;
+  font-family: "Merriweather";
 }
 
 .business-patners-slider {
@@ -1614,6 +1632,10 @@ body.animate .slide-left {
 
 .blog-wrapper {
   margin-top: 130px;
+}
+
+.blog-wrapper .text-block {
+  padding-top: 8px;
 }
 
 .blog-wrapper .breadcrumbs-wrapper {
@@ -1749,7 +1771,7 @@ body.animate .slide-left {
 }
 
 .services-wrapper .text-block {
-  padding-top: 20px;
+  padding-top: 8px;
 }
 
 .title-h1 {
@@ -2107,7 +2129,7 @@ label input[type="checkbox"]:checked ~ .custom-checkbox:after {
   }
 
   .main-nav {
-    width: 70%;
+    width: 50%;
   }
 
   .main-nav ul li a {
