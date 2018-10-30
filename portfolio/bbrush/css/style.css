@@ -1780,9 +1780,9 @@ body.animate .slide-left {
 
 .services-list-wrapper {
   position: relative;
-  margin-top: -80px;
-  margin-bottom: 30px;
+  margin: -80px auto 30px;
   padding: 150px 0 50px;
+  max-width: 1385px;
 }
 
 .services-list-wrapper:after {
@@ -2001,6 +2001,19 @@ body.animate .slide-left {
   transform: translate(-50%, -50%);
 }
 
+.video-modal .uk-modal-body {
+  padding: 0;
+  width: 100%;
+  max-width: 600px;
+}
+
+.video-modal iframe,
+.video-modal video {
+  width: 100%;
+  max-width: 100%;
+  min-height: 400px;
+}
+
 /*______ FORMS ______*/
 
 form fieldset {
@@ -2090,9 +2103,21 @@ label input[type="checkbox"]:checked ~ .custom-checkbox:after {
     animation: none;
   }
 
+  .preloader img {
+    width: 150px;
+    height: 150px;
+  }
+
   .logo {
     width: 70px;
     min-width: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .preloader img {
+    width: 350px;
+    height: 350px;
   }
 }
 

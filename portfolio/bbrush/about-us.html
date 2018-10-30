@@ -104,13 +104,15 @@
  -->
 
 
-<div id="video-modal" class="default-modal uk-flex-top uk-modal" uk-modal>
-    <div class="uk-modal-dialog uk-modal-body">
+<div id="video-modal" class="uk-flex-top video-modal" uk-modal>
+    <div class="uk-modal-dialog uk-margin-auto-vertical uk-modal-body">
     	<button type="button" class="uk-modal-close-default icon-close uk-close" uk-close>
     	</button>
-      <div class="modal-body-inner">
-      	Тут будет видео( но это не точно)
-      </div>
+			<video controls="" playsinline="" uk-video="">
+			    <source src="https://quirksmode.org/html5/videos/big_buck_bunny.mp4" type="video/mp4">
+			    <source src="https://quirksmode.org/html5/videos/big_buck_bunny.ogv" type="video/ogg">
+			</video>
+<!-- 			<iframe src="https://www.youtube-nocookie.com/embed/YE7VzlLtp-4?enablejsapi=1&enablejsapi=1" frameborder="0" uk-video></iframe> -->
     </div>
 </div>
 
