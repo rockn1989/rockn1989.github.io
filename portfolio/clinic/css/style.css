@@ -400,6 +400,32 @@ html.uk-touch body *.uk-invisible {
   color: #ff0043;
   text-decoration: none;
 }
+.header .logo {
+  display: block;
+  text-decoration: none;
+}
+.header .logo::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.header .logo::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+.header .logo img {
+  margin-right: 10px;
+  float: left;
+}
+.header .logo__text {
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  display: block;
+  overflow: hidden;
+  color: #000000;
+}
 .contacts {
   color: #000000;
 }
