@@ -11,6 +11,12 @@
   font-style: normal;
 }
 @font-face {
+  font-family: 'Myriad';
+  src: url('../fonts/MyriadProSemiCondensed.otf');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
   font-family: 'icomoon';
   src: url('../fonts/icomoon/icomoon.eot?ckm964');
   src: url('../fonts/icomoon/icomoon.eot?ckm964#iefix') format('embedded-opentype'), url('../fonts/icomoon/icomoon.ttf?ckm964') format('truetype'), url('../fonts/icomoon/icomoon.woff?ckm964') format('woff'), url('../fonts/icomoon/icomoon.svg?ckm964#icomoon') format('svg');
@@ -419,12 +425,15 @@ html.uk-touch body *.uk-invisible {
   float: left;
 }
 .header .logo__text {
+  padding-top: 8px;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 13px;
   text-decoration: none;
   display: block;
   overflow: hidden;
-  color: #000000;
+  color: #6C6161;
+  font-family: 'Myriad';
+  letter-spacing: 0;
 }
 .contacts {
   color: #000000;
