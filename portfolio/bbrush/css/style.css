@@ -288,7 +288,7 @@ table tbody tr td:first-child {
   position: relative;
   margin-bottom: 30px;
   font-weight: 300;
-  line-height: 30px;
+  line-height: 28px;
   z-index: 400;
 }
 
@@ -484,7 +484,7 @@ html,
 body,
 table {
   font-family: "SourceSansPro";
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   color: #1b181a;
@@ -1425,9 +1425,10 @@ body.animate .slide-left {
 .portfolio-filter a {
   position: relative;
   color: #1b181a;
-  margin: 0 30px 15px;
+  margin: 0 15px 15px;
   position: relative;
   color: #7f7f7f;
+  font-size: 16px;
   line-height: 20px;
   word-wrap: nowrap;
   z-index: 20;
@@ -1505,8 +1506,8 @@ body.animate .slide-left {
 .portfolio-list .portfolio-item .subtitle {
   position: relative;
   color: #000000;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 18px;
+  line-height: 24px;
   font-weight: 900;
   font-family: "Merriweather";
   letter-spacing: -0.24px;
