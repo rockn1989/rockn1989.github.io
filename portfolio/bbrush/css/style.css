@@ -1430,7 +1430,6 @@ body.animate .slide-left {
   color: #7f7f7f;
   font-size: 16px;
   line-height: 20px;
-  word-wrap: nowrap;
   z-index: 20;
   font-weight: 400;
   font-family: "Merriweather";
@@ -1771,6 +1770,10 @@ body.animate .slide-left {
   margin-top: 75px;
 }
 
+.services-wrapper .breadcrumbs-wrapper {
+  margin-bottom: 30px;
+}
+
 .services-wrapper .text-block {
   padding-top: 8px;
 }
@@ -1814,7 +1817,7 @@ body.animate .slide-left {
 }
 
 .services-list li {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .services-list li a {
