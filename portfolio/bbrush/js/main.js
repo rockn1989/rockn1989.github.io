@@ -2,17 +2,11 @@
 
 $(function() {	
 
-/*	var callbackModal = $('.default-modal');
-	var close = callbackModal.find('.uk-close');
-	close.on('click', function () {
-		UIkit.modal(callbackModal.hide());
-		$('html').removeClass('uk-modal-page')
-	})*/
 	/*______ Preloader ______*/
 
 	$('.preloader').addClass('loaded');
 	$('.preloader').on('transitionend', function () {
-		$('header.header, body').addClass('animate');
+		$('header.header, body').addClass('is-ready');
 	});
 	
 	/*______ Lazy Load ______*/
@@ -101,6 +95,7 @@ $(function() {
 
 
 	/*______ Отключение UIKIT анимации для мобильных устройств ______*/
+
 
 /*	UIkit.on('beforeready.uk.dom', function () {
 		if (UIkit.$win.width() < 767 && $('html').hasClass('uk-touch')) {

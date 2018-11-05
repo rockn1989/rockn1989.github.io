@@ -60,7 +60,46 @@
 			<a href="#callback-modal" class="btn" uk-toggle>Напишите нам</a>
 		</div>
 	</div>
-	<div class="header-mobile uk-hidden@l"></div>
+	<div class="header-mobile uk-hidden@l">
+		<div class="uk-container">
+			<div class="uk-grid uk-grid-collapse">
+				<div class="uk-width-1-5">
+					<a href="#offcanvas-menu" class="mobile-menu icon-menu" uk-toggle></a>
+				</div>
+				<div class="uk-width-3-5">
+					<a href="index.html" class="mobile-logo">
+						<img src="img/mobile-logo.png" alt="Bright Brush">
+					</a>
+				</div>
+				<div class="uk-width-1-5">
+					<a href="#callback-modal" class="mobile-tel icon-mobile-tel" uk-toggle></a>
+				</div>
+			</div>
+
+			<div id="offcanvas-menu" uk-offcanvas>
+				<div class="uk-offcanvas-bar">
+					<div class="uk-panel">
+						<a href="tel:+74959875634">8 495 987 56 34</a>
+						<ul class="uk-nav">
+							<li><a href="services.html">Услуги</a></li>
+							<li><a href="portfolio.html">Портфолио</a></li>
+							<li><a href="business.html">Для Бизнеса</a></li>
+							<li><a href="price.html">Цены</a></li>
+							<li><a href="blog.html">Блог</a></li>
+							<li><a href="about-us.html">О нас</a></li>
+							<li><a href="contacts.html">Контакты</a></li>
+						</ul>
+						<div class="soc-links">
+							<a href="" class="icon-vk"></a>
+							<a href="" class="icon-inst"></a>
+							<a href="" class="icon-youtube"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
 </header>
 <!-- end header -->
 	
@@ -68,10 +107,15 @@
 <div class="content">
 	<div class="business-wrapper">
 		<div class="uk-container">
-			<ul class="breadcrumbs uk-text-left remove-margin-bottom uk-invisible" uk-scrollspy="cls: uk-invisible slide-up; delay: 1000">
-				<li><a href="">Главная</a></li>
-				<li>Для бизнеса</li>
-			</ul>
+			<!-- begin breadcrumbs-wrapper -->
+<div class="breadcrumbs-wrapper">
+	<div class="uk-container">
+		<ul class="breadcrumbs uk-invisible uk-text-left" uk-scrollspy="cls: uk-invisible slide-up; delay: 1000">
+			<li><a href="">Главная</a></li>
+			<li>Для бизнеса</li></ul>
+	</div>
+</div>
+<!-- end breadcrumbs-wrapper -->
 			<h1 class="title-h1 uk-invisible" uk-scrollspy="cls: uk-invisible slide-up; delay: 1200">Для бизнеса</h1>
 			<div class="uk-grid">
 				<div class="uk-width-1-2@m">

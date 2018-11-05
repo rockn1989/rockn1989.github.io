@@ -101,17 +101,43 @@ $(function () {
 	/*______ Business patners slider  ______*/
 
 	$('.business-patners-slider .slider').slick({
-		arrows: false,
+		arrows: true,
 		dots: false,
 		infinity: true,
 		cssEase: 'linear',
-		autoplay: false,
+		autoplay: true,
 		fade: false,
 		autoplaySpeed: 3000,
 		speed: 500,
 		slidesToShow: 5,
 		slidesToScroll: 1,
-		adaptiveHeight: true
+		adaptiveHeight: true,
+		prevArrow: '<div class="btn-slide slick-prev"><i class="icon-arrow-left"></i></div>',
+		nextArrow: '<div class="btn-slide slick-next"><i class="icon-arrow-right"></i></div>',
+		responsive: [
+			{
+				breakpoint: 1025,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					infinite: true,
+				}
+			},
+			{
+				breakpoint: 940,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 600,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			}
+		]
 	})
 
 
