@@ -290,6 +290,10 @@ table tbody tr td:first-child {
   z-index: 400;
 }
 
+.text-block a {
+  color: #1b181a;
+}
+
 .bold-link {
   font-size: 21px;
   line-height: 30px;
@@ -1257,8 +1261,13 @@ body.is-ready .slide-left {
 }
 
 .content p {
+  margin-bottom: 10px;
   color: rgba(0, 0, 0, 0.8);
   line-height: 30px;
+}
+
+.content * + p {
+  margin-top: 15px;
 }
 
 .main-page {
@@ -1409,6 +1418,15 @@ body.is-ready .slide-left {
   max-width: 900px;
   font-weight: 300;
   text-align: center;
+}
+
+.contacts-wrapper .breadcrumbs-wrapper {
+  margin-bottom: 30px;
+}
+
+.map {
+  margin: 55px auto 0;
+  padding: 0 2.5%;
 }
 
 /*______ Page Portfolio ______*/
@@ -2340,6 +2358,14 @@ label input[type="checkbox"]:checked ~ .custom-checkbox:after {
     top: -90px;
   }
 
+  .contacts-wrapper {
+    margin-top: 40px;
+  }
+
+  .map {
+    height: 350px;
+  }
+
   .portfolio-wrapper {
     margin-top: 40px;
   }
@@ -2529,6 +2555,14 @@ label input[type="checkbox"]:checked ~ .custom-checkbox:after {
     top: -40px;
   }
 
+  .contacts-wrapper {
+    margin-top: 70px;
+  }
+
+  .map {
+    height: 500px;
+  }
+
   .portfolio-filter:after {
     display: block;
   }
@@ -2681,6 +2715,14 @@ label input[type="checkbox"]:checked ~ .custom-checkbox:after {
     right: 30px;
   }
 
+  .contacts-wrapper {
+    margin-top: 75px;
+  }
+
+  .map {
+    height: 670px;
+  }
+
   .portfolio-wrapper {
     margin-top: 70px;
   }
@@ -2699,6 +2741,10 @@ label input[type="checkbox"]:checked ~ .custom-checkbox:after {
 
   .detail-custom-grid > div {
     width: 50%;
+  }
+
+  .detail-custom-grid .left-block {
+    margin-top: 0;
   }
 
   .detail-custom-grid .right-block {
