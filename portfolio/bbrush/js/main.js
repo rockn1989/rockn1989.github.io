@@ -93,25 +93,8 @@ $(function() {
 		siblingsList.stop().slideToggle('350');
 	});
 
-
-	/*______ Отключение UIKIT анимации для мобильных устройств ______*/
-
-
-/*	UIkit.on('beforeready.uk.dom', function () {
-		if (UIkit.$win.width() < 767 && $('html').hasClass('uk-touch')) {
-			UIkit.$('[data-uk-scrollspy]').removeAttr('data-uk-scrollspy');
-		};
-	});*/
-
-
 	/*______ Полифил для Object-fit ______*/
 	
 	objectFitImages();
-
-
-	/*______ Полифил для SVG ______*/
-
-	/*svg4everebody();*/
-
 
 });

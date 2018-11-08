@@ -506,22 +506,6 @@ svg {
   transition: fill .3s linear;
 }
 
-/* html {
-	@media (min-width: 0) and (max-width: 767px) {
-		body {
-			*.uk-invisible {
-				display: block !important;
-				opacity: 1 !important;
-				animation: none !important;
-				visibility: visible !important;
-			}
-			[class*=uk-animation-] {
-					animation: none;
-			}
-		}
-	}
-} */
-
 .uk-container {
   margin: 0 auto;
   max-width: 1200px;
@@ -584,8 +568,10 @@ svg {
   position: fixed;
   top: 0;
   left: 0;
+  display: block;
+  max-width: 100%;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   z-index: 999;
   background-color: #ffffff;
   -webkit-transition: all .3s ease .3s;
@@ -1267,7 +1253,7 @@ body.is-ready .slide-left {
 }
 
 .content {
-  padding: 70px 0;
+  padding: 70px 0 20px;
 }
 
 .content p {
@@ -1586,6 +1572,26 @@ body.is-ready .slide-left {
   position: relative;
 }
 
+.detail-custom-grid:before {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.detail-custom-grid::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.detail-custom-grid .left-block {
+  float: left;
+}
+
+.detail-custom-grid .right-block {
+  float: right;
+}
+
 /*______ Page Business ______*/
 
 .business-wrapper {
@@ -1902,6 +1908,21 @@ body.is-ready .slide-left {
 
 /*______ PAGE FOOTER ______*/
 
+.footer {
+  padding: 30px 2.5%;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.footer::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.dev a {
+  color: rgba(0, 0, 0, 0.8);
+}
+
 /*______ SLIDERS ______*/
 
 .detail-slider {
@@ -1929,6 +1950,10 @@ body.is-ready .slide-left {
 
 .detail-slider .slide {
   overflow: hidden;
+}
+
+.detail-slider .slide img {
+  display: inline;
 }
 
 .detail-slider .slide.imgPlay img {
@@ -2230,8 +2255,8 @@ label input[type="checkbox"]:checked ~ .custom-checkbox:after {
 
   .page-controller {
     position: static;
-    margin: 30px 0 !important;
-    text-align: center;
+    margin: 40px auto !important;
+    text-align: left;
   }
 
   .uk-container {
@@ -2300,6 +2325,13 @@ label input[type="checkbox"]:checked ~ .custom-checkbox:after {
     height: 320px;
   }
 
+  .main-page .main-play-btn-wrapper {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+
   .text-page {
     margin-top: 70px;
   }
@@ -2318,6 +2350,15 @@ label input[type="checkbox"]:checked ~ .custom-checkbox:after {
 
   .portfolio-detail {
     margin-top: 70px;
+    margin-bottom: 50px;
+  }
+
+  .detail-custom-grid > div {
+    width: 100%;
+  }
+
+  .detail-custom-grid .left-block {
+    margin-top: 80px;
   }
 
   .business-wrapper {
@@ -2367,6 +2408,10 @@ label input[type="checkbox"]:checked ~ .custom-checkbox:after {
     display: none;
   }
 
+  .detail-slider .slide {
+    text-align: center;
+  }
+
   .slider__arrow {
     right: 50%;
     -webkit-transform: translateX(50%);
@@ -2393,7 +2438,17 @@ label input[type="checkbox"]:checked ~ .custom-checkbox:after {
   }
 
   .default-modal .modal-body-inner {
-    padding: 0 15px;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: 480px) {
+  .copyright {
+    float: left;
+  }
+
+  .dev {
+    float: right;
   }
 }
 
@@ -2406,12 +2461,6 @@ label input[type="checkbox"]:checked ~ .custom-checkbox:after {
 
   .img-wrapper.scale-140deg {
     margin-top: -40px;
-  }
-
-  .page-controller {
-    position: absolute;
-    margin: 0 !important;
-    text-align: left;
   }
 
   .preloader img {
@@ -2452,6 +2501,10 @@ label input[type="checkbox"]:checked ~ .custom-checkbox:after {
   .main-page__inner .main-btn-wrapper {
     margin: 30px 0;
     text-align: left;
+  }
+
+  .main-page__inner .seo-text {
+    color: #ffffff;
   }
 
   .main-page .bg-phone {
@@ -2519,6 +2572,10 @@ label input[type="checkbox"]:checked ~ .custom-checkbox:after {
     margin-top: 140px;
   }
 
+  .detail-slider .slide {
+    max-height: 450px;
+  }
+
   .slider__arrow {
     right: 0;
     -webkit-transform: translateX(0);
@@ -2551,6 +2608,11 @@ label input[type="checkbox"]:checked ~ .custom-checkbox:after {
   .title-h2 {
     font-size: 48px;
     line-height: 54px;
+  }
+
+  .page-controller {
+    position: absolute;
+    margin: 0 !important;
   }
 
   .header:before {
@@ -2613,7 +2675,6 @@ label input[type="checkbox"]:checked ~ .custom-checkbox:after {
     text-indent: -9999px;
     width: 1px;
     visibility: hidden;
-    color: #ffffff;
   }
 
   .main-page .main-play-btn-wrapper {
@@ -2634,6 +2695,14 @@ label input[type="checkbox"]:checked ~ .custom-checkbox:after {
 
   .portfolio-detail .text-block {
     padding-right: 15%;
+  }
+
+  .detail-custom-grid > div {
+    width: 50%;
+  }
+
+  .detail-custom-grid .right-block {
+    margin-top: -150px;
   }
 
   .business-wrapper {
@@ -2683,9 +2752,17 @@ label input[type="checkbox"]:checked ~ .custom-checkbox:after {
     display: block;
   }
 
+  .detail-slider .slide {
+    max-height: none;
+  }
+
   .default-modal .title-h2 {
     margin-bottom: 70px;
     font-size: 48px;
+  }
+
+  .default-modal .modal-body-inner {
+    padding: 0 15px;
   }
 }
 

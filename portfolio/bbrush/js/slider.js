@@ -65,20 +65,23 @@ $(function () {
 					slidesToShow: 1,
 					slidesToScroll: 1,
 					infinite: true,
+					adaptiveHeight: true
 				}
 			},
 			{
 				breakpoint: 940,
 				settings: {
 					slidesToShow: 1,
-					slidesToScroll: 1
+					slidesToScroll: 1,
+					adaptiveHeight: false
 				}
 			},
 			{
 				breakpoint: 600,
 				settings: {
 					slidesToShow: 1,
-					slidesToScroll: 1
+					slidesToScroll: 1,
+					adaptiveHeight: false
 				}
 			}
 		]
