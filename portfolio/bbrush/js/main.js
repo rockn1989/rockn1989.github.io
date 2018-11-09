@@ -4,10 +4,12 @@ $(function() {
 
 	/*______ Preloader ______*/
 
-	$('.preloader').addClass('loaded');
-	$('.preloader').on('transitionend', function () {
-		$('header.header, body').addClass('is-ready');
-	});
+	setTimeout(function () {
+		$('.preloader').addClass('loaded');
+		$('.preloader').on('transitionend', function () {
+			$('header.header, body').addClass('is-ready');
+		});
+	}, 800);
 	
 	/*______ Lazy Load ______*/
 
