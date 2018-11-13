@@ -420,9 +420,20 @@ html.uk-touch body *.uk-invisible {
   display: table;
   clear: both;
 }
+@media (min-width: 0) and (max-width: 480px) {
+  .header .logo {
+    text-align: center;
+  }
+}
 .header .logo img {
   margin-right: 10px;
   float: left;
+}
+@media (min-width: 0) and (max-width: 480px) {
+  .header .logo img {
+    margin: 0;
+    float: none;
+  }
 }
 .header .logo__text {
   padding-top: 8px;
@@ -434,6 +445,11 @@ html.uk-touch body *.uk-invisible {
   color: #6C6161;
   font-family: 'Myriad';
   letter-spacing: 0;
+}
+@media (min-width: 0) and (max-width: 480px) {
+  .header .logo__text {
+    display: none;
+  }
 }
 .contacts {
   color: #000000;
@@ -3457,4 +3473,125 @@ label.custom-radio-wrapper .custom-radio-label {
 .autocomplete.visible {
   display: block;
   opacity: 1;
+}
+/* SERVICE COAST */
+.custom-accardion-wrapper {
+  margin: 50px 0;
+  -webkit-box-shadow: 0 5px 13px #d7e3e9;
+          box-shadow: 0 5px 13px #d7e3e9;
+}
+.custom-accardion__inner {
+  padding: 20px 35px 20px 30px;
+  border-bottom: 1px solid #e7f2f8;
+}
+.custom-accardion__inner::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.custom-accardion__inner::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (min-width: 0) and (max-width: 767px) {
+  .custom-accardion__inner {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.custom-accardion__name {
+  float: left;
+  color: #8f96a0;
+  line-height: 21px;
+}
+@media (min-width: 0) and (max-width: 767px) {
+  .custom-accardion__name {
+    max-width: 65%;
+    word-break: break-all;
+  }
+}
+.custom-accardion__value {
+  float: right;
+}
+.custom-accardion__text {
+  color: #8f96a0;
+  font-weight: 700;
+}
+.custom-accardion__arrow {
+  display: none;
+}
+.custom-accardion__arrow:before {
+  color: #ff0043;
+}
+.custom-accardion a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 700;
+}
+.custom-accardion.list .custom-accardion__sublist .custom-accardion__name {
+  padding-left: 25px;
+}
+.custom-accardion.list .custom-accardion__text {
+  display: none;
+}
+.custom-accardion.list .custom-accardion__arrow {
+  display: block;
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.custom-accardion.list .custom-accardion__arrow.open {
+  -webkit-transform: rotate(180deg);
+     -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.custom-accardion.list .custom-accardion__arrow.open:before {
+  color: #8f96a0;
+}
+.custom-accardion.list.open .custom-accardion__sublist {
+  display: block;
+}
+.custom-accardion__sublist {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+}
+.custom-accardion__sublist li {
+  margin: 0 !important;
+  padding: 0;
+}
+.custom-accardion__sublist li .custom-accardion__text {
+  display: block !important;
+}
+.custom-accardion__sublist li .custom-accardion__arrow {
+  display: none !important;
+  cursor: default !important;
+}
+.custom-accardion__sublist li:first-child .custom-accardion {
+  -webkit-box-shadow: inset 0 5px 4px #d7e3e9;
+          box-shadow: inset 0 5px 4px #d7e3e9;
+}
+.custom-accardion__sublist li:last-child .custom-accardion {
+  -webkit-box-shadow: inset 0 -5px 4px #d7e3e9;
+          box-shadow: inset 0 -5px 4px #d7e3e9;
+}
+.custom-accardion:last-child.list .custom-accardion__sublist li:last-child .custom-accardion {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.job-shot-desc {
+  margin-top: -15px;
+  margin-bottom: 25px;
+}
+.job-salary {
+  color: #ff0044;
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 700;
 }

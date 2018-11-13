@@ -262,6 +262,26 @@ $('.about-company-slider').slick({
 		}
 	});
 
+	/* SERVICE COAST */
+
+	$('.custom-accardion').on('click','.custom-accardion__arrow', function() {
+
+		var _self = $(this),
+				parents = $(this).parents('.custom-accardion'),
+				sublist = $(parents).find('.custom-accardion__sublist');
+
+		if($(parents).hasClass('open')) {
+			$(sublist).slideUp('350', function() {
+				$(parents).removeClass('open');
+			});
+			_self.removeClass('open');
+		} else {
+			$(sublist).slideDown('350', function() {
+				$(parents).addClass('open');
+			});
+			_self.addClass('open');
+		}
+	});
 
 	/* FILTER DIRECTIONS MOBILE */
 
