@@ -474,6 +474,20 @@ $('.about-company-slider').slick({
 		$(this).val('');
 	});
 
+	$('.js__file-upload').on('change', function (e) {
+		if($(this).prop('files')[0].type == 'application/pdf' || $(this).prop('files')[0].type == 'application/vnd.openxmlformats-officedocument.wordprocessingml.document') {
+			var text = $(this).val().replace('C:\\fakepath\\','');
+			$('.file-name').removeClass('error').text('');
+			$('.file-name').text(text);
+		} else {
+			$('.file-name').text();
+			$('.file-name').addClass('error').text('Можно загружать файлы только в формате PDF или Word');
+			$(this).val();
+		}
+
+
+	});
+
 });
 
 

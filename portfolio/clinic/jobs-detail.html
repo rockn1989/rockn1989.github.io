@@ -25,7 +25,9 @@
 		<script src="libs/placeholders.min.js"></script>
 	<![endif]-->
 </head>
+
 <body>
+
 	<header class="header">
 		<div class="header__top uk-visible-large">
 			<div class="uk-container">
@@ -151,14 +153,28 @@
 
 
 
+
+
+
 	<div class="content">
 		<div class="content-header">
 			<div class="uk-container">
 				<ul class="breadcrumbs">
-					<li><a href="">Главная</a></li>
-					<li><a href="">Вакансии</a></li>
-					<li>Администратор медицинского центра</li>
-				</ul>
+		
+		
+	<li><a href="">Главная</a></li>
+	
+	
+		
+	<li><a href="">Вакансии</a></li>
+	
+	
+		
+	<li>Администратор медицинского центра</li>
+		
+	
+	</ul>
+
 				<h1>Администратор медицинского центра</h1>
 			</div>
 		</div>
@@ -189,6 +205,8 @@
 			</div>
 		</div>
 	</div>
+
+
 
 	<footer class="footer">
 		<div class="uk-container">
@@ -270,6 +288,8 @@
 			</div>
 		</div>
 	</footer>
+
+
 
 
 
@@ -388,13 +408,7 @@
 					</div>
 				</fieldset>
 				<fieldset>
-					<select name="" id="" class="customSelect js__custom-select">
-						<option value="" class="placeholder"></option>
-						<option value="Петров Павел Юрьевич">Петров Павел Юрьевич</option>
-						<option value="Петров Павел Юрьевич">Петров Павел Юрьевич</option>
-						<option value="Петров Павел Юрьевич">Петров Павел Юрьевич</option>
-						<option value="Петров Павел Юрьевич">Петров Павел Юрьевич</option>
-					</select>
+					Для получения персонального ответа, оставьте пожалуйста свои контактные данные
 				</fieldset>
 				<fieldset>
 					<input type="text" placeholder="E-mail">
@@ -485,20 +499,37 @@
 
 <!-- ФОРМА ОТКЛИКНУТЬСЯ НА ВАКАНСИЮ -->
 
-<div id="job-modal" class="uk-modal default-modal callback-modal">
+<div id="job-modal" class="uk-modal default-modal job-modal">
 	<div class="uk-modal-dialog">
 		<div class="uk-modal-header">
-			<div class="title">Оставить заявку</div>
+			<div class="title">Отправить резюме</div>
 			<a class="uk-modal-close uk-close"></a>
 		</div>
 		<div class="uk-modal-body">
 			<form action="">
 				<fieldset>
-					<input type="text" name="name" placeholder="Имя">
-					<input type="text" name="tel" placeholder="Телефон" class="js__mask" required>
+					<div class="uk-grid">
+						<div class="uk-width-1-1">
+							<input type="text" name="job-name" placeholder="Фамилия и имя*">
+						</div>
+						<div class="uk-width-medium-1-2">
+							<input type="text" name="job-tel" placeholder="Телефон*" class="js__mask" required>
+						</div>
+						<div class="uk-width-medium-1-2">
+							<input type="text" name="job-email" placeholder="E-mail*" required>
+						</div>
+						<div class="uk-width-1-1">
+
+							<label for="file" class="file-upload">
+								<div class="file-label">Загрузить резюме (PDF, Word)</div>
+								<input type="file" id="file" name="file-upload" class="js__file-upload">
+							</label>
+							<div class="file-name"></div>
+						</div>
+					</div>
 				</fieldset>
-				<label for="callback-politics" class="custom-checkbox-wrapper">
-					<input type="checkbox" id="callback-politics">
+				<label for="job-politics" class="custom-checkbox-wrapper">
+					<input type="checkbox" id="job-politics">
 					<span class="custom-checkbox"></span>
 					<span class="custom-checkbox-label">Я ознакомлен и согласен с условиями обработки данных</span>
 				</label>
@@ -596,6 +627,7 @@
 
 
 
+
 	<script src="libs/jquery.mask.min.js" defer></script>
 	<script src="libs/jquery.validate.min.js" defer></script>
 	<script src="libs/js/uikit.min.js" defer></script>
@@ -604,6 +636,7 @@
 	<script src="libs/svg4everybody.min.js" defer></script>
 	<script type="text/javascript" src="https://www.youtube.com/iframe_api"></script>
 	<script src="js/main.js" defer></script>
+
 
 </body>
 </html>
