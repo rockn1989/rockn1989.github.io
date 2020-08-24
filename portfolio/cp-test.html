@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>I am Woman</title>
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<body>
+	
+	<style>
+
+		.ui-wrapper {
+			margin: 50px auto;
+			max-width: 640px;
+		}
+		.row {
+			margin-left: -25px;
+			padding-top: 30px;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+		}
+
+		.row>div {
+			padding-left: 25px;
+		}
+
+		.col-6-10 {
+			width: 60%;
+		}
+
+		.col-4-10	{
+			width: 40%;
+		}
+
+		.ui-sliders>div {
+			margin-bottom: 30px;
+		}
+
+		.test-field {
+			padding: 10px;
+			border: 1px solid #d4d4d4;
+		}
+		
+		.form-colors button {
+			padding: .5em 1.2em;
+			cursor: pointer;
+			border-radius: 4px;
+			border: 1px solid #d4d4d4;
+			outline: none;
+		}
+
+		.active {
+			background: #4072fe;
+			color: #ffffff;
+		}
+
+		.red-theme {
+			background: red;
+			border-color: red !important;
+		}
+		.green-theme {
+			background: springgreen;
+			border-color: springgreen !important;
+		}
+		.blue-theme {
+			background: blue;
+			border-color: blue !important;
+		}
+	
+		.ui-slider-handle,
+		.ui-slider-handle:active,
+		.ui-slider-handle:focus {
+			border-color: inherit !important;
+			color: inherit !important;
+			outline: none;
+			background-color: #ffffff;
+		}
+	</style>
+
+	<div class="ui-wrapper">
+		<form action="" class="form-colors">
+			<fieldset>
+				<legend>Select</legend>
+				<button type="button" class="js__check-color active">Color</button>
+				<button type="button" class="js__check-bgColor">backgroundColor</button>
+			</fieldset>
+		</form>
+		
+		<div class="row">
+			<div class="col-6-10">
+				<div class="ui-sliders">
+					<div class="slider-1 red-theme"></div>
+					<div class="slider-2 green-theme"></div>
+					<div class="slider-3 blue-theme"></div>
+				</div>
+			</div>
+			<div class="col-4-10">
+				<div class="test-field">
+					<div class="test-field__text">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita ad, maiores. Fugiat odio maiores aperiam, odit sapiente quaerat. Nostrum, laudantium!
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script>
+		$(function() {
+
+			const element = {
+				text: {
+					target: $('.test-field__text'),
+					isChecked: true
+				},
+				bgColor: {
+					target: $('.test-field'),
+					isChecked: false
+				}
+			};
+
+			$('.form-colors').on('click', 'button', function (e) {
+				e.preventDefault();
+				
+				switch(e.target.className) {
+					case 'js__check-color': 
+						element.text.isChecked = true;
+						element.bgColor.isChecked = false;
+						break;
+					case 'js__check-bgColor': 
+						element.text.isChecked = false;
+						element.bgColor.isChecked = true;
+						break;
+				}
+
+				$(this).addClass('active')
+					.siblings('button').removeClass('active');
+
+				updateColors();
+			});
+
+
+			function updateColors () {
+				element.text.isChecked ? 
+					element.text.target.css('color',
+						'rgb('+colorType.getColor('red')+
+						','+colorType.getColor('green')+
+						','+colorType.getColor('blue')+')'
+					) :
+					element.bgColor.target.css('background-color',
+						'rgb('+colorType.getColor('red')+
+						','+colorType.getColor('green')+
+						','+colorType.getColor('blue')+')'
+					);
+			}
+				
+			const colorType = {
+				red: 0,
+				green: 0,
+				blue: 0,
+				setColor: function (type, value) {
+					switch(type) {
+						case 'red': 
+							this.red = value;
+							break;
+						case 'green': 
+							this.green = value;
+							break;
+						case 'blue': 
+							this.blue = value;
+							break;
+					}
+				},
+				getColor: function (type) {
+					switch(type) {
+						case 'red': 
+							return this.red;
+							break;
+						case 'green': 
+							return this.green;
+							break;
+						case 'blue': 
+							return this.blue;
+							break;
+					}
+				}
+			}
+
+			$('.slider-1').slider({
+				min: colorType.red,
+				max: 255,
+				step: 1,
+				slide: function(event, ui) {
+					colorType.setColor('red', ui.value);
+					updateColors();
+				}
+			});
+
+			$('.slider-2').slider({
+				min: colorType.green,
+				max: 255,
+				step: 1,
+				slide: function(event, ui) {
+					colorType.green = ui.value;
+					updateColors();
+				}
+			});
+
+			$('.slider-3').slider({
+				min: colorType.blue,
+				max: 255,
+				step: 1,
+				slide: function(event, ui) {
+					colorType.blue = ui.value;
+					updateColors();
+				}
+			})
+
+			updateColors()
+				
+		});
+
+	</script>
+</body>
+</html>
