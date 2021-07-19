@@ -3,7 +3,7 @@
    * Components init
    */
 
-  for (let Component in VoLTe) {
+  for (let Component in window.VoLTe) {
     new VoLTe[Component]().init();
   }
 
