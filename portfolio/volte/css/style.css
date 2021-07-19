@@ -102,7 +102,7 @@ figcaption {
 
 @font-face {
   font-family: "GraphikLc";
-  src: url("../fonts/MegaFonGraphikLC-Regular.woff2"), url("../fonts/MegaFonGraphikLC-Regular.woff");
+  src: url("../fonts/MegaFonGraphikLC-Regular.woff2"), url("../fonts/MegaFonGraphikLC-Regular.woff"), local(Arial);
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -133,11 +133,10 @@ figcaption {
 
 @font-face {
   font-family: "GraphikLc-fallback";
-  size-adjust: 1100%;
-  ascent-override: normal;
-  descet-override: normal;
-  line-gap-override: normal;
-  src: local("Arial");
+  src: local(Arial Bold);
+  descent-override: 0%;
+  ascent-override: 72%;
+  line-gap-override: 3%;
 }
 
 /* ______ End Main Fonts ______ */
