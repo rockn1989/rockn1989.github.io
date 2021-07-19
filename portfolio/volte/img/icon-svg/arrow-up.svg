@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="13px" height="8px" viewBox="0 0 13 8" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M11.3369 8L6.5 3.20605L1.66315 8L0 6.39698L6.5 0L13 6.39698L11.3369 8Z" id="path_1" />
+    <clipPath id="mask_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <path d="M11.3369 8L6.5 3.20605L1.66315 8L0 6.39698L6.5 0L13 6.39698L11.3369 8Z" id="Mask" fill="#333333" stroke="none" />
+</svg>

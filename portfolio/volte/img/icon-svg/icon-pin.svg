@@ -1,0 +1,7 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="12.08 8.75 18.07 24.5">
+  <g id="Group" transform="translate(1 1)">
+    <path d="M15.4005 11.25C15.4005 11.25 16.071 9.9105 16.071 8.0355C16.071 3.597 12.474 0 8.0355 0C3.597 0 0 3.597 0 8.0355C0 10.071 0.6705 11.25 0.6705 11.25L6.429 22.5L9.642 22.5L15.4005 11.25Z" transform="translate(12.083783 8.75)" id="Stroke-1" fill="none" fill-rule="evenodd" stroke="#333333" stroke-width="2"/>
+    <path d="M6 3C6 4.656 4.656 6 3 6C1.344 6 0 4.656 0 3C0 1.344 1.344 0 3 0C4.656 0 6 1.344 6 3Z" transform="translate(17.118984 14)" id="Stroke-3" fill="none" fill-rule="evenodd" stroke="#333333" stroke-width="2"/>
+    <path d="M0 0L40 0L40 40L0 40L0 0Z" id="Rectangle-6" fill="none" fill-rule="evenodd" stroke="none"/>
+  </g>
+</svg>

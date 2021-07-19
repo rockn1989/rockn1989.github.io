@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g id="Group" transform="translate(1 1)">
+    <path d="M10.386 22.4355L0 19.467L0 0.087C0.048 0.051 0.0675 0.036 0.114 0L10.5 2.967L10.5 22.3485C10.452 22.3845 10.4325 22.3995 10.386 22.4355Z" transform="translate(6.0830336 0.15818334)" id="Stroke-1" fill="none" fill-rule="evenodd" stroke="#333333" stroke-width="2" />
+    <path d="M0.1305 22.3275L6 19.392L6 0.135C5.9055 0.0765 5.8785 0.0585 5.784 0L0 2.892L0 22.2465C0.057 22.2825 0.0735 22.293 0.1305 22.3275Z" transform="translate(16.583183 0.23408334)" id="Stroke-3" fill="none" fill-rule="evenodd" stroke="#333333" stroke-width="2" />
+    <path d="M0.2175 22.3275L6 19.4355L6 0.081C5.943 0.0465 5.928 0.036 5.871 0L0 2.9355L0 22.1925C0.096 22.251 0.123 22.269 0.2175 22.3275Z" transform="translate(0.08258333 0.19013333)" id="Stroke-5" fill="none" fill-rule="evenodd" stroke="#333333" stroke-width="2" />
+  </g>
+</svg>

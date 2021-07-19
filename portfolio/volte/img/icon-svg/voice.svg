@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 34 32" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g id="Group-2" transform="translate(1 1)">
+    <path d="M16.62 0C8.336 0 1.62 6.716 1.62 15C1.62 17.16 2.085 19.208 2.907 21.064L0 27.076L2.352 29.88L9.104 27.968C11.316 29.252 13.878 30 16.62 30C24.904 30 31.62 23.284 31.62 15C31.62 6.716 24.904 0 16.62 0Z" transform="translate(0.1825 -0.0001)" id="Stroke-1" fill="none" fill-rule="evenodd" stroke="#00B956" stroke-width="2" />
+    <path d="M0 8L0 0" transform="translate(8.8025 10.9999)" id="Stroke-3" fill="none" fill-rule="evenodd" stroke="#00B956" stroke-width="2" />
+    <path d="M0 0L0 12" transform="translate(16.8025 8.9999)" id="Stroke-5" fill="none" fill-rule="evenodd" stroke="#00B956" stroke-width="2" />
+    <path d="M0 0L0 4" transform="translate(12.8025 12.9999)" id="Stroke-7" fill="none" fill-rule="evenodd" stroke="#00B956" stroke-width="2" />
+    <path d="M0 2L0 0" transform="translate(20.8025 13.9999)" id="Stroke-9" fill="none" fill-rule="evenodd" stroke="#00B956" stroke-width="2" />
+    <path d="M0 8L0 0" transform="translate(24.8025 10.9999)" id="Stroke-11" fill="none" fill-rule="evenodd" stroke="#00B956" stroke-width="2" />
+  </g>
+</svg>
