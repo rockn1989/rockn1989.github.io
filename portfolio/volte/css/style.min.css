@@ -457,14 +457,14 @@ figcaption {
   src: url("../fonts/MegaFonGraphikLC-Regular.woff2"), url("../fonts/MegaFonGraphikLC-Regular.woff"), local(Arial);
   font-style: normal;
   font-weight: 400;
-  font-display: swap;
+  font-display: optional;
 }
 
 @font-face {
   font-family: "GraphikLc";
   src: url("../fonts/MegaFonGraphikLC-Medium.woff2"), url("../fonts/MegaFonGraphikLC-Medium.woff");
   font-style: 500;
-  font-display: swap;
+  font-display: optional;
 }
 
 @font-face {
@@ -472,7 +472,7 @@ figcaption {
   src: url("../fonts/MegaFonGraphikLC-Semibold.woff2"), url("../fonts/MegaFonGraphikLC-Semibold.woff");
   font-style: normal;
   font-weight: 600;
-  font-display: swap;
+  font-display: optional;
 }
 
 @font-face {
@@ -480,7 +480,7 @@ figcaption {
   src: url("../fonts/MegaFonGraphikLC-Bold.woff2"), url("../fonts/MegaFonGraphikLC-Bold.woff");
   font-style: normal;
   font-weight: 700;
-  font-display: swap;
+  font-display: optional;
 }
 
 @font-face {
